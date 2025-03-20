@@ -3,53 +3,57 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('landing page/index');
+})->name('welcome');
+
+Route::get('/index', function () {
+    return view('landing page/index');
 })->name('index');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/syarat', function () {
-    return view('syarat');
+    return view('landing page/syarat');
 })->name('syarat');
 
 Route::get('/kontak', function () {
-    return view('kontak');
+    return view('landing page/kontak');
 })->name('kontak');
 
 Route::get('/tentang', function () {
-    return view('tentang');
+    return view('landing page/tentang');
 })->name('tentang');
 
 Route::get('/keunggulan', function () {
-    return view('keunggulan');
+    return view('landing page/keunggulan');
 })->name('keunggulan');
 
 Route::get('/promo', function () {
-    return view('promo');
+    return view('landing page/promo');
 })->name('promo');
 
 Route::get('/paket', function () {
-    return view('paket');
+    return view('landing page/paket');
 })->name('paket');
 
+Route::get('/dashboard', function () {
+    return view('admin page/dashboard');
+})->name('dashboard');
+
 Route::get('/register', function () {
-    return view('register');
+    return view('admin page/register');
 })->name('register');
 
 Route::get('/password', function () {
-    return view('password');
+    return view('admin page/password');
 })->name('password');
 
 Route::get('/login', function () {
-    return view('login');
+    return view('admin page/login');
 })->name('login');
 
 Route::get('/charts', function () {
-    return view('charts');
+    return view('admin page/charts');
 })->name('charts');
 
 Route::get('/tables', function () {
-    return view('tables');
+    return view('admin page/tables');
 })->name('tables');

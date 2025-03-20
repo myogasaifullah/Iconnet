@@ -19,45 +19,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-        <div class="container px-5">
-            <!-- Logo dan Nama Brand -->
-            <a class="navbar-brand d-flex align-items-center" href="#!">
-                <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Iconnet.png" alt="Logo" width="100" class="me-2">
-                <span class="fw-bold text-primary"></span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active menu-link fw-bold" aria-current="page" href="{{ route('index') }}">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('tentang') }}">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('keunggulan') }}">Keunggulan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('promo') }}">Promo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('paket') }}">Paket</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('syarat') }}">Syarat & Ketentuan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link fw-bold" href="{{ route('kontak') }}">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    @include('layouts.navbar')
     <!-- Carousel Gambar-->
     <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -80,15 +42,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <!-- lampung -->
-    <section class="py-5 border-bottom">
+    <section class="bg-white py-5 border-bottom">
         <div class="container px-5 my-5 px-5">
             <div class="row align-items-center">
                 <!-- Bagian Gambar -->
                 <div class="col-lg-6 d-flex">
                     <!-- Gambar 1 (Vertikal) -->
-                    <div class="me-3">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/pexels-ketut-subiyanto-4473892.jpg" class="img-fluid rounded mb-4" alt="Gambar 1">
+                    <div class="container mt-5 p-5 mb-4">
+                        <div class="me-3">
+                            <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/pexels-ketut-subiyanto-4473892.jpg" class="img-fluid rounded mb-4" alt="Gambar 1">
+                        </div>
                     </div>
 
                     <!-- Gambar 2 dan 3 (Vertikal atas-bawah) -->
@@ -131,7 +96,7 @@
     <section class="bg-white py-5 border-bottom" id="features">
         <div class="container px-5 my-5">
             <div class="row gx-5">
-                <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="col-lg-4 mb-5 mb-lg-0 card">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                     <h2 class="h4 fw-bolder">Reliable</h2>
                     <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
@@ -140,7 +105,7 @@
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="col-lg-4 mb-5 mb-lg-0 card">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
                     <h2 class="h4 fw-bolder">Affordable</h2>
                     <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
@@ -149,7 +114,7 @@
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 card">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                     <h2 class="h4 fw-bolder">Unlimited</h2>
                     <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
@@ -162,7 +127,7 @@
         </div>
     </section>
     <!-- Section Promo -->
-    <section id="promo" class="bg-light py-10">
+    <section id="promo" class="bg-light py-5 border-bottom">
         <div class="container mx-auto px-4">
             <div class="text-center mb-6">
                 <h2 class="text-3xl font-bold mb-2">Promo Spesial!</h2>
@@ -170,8 +135,8 @@
             </div>
             <!-- Bagian Gambar -->
             <div class="card mb-5 mb-xl-0">
-                <div class="me-3">
-                    <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png" class="img-fluid rounded mb-4" alt="Gambar 1">
+                <div class="me-3 ">
+                    <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png" class="img-fluid rounded mb-4 border-2 border-grey-500 shadow-lg" alt="Gambar 1">
                 </div>
             </div>
     </section>
@@ -186,7 +151,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
                 <!-- Pricing card 1 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 border-primary">
                         <div class="card-body p-5">
                             <div class="mb-3">
                                 <span class="display-7 fw-bold">Rp.259.000</span>
@@ -207,7 +172,7 @@
 
                 <!-- Pricing card 2 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 border-primary">
                         <div class="card-body p-5">
                             <div class="mb-3">
                                 <span class="display-7 fw-bold">Rp.269.000</span>
@@ -228,7 +193,7 @@
 
                 <!-- Pricing card 3 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 border-primary">
                         <div class="card-body p-5">
                             <div class="mb-3">
                                 <span class="display-7 fw-bold">Rp.319.000</span>
@@ -249,7 +214,7 @@
 
                 <!-- Pricing card 4 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 border-primary">
                         <div class="card-body p-5">
                             <div class="mb-3">
                                 <span class="display-7 fw-bold">Rp.499.000</span>
@@ -266,6 +231,76 @@
                             <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- why -->
+    <section class="bg-light  py-5 border-bottom">
+        <div class="container text-center my-5">
+            <h2 class="fw-bold">Mengapa Memilih Iconnet</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card-custom card">
+                        <div class="icon"><img src="https://static.thenounproject.com/png/3574480-200.png" alt="Home Broadband"></div>
+                        <h5>Home Broadband</h5>
+                        <p>Internet broadband menyediakan kecepatan internet yang jauh lebih tinggi dibandingkan dengan teknologi akses internet lainnya.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-custom card">
+                        <div class="icon"><img src="assets/roket.png" alt="Koneksi Stabil"></div>
+                        <h5>Koneksi Stabil</h5>
+                        <p>Koneksi broadband Iconnet cenderung lebih stabil dan dapat diandalkan serta meminimalkan gangguan dan pemutusan koneksi yang ada.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-custom card">
+                        <div class="icon"><img src="https://static.vecteezy.com/system/resources/previews/009/408/713/large_2x/computer-icon-transparent-free-png.png" alt="Multimedia"></div>
+                        <h5>Multimedia</h5>
+                        <p>Iconnet memiliki kapasitas yang besar untuk mengakomodasi penggunaan data yang intensif, seperti streaming video berkualitas tinggi.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-custom card">
+                        <div class="icon"><img src="assets/gembok.png" alt="Keamanan"></div>
+                        <h5>Keamanan</h5>
+                        <p>Internet broadband Iconnet menggunakan enkripsi data untuk melindungi informasi pribadi dan sensitif yang dikirimkan melalui jaringan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- peta -->
+    <section class="bg-white  py-5 border-bottom">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Bagian Kiri -->
+                <div class="col-md-6">
+                    <h5 class="text-primary">Internet Untuk Semua</h5>
+                    <h2 class="fw-bold">Jangkauan Internet Wifi Iconnet</h2>
+                    <p class="text-muted">
+                        Bandar Lampung,
+                        Lampung Barat,
+                        Lampung Selatan,
+                        Lampung Tengah,
+                        Lampung Timur,
+                        Lampung Utara,
+                        Metro,
+                        Pesawaran,
+                        Pringsewu,
+                        Tanggamus,
+                        Tulang Bawang
+                    </p>
+                    <a href="#" class="btn btn-primary px-4 py-2">Daftar Segera -></a>
+                </div>
+
+                <!-- Bagian Kanan (Peta) -->
+                <div class="col-md-6 text-center">
+                    <img src="/assets/lampung.png" alt="Jangkauan Iconnet" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -319,184 +354,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="card mb-4 me-3" style="min-width: 300px;">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
+                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card mb-4 me-3" style="min-width: 300px;">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">Iconnet harganya relatif murah dan terjangkau</p>
+                                <div class="small text-muted">- Murni, Carik Sindumartani</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card mb-4 me-3" style="min-width: 300px;">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="ms-4">
+                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
+                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact section-->
-    <section class="bg-white py-5">
-        <div class="container mt-5">
-            <div class="card p-5 mb-4">
-                <h1 class="text-2xl font-bold mb-4 text-center">Hubungi Kami</h1>
 
-                <p class="mb-4 text-center">Jika Anda memiliki pertanyaan, keluhan, atau ingin mengetahui informasi lebih lanjut, silakan hubungi kami melalui salah satu cara berikut:</p>
+    @include('layouts.footer')
 
-                <div class="row">
-                    <!-- Alamat Kantor -->
-                    <div class="col-lg-6 col-sm-12 mb-4">
-                        <div class="p-4 bg-gray-100 rounded shadow">
-                            <h2 class="text-xl font-bold mb-4 text-blue-600">Alamat Kantor</h2>
-                            <p class="text-gray-700">Jl. Contoh No.123, Kota Medan, Sumatera Utara</p>
-                            <p class="text-gray-700">Indonesia</p>
-                        </div>
-                    </div>
-
-                    <!-- Kontak -->
-                    <div class="col-lg-6 col-sm-12 mb-4">
-                        <div class="p-4 bg-gray-100 rounded shadow">
-                            <h2 class="text-xl font-bold mb-4 text-blue-600">Kontak</h2>
-                            <p class="text-gray-700"><strong>Telepon:</strong> (061) 123-4567</p>
-                            <p class="text-gray-700"><strong>Email:</strong> info@iconnetsumut.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8">
-                    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulir Kontak</h2>
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="py-5 bg-light shadow-sm">
-        <div id="footer-6" class="footer-area has-animation active-animation">
-            <div class="footer-top-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div id="media_image-11" class="widget widget_media_image" style="margin-bottom: 20px;">
-                                <a href="#">
-                                    <img
-                                        loading="lazy"
-                                        width="250"
-                                        height="73"
-                                        src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Iconnet.png"
-                                        class="image wp-image-4999 attachment-full size-full has-transparency"
-                                        alt="Logo Iconnet"
-                                        decoding="async"
-                                        style="--dominant-color: #ffffff; max-width: 100%; height: auto; width: 250px;"
-                                        srcset="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Iconnet.png"
-                                        sizes="(max-width: 500px) 100vw, 500px"
-                                        data-has-transparency="true"
-                                        data-dominant-color="ffffff">
-                                </a>
-                            </div>
-                            <div id="text-16" class="widget widget_text">
-                                <div class="textwidget">
-                                    <p style="clear: both;">
-                                        <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer">
-                                            <img loading="lazy" decoding="async" src="https://iconnetjabar.com/wp-content/uploads/2023/09/Logo-MyIcon.png" alt="gambar1" width="60" height="60">
-                                        </a>&nbsp; &nbsp; &nbsp;
-                                        <a href="https://play.google.com/store/apps/details?id=com.icon.pln123">
-                                            <img loading="lazy" decoding="async" src="https://iconnetjabar.com/wp-content/uploads/2023/09/Logo-PLN-Mobile.png" alt="gambar2" width="60" height="60">
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- <div id="rt-about-social-15" class="widget rt_footer_social_widget">
-                                <div class="rt-about-widget">
-                                    <ul class="footer-social">
-                                        <li><a href="https://www.facebook.com/people/Iconnet-SUMUT/61551088654518/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="https://instagram.com/iconnet.sumut" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div id="digeco_address-16" class="widget widget_digeco_address">
-                                <h3 class="widgettitle ">Alamat</h3>
-                                <p class="rtin-des"></p>
-                                <ul class="corporate-address">
-                                    <li><i class="flaticon-placeholder"></i>Jl. Gn. Rajabasa Raya No.16, Perumnas Way Halim, Kec. Way Halim, Kota Bandar Lampung, Lampung 35132</li>
-                                    <li><i class="flaticon-telephone"></i> <a href="tel:08116241500">08116241500</a></li>
-                                    <li><i class="flaticon-plane"></i> <a href="mailto:iconnetsumut@gmail.com">iconnetlampung@gmail.com</a></li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12" style="margin-bottom: 20px;">
-                            <div id="nav_menu-25" class="widget widget_nav_menu">
-                                <h3 class="widgettitle ">Tentang</h3>
-                                <div class="menu-menu-container">
-                                    <ul id="menu-menu-3" class="menu">
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4834"><a href="/">Beranda</a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4823"><a href="https://iconnetsumut.com/promo/">Promo &amp; Produk</a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5136"><a href="https://iconnetsumut.com/cara-pembayaran/">Cara Pembayaran</a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5135"><a href="https://iconnetsumut.com/faq/">FAQ</a></li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5004 current_page_item menu-item-5005"><a href="https://iconnetsumut.com/hubungi-kami/" aria-current="page">Hubungi Kami</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-12">
-                            <div id="nav_menu-26" class="widget widget_nav_menu">
-                                <h3 class="widgettitle ">Layanan Kami</h3>
-                                <div class="menu-layanan-kami-container">
-                                    <ul id="menu-layanan-kami" class="menu">
-                                        <li id="menu-item-5132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5132"><a href="https://iconnetsumut.com/faq/">Tanya Jawab</a></li>
-                                        <li id="menu-item-5134" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5134"><a href="https://iconnetsumut.com/cara-pembayaran/">Cara Pembayaran</a></li>
-                                        <li id="menu-item-5133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5133"><a href="https://iconnetsumut.com/syarat-ketentuan/">Syarat &amp; Ketentuan</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="container px-5">
-                                <p class="m-0 text-center text-blue">Copyright &copy; PT INDONESIA COMNETS PLUS © 2024. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

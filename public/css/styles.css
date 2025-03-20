@@ -11349,3 +11349,150 @@ body {
 img {
   object-fit: cover;
 }
+
+body {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #121212;
+  font-size: 28px;
+}
+
+.card-custom {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: #0d2c6d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
+
+h5 {
+  font-weight: bold;
+  color: #121212;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+ 
+  justify-content: center;
+  align-items: center;
+}
+.contact-box {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact-box i {
+  font-size: 30px;
+  color: #6c757d;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-title {
+  font-size: 12px;
+  color: #6c757d;
+}
+.contact-detail {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-custom {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-custom:hover {
+  background: #007bff; /* Warna latar saat hover (biru) */
+  color: white; /* Mengubah teks menjadi putih */
+  transform: translateY(-5px); /* Efek naik saat hover */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.card-custom:hover h5,
+.card-custom:hover p {
+  color: white;
+}
+
+.card-custom .icon img {
+  width: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-custom:hover .icon img {
+  transform: scale(1.1); /* Efek zoom pada ikon */
+}
+
+.contact-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        .contact-icon img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h5 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .contact-card p {
+            font-size: 14px;
+            margin: 0;
+        }
