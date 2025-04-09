@@ -1,67 +1,40 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaketController;
+use App\Http\Controllers\PromoController;
 
-Route::get('/', function () {
-    return view('landing page/index');
-})->name('welcome');
+// Route untuk halaman admin promo
+Route::prefix('produk_promo')->name('promo.')->group(function () {
+    Route::get('/', [PromoController::class, 'index'])->name('index');
+    Route::post('/', [PromoController::class, 'store'])->name('store');
+    Route::delete('/{promo}', [PromoController::class, 'destroy'])->name('destroy');
+});
 
-Route::get('/index', function () {
-    return view('landing page/index');
-})->name('index');
+// Route untuk halaman admin paket
+Route::prefix('produk_paket')->name('produk_paket.')->group(function () {
+    Route::get('/', [PaketController::class, 'index'])->name('index');
+    Route::get('/create', [PaketController::class, 'create'])->name('create');
+    Route::post('/', [PaketController::class, 'store'])->name('store');
+    Route::get('/{id}/edit', [PaketController::class, 'edit'])->name('edit');
+    Route::put('/{id}', [PaketController::class, 'update'])->name('update');
+    Route::delete('/{id}', [PaketController::class, 'destroy'])->name('destroy');
+});
 
-Route::get('/syarat', function () {
-    return view('landing page/syarat');
-})->name('syarat');
+// Route static (landing page)
+Route::get('/', fn() => view('landing_page/index'))->name('welcome');
+Route::get('/index', fn() => view('landing_page/index'))->name('index');
+Route::get('/syarat', fn() => view('landing_page/syarat'))->name('syarat');
+Route::get('/kontak', fn() => view('landing_page/kontak'))->name('kontak');
+Route::get('/tentang', fn() => view('landing_page/tentang'))->name('tentang');
+Route::get('/keunggulan', fn() => view('landing_page/keunggulan'))->name('keunggulan');
+Route::get('/promo', fn() => view('landing_page/promo'))->name('promo');
+Route::get('/paket', fn() => view('landing_page/paket'))->name('paket');
 
-Route::get('/kontak', function () {
-    return view('landing page/kontak');
-})->name('kontak');
-
-Route::get('/tentang', function () {
-    return view('landing page/tentang');
-})->name('tentang');
-
-Route::get('/keunggulan', function () {
-    return view('landing page/keunggulan');
-})->name('keunggulan');
-
-Route::get('/promo', function () {
-    return view('landing page/promo');
-})->name('promo');
-
-Route::get('/paket', function () {
-    return view('landing page/paket');
-})->name('paket');
-
-Route::get('/dashboard', function () {
-    return view('admin page/dashboard');
-})->name('dashboard');
-
-Route::get('/register', function () {
-    return view('admin page/register');
-})->name('register');
-
-Route::get('/password', function () {
-    return view('admin page/password');
-})->name('password');
-
-Route::get('/login', function () {
-    return view('admin page/login');
-})->name('login');
-
-Route::get('/charts', function () {
-    return view('admin page/charts');
-})->name('charts');
-
-Route::get('/tables', function () {
-    return view('admin page/tables');
-})->name('tables');
-
-Route::get('/produk/promo', function () {
-    return view('admin page/promo');
-})->name('/produk/promo');
-
-Route::get('/produk/paket', function () {
-    return view('admin page/paket');
-})->name('/produk/paket');
+// Admin page
+Route::get('/dashboard', fn() => view('admin_page/dashboard'))->name('dashboard');
+Route::get('/register', fn() => view('admin_page/register'))->name('register');
+Route::get('/password', fn() => view('admin_page/password'))->name('password');
+Route::get('/login', fn() => view('admin_page/login'))->name('login');
+Route::get('/charts', fn() => view('admin_page/charts'))->name('charts');
+Route::get('/tables', fn() => view('admin_page/tables'))->name('tables');

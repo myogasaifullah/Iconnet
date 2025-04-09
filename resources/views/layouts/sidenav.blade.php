@@ -9,11 +9,11 @@
                         Dashboard
                     </a>
                     <div class="sb-sidenav-menu-heading">Produk</div>
-                    <a class="nav-link" href="{{ route('/produk/promo') }}">
+                    <a class="nav-link" href="{{ route('promo.index') }}">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                         Promo
                     </a>
-                    <a class="nav-link" href="{{ route('/produk/paket') }}">
+                    <a class="nav-link" href="{{ route('produk_paket.index') }}">
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                         Paket
                     </a>
@@ -26,8 +26,8 @@
                     </a>
                     <div class="collapse" id="collapseProduk" aria-labelledby="headingProduk" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="{{ route('/produk/paket') }}">Paket</a>
-                            <a class="nav-link" href="{{ route('/produk/promo') }}">Promo</a>
+                            <a class="nav-link" href="{{ route('produk_paket.index') }}">Paket</a>
+                            <a class="nav-link" href="{{ route('promo.index') }}">Promo</a>
                         </nav>
                     </div>
                     <div class="sb-sidenav-menu-heading">Interface</div>
