@@ -57,3 +57,11 @@ Route::get('/charts', function () {
 Route::get('/tables', function () {
     return view('admin page/tables');
 })->name('tables');
+
+Route::get('/produk/promo', function () {
+    return view('admin page/promo');
+})->name('/produk/promo');
+
+Route::get('/produk/paket', function () {
+    return view('admin page/paket');
+})->name('/produk/paket');
