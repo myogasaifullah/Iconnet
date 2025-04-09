@@ -56,10 +56,21 @@
                             <td>{{ $promo->deskripsi }}</td>
                             <td><img src="{{ asset('storage/' . $promo->gambar) }}" width="100" alt=""></td>
                             <td>
+                                {{-- Form Update --}}
+                                <form action="{{ route('promo.update', $promo->id) }}" method="POST" enctype="multipart/form-data" style="margin-bottom: 10px;">
+                                    @csrf
+                                    @method('PUT')
+                                    <input type="text" name="judul" value="{{ $promo->judul }}" class="form-control mb-1" required>
+                                    <textarea name="deskripsi" class="form-control mb-1" required>{{ $promo->deskripsi }}</textarea>
+                                    <input type="file" name="gambar" class="form-control mb-1">
+                                    <button class="btn btn-warning btn-sm w-100 mb-1">Update</button>
+                                </form>
+
+                                {{-- Tombol Hapus --}}
                                 <form action="{{ route('promo.destroy', $promo->id) }}" method="POST" onsubmit="return confirm('Yakin hapus promo ini?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                    <button class="btn btn-danger btn-sm w-100">Hapus</button>
                                 </form>
                             </td>
                         </tr>

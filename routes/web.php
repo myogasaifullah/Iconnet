@@ -8,6 +8,7 @@ use App\Http\Controllers\PromoController;
 Route::prefix('produk_promo')->name('promo.')->group(function () {
     Route::get('/', [PromoController::class, 'index'])->name('index');
     Route::post('/', [PromoController::class, 'store'])->name('store');
+    Route::put('/{promo}', [PromoController::class, 'update'])->name('update');
     Route::delete('/{promo}', [PromoController::class, 'destroy'])->name('destroy');
 });
 

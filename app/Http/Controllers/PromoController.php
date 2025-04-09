@@ -29,6 +29,27 @@ class PromoController extends Controller
         return redirect()->route('promo.index')->with('success', 'Promo berhasil ditambahkan.');
     }
 
+    public function update(Request $request, Promo $promo)
+    {
+        $validated = $request->validate([
+            'judul' => 'required',
+            'deskripsi' => 'required',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
+        ]);
+
+        // Cek jika gambar baru diupload
+        if ($request->hasFile('gambar')) {
+            if ($promo->gambar) {
+                Storage::disk('public')->delete($promo->gambar);
+            }
+            $path = $request->file('gambar')->store('promo', 'public');
+            $validated['gambar'] = $path;
+        }
+
+        $promo->update($validated);
+        return redirect()->route('promo.index')->with('success', 'Promo berhasil diperbarui.');
+    }
+
     public function destroy(Promo $promo)
     {
         if ($promo->gambar) {
