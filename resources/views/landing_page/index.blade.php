@@ -91,41 +91,44 @@
             <hr class="mt-4" style="border: 2px solid #007bff; width: 100%;">
         </div>
     </div>
-
-    <!-- Features section-->
+    <!-- feature -->
     <section class="bg-white py-5 border-bottom" id="features">
         <div class="container px-5 my-5">
-            <div class="row gx-5">
-                <div class="col-lg-4 mb-5 mb-lg-0 card">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                    <h2 class="h4 fw-bolder">Reliable</h2>
-                    <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
-                    <a class="text-decoration-none" href="#!">
-                        Call to action
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+            <div class="row gx-4 gy-4">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-collection"></i>
+                        </div>
+                        <h2>Reliable</h2>
+                        <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
+                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0 card">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                    <h2 class="h4 fw-bolder">Affordable</h2>
-                    <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
-                    <a class="text-decoration-none" href="#!">
-                        Call to action
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h2>Affordable</h2>
+                        <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
+                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-4 card">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                    <h2 class="h4 fw-bolder">Unlimited</h2>
-                    <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
-                    <a class="text-decoration-none" href="#!">
-                        Call to action
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-toggles2"></i>
+                        </div>
+                        <h2>Unlimited</h2>
+                        <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
+                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Section Promo -->
     <section id="promo" class="bg-light py-5 border-bottom">
         <div class="container mx-auto px-4">
@@ -149,91 +152,95 @@
                 <p class="lead mb-0">Berbagai paket yang dapat sesuai dengan layanan kebutuhan internet dan multimedia anda.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
-                <!-- Pricing card 1 -->
+                <!-- Card 1 -->
                 <div class="col mb-4">
-                    <div class="card h-100 border-primary">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.259.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 20 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>20 Mbps</h2>
+                            <h1>259.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 20 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 2 -->
+                <!-- Card 2 -->
                 <div class="col mb-4">
-                    <div class="card h-100 border-primary">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.269.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 35 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>35 Mbps</h2>
+                            <h1>269.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 35 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 3 -->
+                <!-- Card 3 -->
                 <div class="col mb-4">
-                    <div class="card h-100 border-primary">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.319.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 50 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>50 Mbps</h2>
+                            <h1>319.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 50 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 4 -->
+                <!-- Card 4 -->
                 <div class="col mb-4">
-                    <div class="card h-100 border-primary">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.499.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 100 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>100 Mbps</h2>
+                            <h1>499.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 100 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
     </section>
 
@@ -306,98 +313,46 @@
         </div>
     </section>
 
-    <!-- Testimonials section-->
+    <!-- Testimonials section -->
     <section class="bg-light py-5 border-bottom">
-        <div class="container px-5 my-5 px-5">
+        <div class="container px-5 my-5">
             <div class="text-center mb-5">
                 <h2 class="fw-bolder">TESTIMONI</h2>
-                <p class="lead mb-0">Our customers love working with us</p>
+                <p class="lead mb-0">Apa kata mereka tentang Iconnet</p>
             </div>
 
-            <!-- Wrapper untuk membuat card menjadi horizontal -->
-            <div class="d-flex flex-nowrap overflow-auto">
-                <!-- Testimonial 1 -->
-                <div class="card mb-4 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
-                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Carousel Testimoni -->
+            <div class="d-flex overflow-auto pb-3">
+                @php
+                $testimonials = [
+                ['pesan' => 'Iconnet menjawab kebutuhan internet untuk bisnis saya', 'nama' => 'Wiyadi', 'profesi' => 'Wirausahawan'],
+                ['pesan' => 'Iconnet harganya relatif murah dan terjangkau', 'nama' => 'Murni', 'profesi' => 'Carik Sindumartani'],
+                ['pesan' => 'Internet Iconnet stabil dan cocok untuk kerja remote', 'nama' => 'Rian', 'profesi' => 'Freelancer'],
+                ['pesan' => 'Pelayanan cepat dan ramah, recommended!', 'nama' => 'Ayu', 'profesi' => 'Mahasiswa'],
+                ];
+                @endphp
 
-                <!-- Testimonial 2 -->
-                <div class="card mb-4 me-3" style="min-width: 300px;">
+                @foreach($testimonials as $t)
+                <div class="card shadow-sm border-0 me-3" style="min-width: 300px;">
                     <div class="card-body p-4">
                         <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                            </div>
                             <div class="ms-4">
-                                <p class="mb-1">Iconnet harganya relatif murah dan terjangkau</p>
-                                <div class="small text-muted">- Murni, Carik Sindumartani</div>
+                                <p class="mb-1 fst-italic">"{{ $t['pesan'] }}"</p>
+                                <div class="small text-muted">- {{ $t['nama'] }}, {{ $t['profesi'] }}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonial 3 -->
-                <div class="card mb-4 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
-                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-4 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
-                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="card mb-4 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Iconnet harganya relatif murah dan terjangkau</p>
-                                <div class="small text-muted">- Murni, Carik Sindumartani</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="card mb-4 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Iconnet menjawab kebutuhan internet untuk bisnis saya</p>
-                                <div class="small text-muted">- Wiyadi, Wirausahawan</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
 
 
     @include('layouts.footer')
-
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

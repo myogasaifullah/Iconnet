@@ -1,101 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Iconnet</title>
-    <!-- Favicon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syarat & Ketentuan - Iconnet</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-    <!-- Navbar -->
+<body class="bg-light text-dark">
+
     @include('layouts.navbar')
-    <div class="container mt-5">
-        <div class="card p-5 mb-4">
-            <h3 id="headline-550-26" class="ct-headline  text-center">Syarat &amp; Ketentuan<br></h3>
-            <div id="div_block-555-26" class="ct-div-block">
-                <div id="_tabs_contents-542-26" class="oxy-tabs-contents-wrapper oxy-tabs-contents">
-                    <div id="_tab_content-543-26" class="oxy-tab-content tabs-contents-3270-tab">
-                        <h4 id="headline-552-26" class="ct-headline">Syarat Layanan IconNet<br></h4>
-                        <div id="_rich_text-553-26" class="oxy-rich-text">
-                            <ol>
-                                <li>Syarat dan Ketentuan berikut berlaku untuk pengguna perseorangan (‘Pelanggan’) di layanan IconNet (‘Layanan’).</li>
-                                <li>Layanan IconNet diberikan kepada Pelanggan sebagai layanan dengan teknologi kecepatan dan bandwidth “up to” sehingga ICON+ tidak memberikan jaminan tertentu kepada Pelanggan atas layanan tersebut.</li>
-                                <li>Pelanggan mengetahui bahwa Pelanggan harus melakukan pembayaran di setiap bulan untuk memperpanjang masa aktif bulanan sesuai paket Layanan yang dipilih.</li>
-                                <li>Pelanggan mengetahui bahwa 1 (satu) akun Layanan IconNet terdiri dari 1 (satu) akses Broadband Internet.</li>
-                                <li>Pelanggan mengetahui bahwa kualitas Layanan yang diterima tergantung pada perangkat Layanan dengan perangkat penerima, baik secara langsung dan/atau tidak langsung.</li>
-                                <li>Layanan diberikan tanpa jaminan tertentu, tanpa jaminan gangguan Layanan dan tanpa jaminan ketersedian Layanan dimana Layanan dapat diakses secara bersamaan oleh semua Pelanggan tanpa pengaturan, alokasi dan/atau prioritas tertentu. Pelanggan berhak memperoleh dukungan teknis dan/atau non-teknis dari ICON+ yang dapat dihubungi 24 x 7 terkait dengan Layanan melalui contact center 150678.</li>
-                                <li>Pelanggan akan memberi izin kepada pegawai atau tenaga teknis Layanan dari ICON+ memasuki wilayah milik Pelanggan untuk melakukan instalasi, aktivasi, konfigurasi, dan/atau pemeliharaan Layanan pada saat yang telah disepakati Pelanggan.</li>
-                                <li>Pelanggan tidak diperkenankan untuk menjual, memanfaatkan atau membagi kembali seluruh atau sebagian Layanan untuk keperluan Pihak Ketiga selain Pelanggan.</li>
-                                <li>Syarat dan Ketentuan berlaku efektif setelah Pelanggan melakukan persetujuan (centang pada kolom yang disediakan) saat mengisi formulir registrasi online dan/atau saat pegawai Layanan melakukan pengisian formulir registrasi atas persetujuan Pelanggan baik secara tertulis atau lisan. ICON+ memiliki hak untuk menolak aplikasi ini tanpa penjelasan.</li>
-                                <li>Pelanggan menyatakan bahwa informasi yang telah diberikan kepada ICON+ adalah benar dan sepakat untuk terikat dengan Syarat dan Ketentuan Layanan. Setiap perubahan terhadap informasi yang telah diberikan wajib disampaikan kepada ICON+ selama berlangganan Layanan.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div id="_tab_content-544-26" class="oxy-tab-content tabs-contents-3270-tab oxy-tabs-contents-content-hidden">
-                        <h4 id="headline-559-26" class="ct-headline">Ketentuan Layanan IconNet<br></h4>
-                        <div id="_rich_text-560-26" class="oxy-rich-text">
-                            <ol>
-                                <li>Pelanggan IconNet adalah Pelanggan yang lokasi terminasi layanannya berada pada cakupan Fiber Optik FTTH milik ICON+ untuk area redential (Rumah).</li>
-                                <li>Pelanggan IconNet dan IconNet+TV akan dikenakan biaya instalasi (One Time Charge) sebesar Rp 250.000,-/titik.</li>
-                                <li>Perangkat ONT dari ICON+ adalah perangkat yang mendukung untuk dapat digunakan sebagai Access Point WIFI (standard)</li>
-                                <li>Masa berlangganan (sewa) layanan adalah minimal 1 tahun</li>
-                                <li>Pelanggan yang sudah dinyatakan melakukan terminasi dan berkenan untuk berlangganan kembali tidak akan dikenakan biaya dengan ketentuan jika kabel jaringan ICON+ masih tersedia dan layak digunakan di lokasi Pelanggan. Apabila kondisi kabel jaringan ICON+ yang terdapat di lokasi pelanggan sudah tidak layak digunakan, Pelanggan diharuskan untuk melakukan pembayaran ulang yang terdiri dari biaya instalasi.</li>
-                                <li>Layanan memiliki masa tenggang selama 1 (satu) hari berlaku setelah jatuh tempo masa aktif. Apabila Pelanggan telah melewati masa tenggang dan tidak melakukan pembayaran, Pelanggan dinyatakan telah melakukan terminasi.</li>
-                                <li>ICON+ memberikan garansi untuk perangkat ICON+ Modem dan perangkat ICON+ TV STB (set-top box) dengan jangka waktu selama masa/periode berlangganan dan berlaku setelah status Layanan Pelanggan aktif. Garansi ini tidak berlaku jika kerusakan pada perangkat terjadi akibat kecelakaan dan/atau kelalaian yang disebabkan oleh Pelanggan.</li>
-                                <li>Harga sudah termasuk pajak (PPN)</li>
-                                <li>Biaya bulanan yang telah dibayarkan tidak dapat dikembalikan atau diuangkan.</li>
-                                <li>Biaya bulanan dan biaya perangkat adalah biaya yang menjadi kewajiban Pelanggan dalam bentuk paket dalam masa aktif selama 30 (tiga puluh) hari termasuk namun tidak terbatas pada biaya materai, biaya tunggakan, biaya mutasi, denda keterlambatan pembayaran, atau biaya lainnya sesuai dengan peraturan perundang-undangan yang berlaku.</li>
-                                <li>Permohonan berhenti berlangganan TV dan atau penurunan Bandwith internet dapat diajukan setelah minimal berlangganan selama 3 (Tiga) bulan dari layanan aktif atau sejak BAIA ini di tanda tangan.</li>
-                                <li>Apabila pelanggan melakukan pembatalan layanan sebelum masa kontrak berakhir ( yaitu 1 tahun) maka akan dikenakan biaya pembatalan berlangganan sesuai dengan kontrak Berita Acara Instalasi yang di tanda tangani kedua pihak.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div id="_tab_content-545-26" class="oxy-tab-content tabs-contents-3270-tab oxy-tabs-contents-content-hidden">
-                        <h4 id="headline-561-26" class="ct-headline">Informasi Umum<br></h4>
-                        <div id="_rich_text-562-26" class="oxy-rich-text">
-                            <ol>
-                                <li>Keseluruhan Syarat dan Ketentuan ini tunduk pada ketentuan hukum yang berlaku di wilayah Republik Indonesia. Apabila ada perselisihan antara ICON+ dan Pelanggan terkait dengan Syarat dan Ketentuan, akan diutamakan penyelesaian melalui musyawarah untuk mufakat. Apabila tidak tercapai kata mufakat maka ICON+ berhak untuk mengajukan tuntutan atau gugatan melalui Pengadilan Negeri Jakarta Pusat.</li>
-                                <li>ICON+ dan Pelanggan sepakat untuk mengesampingkan ketentuan Pasal 1266 Kitab Undang undang Hukum Perdata Indonesia, sehingga atas setiap penghentian Layanan ini bersifat final berdasarkan permohonan tertulis dari Pihak yang melakukan pengentian Layanan sesuai dengan Syarat dan Ketentuan Layanan ini.</li>
-                                <li>Bilamana dalam menjalankan kewajiban yang tertera dalam Keseluruhan Syarat dan Ketentuan ini tidak dapat terlaksana, terhambat atau terganggu oleh sebab, akibat atau kondisi yang berada diluar kendali (force majeure), ICON+ akan memberitahukan keadaan tersebut secepatnya kepada Pelanggan dan dapat dibebaskan dari seluruh atau sebagian kewajiban yang harus dilakukan, sepanjang hal tersebut diakibatkan oleh hambatan atau gangguan tersebut. Dalam masa tidak terlaksananya kewajiban tersebut, seluruh biaya dan tagihan yang berkaitan dengan layanan yang diberikan dapat ditangguhkan.</li>
-                                <li>Syarat dan Ketentuan Layanan dapat berubah sewaktu-waktu dan akan diinformasikan melalui situs resmi ICON+.</li>
-                                <li>Syarat dan Ketentuan ini dibuat dalam dua bahasa: Bahasa Indonesia dan Bahasa Inggris. Apabila terjadi perbedaan penafsiran antara Bahasa Indonesia dengan Bahasa Inggris, akan digunakan Syarat dan Ketentuan dalam Bahasa Indonesia.</li>
-                            </ol>
-                        </div>
+
+    <section class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Syarat & Ketentuan</h2>
+            <p class="text-muted">Informasi penting terkait layanan Iconnet</p>
+        </div>
+
+        <div class="accordion" id="accordionTerms">
+            <!-- Tab 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Syarat Layanan IconNet
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <ol class="ps-3">
+                            <li>Syarat dan Ketentuan berikut berlaku untuk pengguna perseorangan (‘Pelanggan’) di layanan IconNet (‘Layanan’).</li>
+                            <li>Layanan IconNet diberikan kepada Pelanggan sebagai layanan dengan teknologi kecepatan dan bandwidth “up to”.</li>
+                            <li>Pelanggan wajib membayar setiap bulan untuk memperpanjang masa aktif layanan.</li>
+                            <li>Satu akun IconNet terdiri dari satu akses Broadband Internet.</li>
+                            <li>Kualitas layanan tergantung pada perangkat yang digunakan pelanggan.</li>
+                            <li>Layanan tanpa jaminan gangguan/ketersediaan, pelanggan berhak mendapatkan dukungan 24/7 dari contact center 150678.</li>
+                            <li>Pelanggan memberi izin teknisi masuk wilayahnya untuk instalasi/pemeliharaan.</li>
+                            <li>Tidak diperkenankan membagikan/menjual layanan kepada pihak ketiga.</li>
+                            <li>Berlaku setelah pelanggan menyetujui formulir registrasi.</li>
+                            <li>Pelanggan bertanggung jawab atas informasi yang diberikan.</li>
+                        </ol>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    var firstTab = document.querySelector('#_tabs_contents-542-26 > .oxy-tabs-contents-content-hidden:first-child');
-                    if (firstTab && firstTab.classList) {
-                        firstTab.classList.remove("oxy-tabs-contents-content-hidden")
-                    };
-                </script>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ketentuan Layanan IconNet
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                        <ol class="ps-3">
+                            <li>Lokasi layanan berada dalam cakupan FTTH ICON+.</li>
+                            <li>Biaya instalasi Rp 250.000,-/titik.</li>
+                            <li>Perangkat ONT mendukung WiFi (standard).</li>
+                            <li>Minimal berlangganan 1 tahun.</li>
+                            <li>Jika terminasi dan ingin berlangganan kembali, bebas biaya jika kabel masih layak.</li>
+                            <li>Masa tenggang 1 hari setelah jatuh tempo. Lewat itu dianggap terminasi.</li>
+                            <li>Garansi perangkat berlaku selama masa aktif, tidak mencakup kerusakan akibat kelalaian pelanggan.</li>
+                            <li>Harga sudah termasuk PPN.</li>
+                            <li>Biaya bulanan tidak dapat dikembalikan.</li>
+                            <li>Biaya lain termasuk biaya mutasi, materai, denda, dsb. sesuai regulasi.</li>
+                            <li>Penurunan bandwidth dapat diajukan setelah minimal 3 bulan aktif.</li>
+                            <li>Pembatalan sebelum 1 tahun dikenakan biaya sesuai kontrak.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Informasi Umum
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                        <ol class="ps-3">
+                            <li>Ketentuan tunduk pada hukum Republik Indonesia.</li>
+                            <li>Penyelesaian perselisihan diutamakan musyawarah, jika gagal melalui Pengadilan Negeri Jakarta Pusat.</li>
+                            <li>Force majeure membebaskan ICON+ dari kewajiban sementara.</li>
+                            <li>Syarat & ketentuan dapat berubah sewaktu-waktu dan diinformasikan di situs resmi.</li>
+                            <li>Versi Bahasa Indonesia adalah versi resmi jika terjadi perbedaan interpretasi.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     @include('layouts.footer')
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

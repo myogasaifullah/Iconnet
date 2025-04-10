@@ -83,8 +83,18 @@
                     </div>
                 </div>
             </section>
-
-
+            <section class="container py-5">
+                <!-- Google Maps -->
+                <div class="mt-5">
+                    <h4 class="text-center mb-3">Lokasi Kami</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9171751338074!2d112.61570531526062!3d-7.13557497221752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd803ed543f4c5b%3A0xa08c9c8cb5c03273!2sKantor%20PLN%20Iconnet!5e0!3m2!1sen!2sid!4v1646664479673!5m2!1sen!2sid"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
             <div class="mt-8">
                 <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulir</h2>
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">

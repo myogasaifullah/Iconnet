@@ -27,89 +27,94 @@
                 <p class="lead mb-0">Berbagai paket yang dapat sesuai dengan layanan kebutuhan internet dan multimedia anda.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
-                <!-- Pricing card 1 -->
+                <!-- Card 1 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.259.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 20 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>20 Mbps</h2>
+                            <h1>259.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 20 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 2 -->
+                <!-- Card 2 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.269.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 35 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>35 Mbps</h2>
+                            <h1>269.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 35 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 3 -->
+                <!-- Card 3 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.319.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 50 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>50 Mbps</h2>
+                            <h1>319.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 50 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Pricing card 4 -->
+                <!-- Card 4 -->
                 <div class="col mb-4">
-                    <div class="card h-100">
-                        <div class="card-body p-5">
-                            <div class="mb-3">
-                                <span class="display-7 fw-bold">Rp.499.000</span>
-                                <span class="text-muted">/ bulan.</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li><i class="bi bi-check text-primary"></i> Up to 100 Mbps</li>
-                                <li><i class="bi bi-check text-primary"></i> Download/Upload</li>
-                                <li><i class="bi bi-check text-primary"></i> Unlimited Quota</li>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h2>100 Mbps</h2>
+                            <h1>499.000</h1>
+                            <p>Per bulan</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li>Full Fiber To The Home</li>
+                                <li>Speed Up To 100 Mbps</li>
+                                <li>Unlimited Quota</li>
+                                <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
-                            <div class="mb-3">
-                                <span class="text-muted">Full Fiber To Home.</span>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
-                            <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Pesan</a></div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

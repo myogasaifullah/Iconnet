@@ -19,70 +19,83 @@
         @include('layouts.sidenav')
         <div id="layoutSidenav_content">
             <main class="container mt-4">
-                <h1>Promo Internet</h1>
+                <h1 class="mb-4 fw-bold text-primary">Promo Internet</h1>
 
+                {{-- Notifikasi Sukses --}}
                 @if(session('success'))
-                <div class="alert alert-success">{{ session('success') }}</div>
+                <div class="alert alert-success shadow-sm">{{ session('success') }}</div>
                 @endif
 
                 {{-- Form Tambah Promo --}}
-                <form action="{{ route('promo.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <div class="mb-3">
-                        <label for="judul" class="form-label">Judul Promo</label>
-                        <input type="text" name="judul" class="form-control" required>
+                <div class="card shadow-sm mb-4 border-0">
+                    <div class="card-header bg-white fw-semibold">Tambah Promo Baru</div>
+                    <div class="card-body">
+                        <form action="{{ route('promo.store') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="judul" class="form-label fw-semibold">Judul Promo</label>
+                                <input type="text" name="judul" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deskripsi" class="form-label fw-semibold">Deskripsi</label>
+                                <textarea name="deskripsi" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="gambar" class="form-label fw-semibold">Gambar</label>
+                                <input type="file" name="gambar" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Tambah Promo</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="deskripsi" class="form-label">Deskripsi</label>
-                        <textarea name="deskripsi" class="form-control" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="gambar" class="form-label">Gambar</label>
-                        <input type="file" name="gambar" class="form-control" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Tambah Promo</button>
-                </form>
+                </div>
 
                 {{-- Daftar Promo --}}
-                <hr>
-                <h3>Daftar Promo</h3>
-                <table class="table table-bordered mt-3">
-                    <thead>
-                        <tr>
-                            <th>Judul</th>
-                            <th>Deskripsi</th>
-                            <th>Gambar</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($promos as $promo)
-                        <tr>
-                            <td>{{ $promo->judul }}</td>
-                            <td>{{ $promo->deskripsi }}</td>
-                            <td><img src="{{ asset('storage/' . $promo->gambar) }}" width="100" alt=""></td>
-                            <td>
-                                {{-- Form Update --}}
-                                <form action="{{ route('promo.update', $promo->id) }}" method="POST" enctype="multipart/form-data" style="margin-bottom: 10px;">
-                                    @csrf
-                                    @method('PUT')
-                                    <input type="text" name="judul" value="{{ $promo->judul }}" class="form-control mb-1" required>
-                                    <textarea name="deskripsi" class="form-control mb-1" required>{{ $promo->deskripsi }}</textarea>
-                                    <input type="file" name="gambar" class="form-control mb-1">
-                                    <button class="btn btn-warning btn-sm w-100 mb-1">Update</button>
-                                </form>
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white fw-semibold">Daftar Promo</div>
+                    <div class="card-body table-responsive">
+                        <table class="table align-middle table-bordered table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Judul</th>
+                                    <th>Deskripsi</th>
+                                    <th>Gambar</th>
+                                    <th style="width: 250px;">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($promos as $promo)
+                                <tr>
+                                    <td>{{ $promo->judul }}</td>
+                                    <td>{{ $promo->deskripsi }}</td>
+                                    <td><img src="{{ asset('storage/' . $promo->gambar) }}" width="100" class="rounded shadow-sm" alt="gambar promo"></td>
+                                    <td>
+                                        {{-- Form Edit --}}
+                                        <form action="{{ route('promo.update', $promo->id) }}" method="POST" enctype="multipart/form-data" class="mb-2">
+                                            @csrf
+                                            @method('PUT')
+                                            <input type="text" name="judul" value="{{ $promo->judul }}" class="form-control mb-1" required>
+                                            <textarea name="deskripsi" class="form-control mb-1" required>{{ $promo->deskripsi }}</textarea>
+                                            <input type="file" name="gambar" class="form-control mb-2">
+                                            <button class="btn btn-warning btn-sm w-100"><i class="fas fa-edit"></i> Update</button>
+                                        </form>
 
-                                {{-- Tombol Hapus --}}
-                                <form action="{{ route('promo.destroy', $promo->id) }}" method="POST" onsubmit="return confirm('Yakin hapus promo ini?')">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-danger btn-sm w-100">Hapus</button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                                        {{-- Tombol Hapus --}}
+                                        <form action="{{ route('promo.destroy', $promo->id) }}" method="POST" onsubmit="return confirm('Yakin hapus promo ini?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm w-100"><i class="fas fa-trash"></i> Hapus</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @empty
+                                <tr>
+                                    <td colspan="4" class="text-center text-muted">Belum ada promo.</td>
+                                </tr>
+                                @endforelse
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </main>
             @include('layouts.footdash')
         </div>

@@ -39,23 +39,19 @@
                 <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a> -->
                                     </div>
                                 </div>
-                                <div class="text-left p-4 bg-gray-100 rounded-md shadow-md">
-                                    <p class="mb-4">
-                                        Iconnet memiliki beberapa keunggulan, di antaranya:
-                                    </p>
-                                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                                        <li><strong>Kecepatan tinggi:</strong> Iconnet menggunakan jaringan fiber optic yang canggih sehingga dapat memberikan kecepatan internet yang tinggi.</li>
-                                        <li><strong>Koneksi stabil:</strong> Iconnet memiliki koneksi yang stabil dan dapat diandalkan.</li>
-                                        <li><strong>Kapasitas besar:</strong> Iconnet memiliki kapasitas yang besar untuk mengakomodasi penggunaan data yang intensif, seperti streaming video berkualitas tinggi.</li>
-                                        <li><strong>Keamanan:</strong> Iconnet menggunakan enkripsi data untuk melindungi informasi pribadi dan sensitif yang dikirimkan melalui jaringan.</li>
-                                        <li><strong>Terjangkau:</strong> Iconnet menawarkan tarif yang terjangkau.</li>
-                                        <li><strong>Cakupan luas:</strong> Iconnet memiliki area cakupan yang luas dan dapat melayani pelanggan di berbagai wilayah di Indonesia.</li>
-                                        <li><strong>Akses dual layanan:</strong> Iconnet memungkinkan pelanggan untuk mengakses layanan listrik dan internet dalam satu genggaman melalui aplikasi New PLN Mobile.</li>
+                                <div class="text-left p-4 bg-white rounded-3 shadow">
+                                    <h2 class="fw-bold text-center mb-4">Keunggulan Iconnet</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Kecepatan tinggi:</strong> Jaringan fiber optic yang canggih.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Koneksi stabil:</strong> Dapat diandalkan kapan saja.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Kapasitas besar:</strong> Cocok untuk streaming dan multimedia.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Keamanan:</strong> Enkripsi data tingkat tinggi.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Terjangkau:</strong> Harga yang bersahabat.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Cakupan luas:</strong> Menjangkau berbagai wilayah Indonesia.</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Akses dual layanan:</strong> Internet dan listrik dalam satu aplikasi.</li>
                                     </ul>
-                                    <p class="mt-4 text-gray-700">
-                                        Iconnet menawarkan berbagai paket layanan yang sesuai dengan kebutuhan internet dan multimedia. Harga paket Iconnet bervariasi, tergantung wilayah pemasangan dan kecepatan yang dipilih.
-                                    </p>
                                 </div>
+
                                 <!-- Garis horizontal warna biru -->
                                 <hr class="mt-4" style="border: 2px solid #007bff; width: 100%;">
                             </div>
