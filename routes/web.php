@@ -3,6 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaketController;
 use App\Http\Controllers\PromoController;
+use App\Http\Controllers\BannerController;
+
+Route::prefix('banner')->name('banner.')->group(function () {
+    Route::get('/', [BannerController::class, 'index'])->name('index');
+    Route::post('/', [BannerController::class, 'store'])->name('store');
+    // Route::get('/{id}/edit', [BannerController::class, 'edit'])->name('edit');
+    Route::put('/{id}', [BannerController::class, 'update'])->name('update');
+    Route::delete('/{id}', [BannerController::class, 'destroy'])->name('destroy');
+});
 
 // Route untuk halaman admin promo
 Route::prefix('produk_promo')->name('promo.')->group(function () {
