@@ -124,17 +124,25 @@
     <div class="login-container">
         <div class="left-section">
             <img src="assets/login.png" alt="Welcome Illustration" class="illustration">
-            <h1>Welcome</h1>
-            <p>Log in to access your account and explore our services</p>
+            <h1>Iconnet</h1>
+            <p>Semua Makin Mudah</p>
         </div>
         <div class="right-section">
-            <h2>User Login</h2>
-            <form>
-                <input type="text" placeholder="Username" class="input-box" required>
-                <input type="password" placeholder="Password" class="input-box" required>
-                <a href="#" class="forgot-link">Forgot Password?</a>
+            <h2>Login</h2>
+
+            @if ($errors->any())
+            <div style="background-color: #f8d7da; color: #842029; padding: 12px; margin-bottom: 20px; border-radius: 8px;">
+                @foreach ($errors->all() as $error)
+                <div>{{ $error }}</div>
+                @endforeach
+            </div>
+            @endif
+
+            <form action="{{ route('login') }}" method="POST">
+                @csrf
+                <input type="text" name="username" placeholder="Username" class="input-box" required>
+                <input type="password" name="password" placeholder="Password" class="input-box" required>
                 <button type="submit" class="login-btn">Login</button>
-                <a href="register.html" class="create-account">Create Account</a>
             </form>
         </div>
     </div>

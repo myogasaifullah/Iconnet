@@ -4,6 +4,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaketController;
 use App\Http\Controllers\PromoController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\Auth\LoginController;
+
+// ✅ Route login & logout (TIDAK DI DALAM MIDDLEWARE auth)
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+// ✅ Route yang hanya bisa diakses jika SUDAH login
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin_page.dashboard');
+    });
+});
+
 
 Route::prefix('banner')->name('banner.')->group(function () {
     Route::get('/', [BannerController::class, 'index'])->name('index');
