@@ -2,73 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* login */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e0f2fe, #ffffff);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left-section {
+            flex: 1;
+            background: #f0f8ff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .left-section .illustration {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .left-section h1 {
+            font-size: 32px;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-section h2 {
+            font-size: 24px;
+            color: #0d6efd;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 16px;
+        }
+
+        .forgot-link {
+            font-size: 14px;
+            color: #0d6efd;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #084298;
+        }
+
+        .create-account {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #0d6efd;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
-<body class="bg-primary">
-    <div id="layoutAuthentication">
-        <div id="layoutAuthentication_content">
-
-            <main>
-                <div class="container">
-                    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
-                        <div class="col-md-6 col-lg-5">
-                            <div class="login-card">
-                                <h3 class="text-center login-title">Login</h3>
-                                <form>
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                        <label for="inputEmail">Email address</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                        <label for="inputPassword">Password</label>
-                                    </div>
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" id="inputRememberPassword" type="checkbox" />
-                                        <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <a class="small" href="password.html">Forgot Password?</a>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Login</button>
-                                </form>
-                                <div class="text-center mt-4 card-footer border-0 bg-transparent">
-                                    <div class="small">
-                                        <a href="register.html">Need an account? Sign up!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-
+<body>
+    <div class="login-container">
+        <div class="left-section">
+            <img src="assets/login.png" alt="Welcome Illustration" class="illustration">
+            <h1>Welcome</h1>
+            <p>Log in to access your account and explore our services</p>
         </div>
-        <div id="layoutAuthentication_footer">
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+        <div class="right-section">
+            <h2>User Login</h2>
+            <form>
+                <input type="text" placeholder="Username" class="input-box" required>
+                <input type="password" placeholder="Password" class="input-box" required>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+                <button type="submit" class="login-btn">Login</button>
+                <a href="register.html" class="create-account">Create Account</a>
+            </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

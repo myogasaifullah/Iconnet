@@ -32,28 +32,34 @@
                     <!-- Baris Pertama -->
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/vkeiuu3p6q" alt="Contact Center"></div>
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+
                             <h5>Contact Center</h5>
                             <p>150678</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/or2dlh4ofc" alt="Whatsapp"></div>
+                            <div class="contact-icon"><i class="bi bi-whatsapp"></i>
+                            </div>
                             <h5>Whatsapp</h5>
                             <p>0811-1200-2123</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/or2dlh4ofc" alt="Instagram"></div>
+                            <div class="contact-icon"><i class="bi bi-instagram"></i>
+                            </div>
                             <h5>Instagram</h5>
                             <p>@iconnet.plniconplus</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/4meh7aodp9" alt="Email Iconnet"></div>
+                            <div class="contact-icon"><i class="bi bi-envelope-fill"></i>
+                            </div>
                             <h5>E-mail ICONNET</h5>
                             <p>cc.iconnet@iconpln.co.id</p>
                         </div>
@@ -62,21 +68,24 @@
                     <!-- Baris Kedua -->
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/4meh7aodp9" alt="Email Gangguan"></div>
+                            <div class="contact-icon"><i class="bi bi-envelope-fill"></i>
+                            </div>
                             <h5>Email Gangguan</h5>
                             <p>cc.iconnet@iconpln.co.id</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/386feeulm6" alt="Refund"></div>
+                            <div class="contact-icon"><i class="bi bi-cash-coin"></i>
+                            </div>
                             <h5>Refund Iconnet</h5>
                             <p>Pengajuan & Check Refund</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="contact-card">
-                            <div class="contact-icon"><img src="https://api.stroom.id/v1/file/asset/load/png/or2dlh4ofc" alt="Instagram"></div>
+                            <div class="contact-icon"><i class="bi bi-instagram"></i>
+                            </div>
                             <h5>Instagram</h5>
                             <p>@iconnet.here</p>
                         </div>

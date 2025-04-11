@@ -137,11 +137,20 @@
                 <p class="text-gray-600">Dapatkan produk terbaik kami dengan harga spesial.</p>
             </div>
             <!-- Bagian Gambar -->
-            <div class="card mb-5 mb-xl-0">
-                <div class="me-3 ">
-                    <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png" class="img-fluid rounded mb-4 border-2 border-grey-500 shadow-lg" alt="Gambar 1">
+            <!-- Promo Card -->
+            <div class="card mb-5 mb-xl-0 py-5 px-4">
+                <div class="me-10">
+                    <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png"
+                        class="img-fluid rounded mb-10 border-2 border-gray-300 shadow-lg"
+                        alt="Gambar 1">
                 </div>
             </div>
+
+            <!-- Tombol -->
+            <div class="text-center mt-4">
+                <a href="/promo" class="btn btn-outline-primary btn-daftar px-4 py-2">Promo Selengkapnya</a>
+            </div>
+
     </section>
 
     <!-- Pricing section-->
@@ -312,6 +321,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Testimonials section -->
     <section class="bg-light py-5 border-bottom">
