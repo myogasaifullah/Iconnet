@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Promo;
+use App\Models\Banner;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class PromoController extends Controller
 {
+    // Halaman Admin Promo
     public function index(Request $request)
     {
         $promos = Promo::all();
         $editPromo = null;
 
-        // Jika ada parameter 'edit' dalam request, kita ambil data promo yang dimaksud
+        // Jika ada parameter 'edit' dalam request
         if ($request->has('edit')) {
             $editPromo = Promo::find($request->edit);
         }
@@ -21,6 +23,17 @@ class PromoController extends Controller
         return view('admin_page.produk_promo', compact('promos', 'editPromo'));
     }
 
+
+    public function showLatestForLandingPage()
+    {
+        $latestPromo = Promo::latest()->first();
+        $banners = Banner::latest()->get(); // ambil semua banner
+
+        return view('landing_page.index', compact('latestPromo', 'banners'));
+    }
+
+
+    // Menyimpan Promo
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -29,7 +42,7 @@ class PromoController extends Controller
             'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
-        // Menyimpan gambar ke folder public
+        // Simpan gambar
         $path = $request->file('gambar')->store('promo', 'public');
         $validated['gambar'] = $path;
 
@@ -38,6 +51,7 @@ class PromoController extends Controller
         return redirect()->route('promo.index')->with('success', 'Promo berhasil ditambahkan.');
     }
 
+    // Update Promo
     public function update(Request $request, Promo $promo)
     {
         $validated = $request->validate([
@@ -46,7 +60,7 @@ class PromoController extends Controller
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
-        // Cek jika gambar baru diupload
+        // Jika gambar baru diupload
         if ($request->hasFile('gambar')) {
             if ($promo->gambar) {
                 Storage::disk('public')->delete($promo->gambar);
@@ -60,6 +74,7 @@ class PromoController extends Controller
         return redirect()->route('promo.index')->with('success', 'Promo berhasil diperbarui.');
     }
 
+    // Hapus Promo
     public function destroy(Promo $promo)
     {
         if ($promo->gambar) {

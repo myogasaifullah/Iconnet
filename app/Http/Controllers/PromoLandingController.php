@@ -12,4 +12,5 @@ class PromoLandingController extends Controller
         $promos = Promo::all(); // Mengambil semua data promo
         return view('landing_page.promo', compact('promos')); // Mengirimkan data ke view
     }
+    
 }

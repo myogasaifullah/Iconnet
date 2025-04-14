@@ -55,6 +55,7 @@ Route::get('/tentang', fn() => view('landing_page/tentang'))->name('tentang');
 Route::get('/keunggulan', fn() => view('landing_page/keunggulan'))->name('keunggulan');
 // Route::get('/promo', fn() => view('landing_page/promo'))->name('promo');
 Route::get('/promo', [PromoLandingController::class, 'index'])->name('promo.landing');
+Route::get('/', [PromoController::class, 'showLatestForLandingPage'])->name('landing.index');
 // Route::get('/paket', fn() => view('landing_page/paket'))->name('paket');
 Route::get('/paket', [PaketController::class, 'landingPage'])->name('paket.landing');
 

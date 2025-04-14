@@ -140,13 +140,17 @@
             </div>
             <!-- Bagian Gambar -->
             <!-- Promo Card -->
+            @if($latestPromo)
             <div class="card mb-5 mb-xl-0 py-5 px-4">
                 <div class="me-10">
-                    <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png"
+                    <img src="{{ asset('storage/' . $latestPromo->gambar) }}"
                         class="img-fluid rounded mb-10 border-2 border-gray-300 shadow-lg"
-                        alt="Gambar 1">
+                        alt="Promo {{ $latestPromo->judul }}">
                 </div>
             </div>
+            @else
+            <p class="text-center text-gray-500">Belum ada promo tersedia saat ini.</p>
+            @endif
 
             <!-- Tombol -->
             <div class="text-center mt-4">
