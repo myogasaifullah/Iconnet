@@ -8,10 +8,17 @@ use Illuminate\Support\Facades\Storage;
 
 class PromoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $promos = Promo::all();
-        return view('admin_page.produk_promo', compact('promos'));
+        $editPromo = null;
+
+        // Jika ada parameter 'edit' dalam request, kita ambil data promo yang dimaksud
+        if ($request->has('edit')) {
+            $editPromo = Promo::find($request->edit);
+        }
+
+        return view('admin_page.produk_promo', compact('promos', 'editPromo'));
     }
 
     public function store(Request $request)
@@ -22,10 +29,12 @@ class PromoController extends Controller
             'gambar' => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
+        // Menyimpan gambar ke folder public
         $path = $request->file('gambar')->store('promo', 'public');
         $validated['gambar'] = $path;
 
         Promo::create($validated);
+
         return redirect()->route('promo.index')->with('success', 'Promo berhasil ditambahkan.');
     }
 
@@ -47,6 +56,7 @@ class PromoController extends Controller
         }
 
         $promo->update($validated);
+
         return redirect()->route('promo.index')->with('success', 'Promo berhasil diperbarui.');
     }
 
@@ -55,7 +65,9 @@ class PromoController extends Controller
         if ($promo->gambar) {
             Storage::disk('public')->delete($promo->gambar);
         }
+
         $promo->delete();
+
         return redirect()->route('promo.index')->with('success', 'Promo berhasil dihapus.');
     }
 }

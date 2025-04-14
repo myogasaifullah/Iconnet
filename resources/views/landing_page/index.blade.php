@@ -21,7 +21,9 @@
     <!-- Navbar -->
     @include('layouts.navbar')
     <!-- Carousel Gambar-->
-    <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+    @include('components.carousel_banner', ['banners' => $banners])
+
+    <!-- <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://api.stroom.id/v1/file/asset/load/jpg/fonj7zzggz" class="d-block w-100" alt="Slide 1">
@@ -41,7 +43,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
     <!-- lampung -->
     <section class="bg-white py-5 border-bottom">

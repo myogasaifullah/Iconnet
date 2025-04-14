@@ -28,18 +28,20 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
                 <!-- Card 1 -->
+                @foreach($pakets as $paket)
                 <div class="col mb-4">
                     <div class="pricing-card">
                         <div class="pricing-header">
-                            <h2>20 Mbps</h2>
-                            <h1>259.000</h1>
+                            <h2>{{ $paket->kecepatan }}</h2>
+                            <h1>{{ number_format($paket->harga, 0, ',', '.') }}</h1>
                             <p>Per bulan</p>
                         </div>
                         <div class="pricing-body">
                             <ul>
                                 <li>Full Fiber To The Home</li>
-                                <li>Speed Up To 20 Mbps</li>
+                                <li>Speed Up To {{ $paket->kecepatan }}</li>
                                 <li>Unlimited Quota</li>
+                                <li>{{ $paket->deskripsi }}</li>
                                 <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
                             <div class="text-center">
@@ -48,72 +50,8 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <!-- Card 2 -->
-                <div class="col mb-4">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h2>35 Mbps</h2>
-                            <h1>269.000</h1>
-                            <p>Per bulan</p>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Full Fiber To The Home</li>
-                                <li>Speed Up To 35 Mbps</li>
-                                <li>Unlimited Quota</li>
-                                <li>Harga Belum Termasuk PPN 11%</li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col mb-4">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h2>50 Mbps</h2>
-                            <h1>319.000</h1>
-                            <p>Per bulan</p>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Full Fiber To The Home</li>
-                                <li>Speed Up To 50 Mbps</li>
-                                <li>Unlimited Quota</li>
-                                <li>Harga Belum Termasuk PPN 11%</li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col mb-4">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h2>100 Mbps</h2>
-                            <h1>499.000</h1>
-                            <p>Per bulan</p>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Full Fiber To The Home</li>
-                                <li>Speed Up To 100 Mbps</li>
-                                <li>Unlimited Quota</li>
-                                <li>Harga Belum Termasuk PPN 11%</li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>

@@ -65,4 +65,16 @@ class BannerController extends Controller
 
         return redirect()->route('banner.index')->with('success', 'Banner berhasil dihapus.');
     }
+
+    public function showCarousel()
+    {
+        $banners = Banner::all();
+        return view('landing_page.index', compact('banners'));
+    }
+    
+    public function landingPage()
+    {
+        $banners = \App\Models\Banner::all(); // Pastikan modelnya di-import atau pakai \App\Models\
+        return view('landing_page.index', compact('banners'));
+    }
 }

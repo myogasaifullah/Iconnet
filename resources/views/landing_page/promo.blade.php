@@ -32,102 +32,28 @@
 
             <!-- Flex Card -->
             <div class="flex flex-wrap gap-6 justify-center">
-                <!-- Card 1 -->
+                @foreach($promos as $promo)
                 <div class="container mx-auto py-8">
                     <div class="flex flex-col lg:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
                         <!-- Bagian Teks -->
                         <div class="w-full lg:w-1/2">
-                            <h2 class="text-3xl font-bold mb-4">ICONNET CUAN</h2>
-                            <p class="mb-4">
-                                Buat kamu yang belum daftar ICONNET, yuk nikmati GRATIS berlangganan sampai dengan 4 bulan dengan promo bundling payment PAKET HEBAT ICONNET dan manfaatkan kesempatan promo sampai dengan GRATIS biaya instalasi selama pendaftaran Oktober 2024.
-                            </p>
-                            <p class="mb-4">
-                                Cek coverage sekarang juga & jika sudah tersedia jaringan ICONNET di tempat kamu, buruan daftar via aplikasi PLN Mobile.
-                            </p>
-                            <p class="font-bold mb-4">ICONNET - Semua Makin Mudah</p>
-                            <a href="https://iconnet-kalimantan.id/promodetail/13" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <h2 class="text-3xl font-bold mb-4">{{ $promo->judul }}</h2>
+                            <p class="mb-4">{{ $promo->deskripsi }}</p>
+                            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 Info Detail
                             </a>
                         </div>
                         <!-- Bagian Gambar -->
-                        <div class="w-full lg:w-1/2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
-                            <img src="https://iconnetjabar.com/wp-content/uploads/2024/01/4izqkzbnea.png" alt="ICONNET CUAN" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mx-auto py-8">
-                    <div class="flex flex-col lg:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
-                        <!-- Bagian Teks -->
                         <div class="w-full lg:w-1/2">
-                            <h2 class="text-3xl font-bold mb-4">ICONNET CUAN</h2>
-                            <p class="mb-4">
-                                Buat kamu yang belum daftar ICONNET, yuk nikmati GRATIS berlangganan sampai dengan 4 bulan dengan promo bundling payment PAKET HEBAT ICONNET dan manfaatkan kesempatan promo sampai dengan GRATIS biaya instalasi selama pendaftaran Oktober 2024.
-                            </p>
-                            <p class="mb-4">
-                                Cek coverage sekarang juga & jika sudah tersedia jaringan ICONNET di tempat kamu, buruan daftar via aplikasi PLN Mobile.
-                            </p>
-                            <p class="font-bold mb-4">ICONNET - Semua Makin Mudah</p>
-                            <a href="https://iconnet-kalimantan.id/promodetail/13" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Info Detail
-                            </a>
-                        </div>
-                        <!-- Bagian Gambar -->
-                        <div class="w-full lg:w-1/2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
-                            <img src="https://api.stroom.id/v1/file/asset/load/jpg/ntjoqkpn3m" alt="ICONNET CUAN" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
+                            <img src="{{ asset('storage/' . $promo->gambar) }}" alt="{{ $promo->judul }}" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
                         </div>
                     </div>
                 </div>
-
-                <div class="container mx-auto py-8">
-                    <div class="flex flex-col lg:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
-                        <!-- Bagian Teks -->
-                        <div class="w-full lg:w-1/2">
-                            <h2 class="text-3xl font-bold mb-4">ICONNET CUAN</h2>
-                            <p class="mb-4">
-                                Buat kamu yang belum daftar ICONNET, yuk nikmati GRATIS berlangganan sampai dengan 4 bulan dengan promo bundling payment PAKET HEBAT ICONNET dan manfaatkan kesempatan promo sampai dengan GRATIS biaya instalasi selama pendaftaran Oktober 2024.
-                            </p>
-                            <p class="mb-4">
-                                Cek coverage sekarang juga & jika sudah tersedia jaringan ICONNET di tempat kamu, buruan daftar via aplikasi PLN Mobile.
-                            </p>
-                            <p class="font-bold mb-4">ICONNET - Semua Makin Mudah</p>
-                            <a href="https://iconnet-kalimantan.id/promodetail/13" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Info Detail
-                            </a>
-                        </div>
-                        <!-- Bagian Gambar -->
-                        <div class="w-full lg:w-1/2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
-                            <img src="https://kaltimtoday.co/wp-content/uploads/2023/01/Promo-Iconnect-PLN.png" alt="ICONNET CUAN" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mx-auto py-8">
-                    <div class="flex flex-col lg:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
-                        <!-- Bagian Teks -->
-                        <div class="w-full lg:w-1/2">
-                            <h2 class="text-3xl font-bold mb-4">ICONNET CUAN</h2>
-                            <p class="mb-4">
-                                Buat kamu yang belum daftar ICONNET, yuk nikmati GRATIS berlangganan sampai dengan 4 bulan dengan promo bundling payment PAKET HEBAT ICONNET dan manfaatkan kesempatan promo sampai dengan GRATIS biaya instalasi selama pendaftaran Oktober 2024.
-                            </p>
-                            <p class="mb-4">
-                                Cek coverage sekarang juga & jika sudah tersedia jaringan ICONNET di tempat kamu, buruan daftar via aplikasi PLN Mobile.
-                            </p>
-                            <p class="font-bold mb-4">ICONNET - Semua Makin Mudah</p>
-                            <a href="https://iconnet-kalimantan.id/promodetail/13" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Info Detail
-                            </a>
-                        </div>
-                        <!-- Bagian Gambar -->
-                        <div class="w-full lg:w-1/2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
-                            <img src="https://api.stroom.id/v1/file/asset/load/png/ngjpa6slql" alt="ICONNET CUAN" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </section>
+
     @include('layouts.footer')
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

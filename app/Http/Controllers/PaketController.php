@@ -7,10 +7,18 @@ use Illuminate\Http\Request;
 
 class PaketController extends Controller
 {
+    // Halaman admin
     public function index()
     {
         $pakets = Paket::all();
         return view('admin_page.produk_paket', compact('pakets'));
+    }
+
+    // Halaman landing page
+    public function landingPage()
+    {
+        $pakets = Paket::all();
+        return view('landing_page.paket', compact('pakets'));
     }
 
     public function store(Request $request)
