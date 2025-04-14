@@ -14,12 +14,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
+        // Seeder untuk user default
         User::factory()->create([
             'name' => 'iconnet',
             'email' => 'iconnet@gmail.com',
             'password' => Hash::make('semua makin mudah'),
+        ]);
+
+        // Panggil seeder lainnya
+        $this->call([
+            VisitSeeder::class,
+            LogSeeder::class,
         ]);
     }
 }

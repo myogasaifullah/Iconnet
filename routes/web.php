@@ -5,6 +5,7 @@ use App\Http\Controllers\PaketController;
 use App\Http\Controllers\PromoController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PromoLandingController;
 
 // ✅ Route login & logout (TIDAK DI DALAM MIDDLEWARE auth)
@@ -60,7 +61,9 @@ Route::get('/', [PromoController::class, 'showLatestForLandingPage'])->name('lan
 Route::get('/paket', [PaketController::class, 'landingPage'])->name('paket.landing');
 
 // Admin page
-Route::get('/dashboard', fn() => view('admin_page/dashboard'))->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+// Route::get('/dashboard', fn() => view('admin_page/dashboard'))->name('dashboard');
 Route::get('/register', fn() => view('admin_page/register'))->name('register');
 Route::get('/password', fn() => view('admin_page/password'))->name('password');
 Route::get('/login', fn() => view('admin_page/login'))->name('login');
