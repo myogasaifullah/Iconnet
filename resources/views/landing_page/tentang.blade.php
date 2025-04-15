@@ -15,6 +15,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -340,6 +341,10 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

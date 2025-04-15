@@ -108,14 +108,13 @@
 
     @include('layouts.navbar')
 
-    <div class="container py-5">
-        <div class="card shadow-sm p-5">
-            <h1 class="text-center mb-4 fw-bold">Hubungi Kami</h1>
-            <p class="text-center mb-5">Jika Anda memiliki pertanyaan, keluhan, atau ingin mengetahui informasi lebih lanjut, silakan hubungi kami melalui salah satu cara berikut:</p>
+    <div class="container py-5" data-aos="fade-up">
+        <div class="card shadow-sm p-5" data-aos="zoom-in" data-aos-delay="100">
+            <h1 class="text-center mb-4 fw-bold" data-aos="fade-down" data-aos-delay="200">Hubungi Kami</h1>
+            <p class="text-center mb-5" data-aos="fade-down" data-aos-delay="300">Jika Anda memiliki pertanyaan, keluhan, atau ingin mengetahui informasi lebih lanjut, silakan hubungi kami melalui salah satu cara berikut:</p>
 
             <div class="row g-4 align-items-start justify-content-center">
-                <!-- Email & Ponsel -->
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon-wrap me-3">
                         <i class="bi bi-envelope-paper-fill text-info fs-1"></i>
                     </div>
@@ -125,8 +124,7 @@
                     </div>
                 </div>
 
-                <!-- Kantor Cirebon -->
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="500">
                     <div class="icon-wrap me-3">
                         <i class="bi bi-geo-alt-fill text-info fs-1"></i>
                     </div>
@@ -136,8 +134,7 @@
                     </div>
                 </div>
 
-                <!-- Sosial Media -->
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="600">
                     <div class="icon-wrap me-3">
                         <i class="bi bi-instagram text-info fs-1"></i>
                     </div>
@@ -148,10 +145,9 @@
                 </div>
             </div>
 
+            <hr class="my-5" data-aos="zoom-in" data-aos-delay="300" />
 
-            <hr class="my-5" />
-
-            <h4 class="text-center mb-4">Lokasi Kami</h4>
+            <h4 class="text-center mb-4" data-aos="fade-down" data-aos-delay="200">Lokasi Kami</h4>
             <div class="ratio ratio-16x9 mb-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.0652622876823!2d105.27721210000001!3d-5.3774149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db003c2dc063%3A0xc44662a267cb76c5!2sPLN%20ICON%20PLUS%20-%20KP.%20LAMPUNG!5e1!3m2!1sid!2sid!4v1744688020324!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- <iframe
@@ -160,50 +156,44 @@
                 </iframe> -->
             </div>
 
-            <section class="contact-section py-5">
+            <section class="contact-section py-5" data-aos="fade-up" data-aos-delay="200">
                 <div class="container">
-                    <h2 class="text-center mb-4 fw-bold">Formulir Kontak</h2>
+                    <h2 class="text-center mb-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Formulir Kontak</h2>
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
                                 <div class="form-floating custom-floating">
                                     <input class="form-control" id="name" type="text" placeholder="Nama lengkap" data-sb-validations="required" />
                                     <label for="name">Nama Lengkap</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">Nama wajib diisi.</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
                                 <div class="form-floating custom-floating">
                                     <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
                                     <label for="email">Email</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">Email wajib diisi.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Format email tidak valid.</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
                                 <div class="form-floating custom-floating">
                                     <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" data-sb-validations="required" />
                                     <label for="phone">Nomor Telepon</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Nomor telepon wajib diisi.</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
                                 <div class="form-floating custom-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" data-sb-validations="required" />
-                                    <label for="phone">Alamat</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Alamat wajib diisi.</div>
+                                    <input class="form-control" id="address" type="text" placeholder="Alamat" data-sb-validations="required" />
+                                    <label for="address">Alamat</label>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12" data-aos="fade-up" data-aos-delay="500">
                                 <div class="form-floating custom-floating">
                                     <textarea class="form-control" id="message" placeholder="Pesan" style="height: 150px" data-sb-validations="required"></textarea>
                                     <label for="message">Pesan</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">Pesan wajib diisi.</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="text-center mt-4">
+                        <div class="text-center mt-4" data-aos="zoom-in" data-aos-delay="600">
                             <button class="btn btn-info text-white btn-lg px-5 shadow-sm" id="submitButton" type="submit">Kirim</button>
                         </div>
 
@@ -216,10 +206,8 @@
                     </form>
                 </div>
             </section>
-
         </div>
     </div>
-
 
     @include('layouts.footer')
 
@@ -235,8 +223,12 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true, // hanya jalan sekali
+            duration: 800,
+        });
     </script>
 </body>
+
 
 </html>

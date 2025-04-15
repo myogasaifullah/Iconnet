@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Syarat & Ketentuan - Iconnet</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-</head>
+    <style>
+        .accordion-button {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
+        .accordion-button:hover {
+            background-color: #f0f0f0;
+            color: #007bff;
+        }
+
+        .accordion-body {
+            transition: all 0.4s ease-in-out;
+        }
+
+        .accordion-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
 <body class="bg-light text-dark">
 
     @include('layouts.navbar')
 
-    <section class="container py-5">
-        <div class="text-center mb-4">
+    <section class="container py-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
             <h2 class="fw-bold">Syarat & Ketentuan</h2>
             <p class="text-muted">Informasi penting terkait layanan Iconnet</p>
         </div>
 
         <div class="accordion" id="accordionTerms">
             <!-- Tab 1 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Syarat Layanan IconNet
@@ -52,7 +68,7 @@
             </div>
 
             <!-- Tab 2 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Ketentuan Layanan IconNet
@@ -79,7 +95,7 @@
             </div>
 
             <!-- Tab 3 -->
-            <div class="accordion-item">
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Informasi Umum
@@ -102,8 +118,11 @@
 
     @include('layouts.footer')
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>

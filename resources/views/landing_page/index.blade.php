@@ -15,6 +15,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -66,8 +68,8 @@
                 </div>
 
                 <!-- Bagian Konten -->
-                <div class="col-lg-6">
-                    <h6 class="text-primary">Layanan Internet Broadband Super Cepat</h6>
+                <div class="col-lg-6" data-aos="fade-right">
+                <h6 class="text-primary">Layanan Internet Broadband Super Cepat</h6>
                     <h2 class="fw-bold">Selamat datang di Iconnet</h2>
                     <p>Layanan Internet Broadband dengan jaringan full fiber optic. Dengan berbagai paket yang dapat sesuai dengan layanan kebutuhan internet dan multimedia. Sehingga anda bisa menikmati layanan internet PLN terbaik dari kami.</p>
                     <p>ICONNET merupakan metamorfosis atau Rebranding dari Stroomnet dengan produk layanan internet broadband full fiber optic yang diberikan oleh PLN ICON PLUS, salah satu Sub-Holding dari PT PLN (Persero).</p>
@@ -169,8 +171,8 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
                 <!-- Card 1 -->
                 @foreach($pakets as $paket)
-                <div class="col mb-4">
-                    <div class="pricing-card">
+                <div class="col mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pricing-card">
                         <div class="pricing-header">
                             <h2>{{ $paket->kecepatan }}</h2>
                             <h1>{{ number_format($paket->harga, 0, ',', '.') }}</h1>
@@ -287,8 +289,8 @@
                 @endphp
 
                 @foreach($testimonials as $t)
-                <div class="card shadow-sm border-0 me-3" style="min-width: 300px;">
-                    <div class="card-body p-4">
+                <div class="card shadow-sm border-0 me-3" style="min-width: 300px;" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
+                <div class="card-body p-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
@@ -319,6 +321,14 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
 </body>
 
 </html>

@@ -16,6 +16,9 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -33,9 +36,9 @@
             <!-- Flex Card -->
             <div class="flex flex-wrap gap-6 justify-center">
                 @foreach($promos as $promo)
-                <div class="container mx-auto py-8">
-                    <div class="flex flex-col lg:flex-row items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
-                        <!-- Bagian Teks -->
+                <div class="container mx-auto py-8" data-aos="{{ $loop->iteration % 2 == 0 ? 'fade-left' : 'fade-right' }}">
+                    <div class="flex flex-col lg:flex-row {{ $loop->iteration % 2 == 0 ? 'lg:flex-row-reverse' : '' }} items-center gap-6 bg-white p-6 rounded-lg shadow-lg card">
+                        <!-- Teks -->
                         <div class="w-full lg:w-1/2">
                             <h2 class="text-3xl font-bold mb-4">{{ $promo->judul }}</h2>
                             <p class="mb-4">{{ $promo->deskripsi }}</p>
@@ -43,14 +46,16 @@
                                 Info Detail
                             </a>
                         </div>
-                        <!-- Bagian Gambar -->
+                        <!-- Gambar -->
                         <div class="w-full lg:w-1/2">
                             <img src="{{ asset('storage/' . $promo->gambar) }}" alt="{{ $promo->judul }}" class="w-full h-auto rounded-lg border-2 border-grey-500 shadow-lg">
                         </div>
                     </div>
                 </div>
+
                 @endforeach
             </div>
+
         </div>
     </section>
 
@@ -66,6 +71,15 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // durasi animasi (ms)
+            once: true, // animasi hanya sekali saat scroll
+        });
+    </script>
+
 </body>
 
 </html>
