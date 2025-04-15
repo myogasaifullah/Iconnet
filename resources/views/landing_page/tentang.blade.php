@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Iconnet</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -16,6 +16,8 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -172,6 +174,7 @@
                 bottom: 0;
                 left: 50%;
                 margin-left: -2px;
+                z-index: 0;
             }
 
             .timeline-item {
@@ -179,6 +182,8 @@
                 position: relative;
                 width: 50%;
                 box-sizing: border-box;
+                z-index: 1;
+                /* Di atas garis */
             }
 
             .timeline-item.left {
@@ -285,7 +290,7 @@
             <h2 class="main-heading">Sejarah Iconnet</h2>
 
             <div class="timeline ">
-                <div class="timeline-item left">
+                <div class="timeline-item left" data-aos="fade-right">>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content card">
                         <h3>Established</h3>
@@ -293,7 +298,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item right">
+                <div class="timeline-item right" data-aos="fade-left">>
                     <div class="timeline-date">2022</div>
                     <div class="timeline-content card">
                         <h3>Berkembang</h3>
@@ -301,14 +306,14 @@
                     </div>
                 </div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left" data-aos="fade-right">>
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content card">
                         <h3>Menjangkau Wilayah Pelosok</h3>
                         <p>Iconnet kini hadir hampir di tiap kota dan kabupaten di pulau Jawa, Sumatera dan Kalimantan dan menjangkau wilayah pelosok.</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item right" data-aos="fade-left">>
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content card">
                         <h3>Transformasi Digital</h3>
@@ -316,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-item left">
+                <div class="timeline-item left" data-aos="fade-right">>
                     <div class="timeline-date">2025</div>
                     <div class="timeline-content card">
                         <h3>Ekspansi Nasional</h3>
@@ -342,9 +347,13 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // durasi animasi (ms)
+            once: true // animasi hanya sekali
+        });
+    </script>
 </body>
 
 </html>

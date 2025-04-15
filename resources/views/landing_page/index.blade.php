@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>Iconnet</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Pricing section-->
-    <section class="bg-light py-5 border-bottom">
+    <section class="bg-white py-5 border-bottom">
         <div class="container px-5 my-5">
             <div class="text-center mb-5">
                 <h2 class="fw-bolder">PAKET ICONNET</h2>
@@ -257,7 +257,7 @@
                         Tanggamus,
                         Tulang Bawang
                     </p>
-                    <a href="#" class="btn btn-primary px-4 py-2">Daftar Segera -></a>
+                    <a href="/jangkauan" class="btn btn-primary px-4 py-2">Selengkapnya</a>
                 </div>
 
                 <!-- Bagian Kanan (Peta) -->
