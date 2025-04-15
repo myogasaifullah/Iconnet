@@ -20,9 +20,11 @@ class DashboardController extends Controller
             ->orderBy('date')
             ->get();
 
-
+        // Data untuk bar chart (halaman yang paling banyak dikunjungi)
         $barData = Visit::selectRaw('page, COUNT(*) as total')
             ->groupBy('page')
+            ->orderBy('total', 'desc')
+            ->limit(5) // Limit to top 5 pages
             ->get();
 
         // Data log aktivitas
