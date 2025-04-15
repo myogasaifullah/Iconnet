@@ -6,6 +6,7 @@ use App\Http\Controllers\PromoController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
 
 // ✅ Route login & logout (TIDAK DI DALAM MIDDLEWARE auth)
@@ -48,15 +49,15 @@ Route::prefix('produk_paket')->name('produk_paket.')->group(function () {
 });
 
 // Route static (landing page)
-Route::get('/', [BannerController::class, 'landingPage'])->name('welcome');
-Route::get('/index', [BannerController::class, 'landingPage'])->name('index');
+Route::get('/', [LandingController::class, 'showLatestForLandingPage'])->name('welcome');
+Route::get('/index', [LandingController::class, 'showLatestForLandingPage'])->name('index');
 Route::get('/syarat', fn() => view('landing_page/syarat'))->name('syarat');
 Route::get('/kontak', fn() => view('landing_page/kontak'))->name('kontak');
 Route::get('/tentang', fn() => view('landing_page/tentang'))->name('tentang');
 Route::get('/keunggulan', fn() => view('landing_page/keunggulan'))->name('keunggulan');
 // Route::get('/promo', fn() => view('landing_page/promo'))->name('promo');
 Route::get('/promo', [PromoLandingController::class, 'index'])->name('promo.landing');
-Route::get('/', [PromoController::class, 'showLatestForLandingPage'])->name('landing.index');
+Route::get('/', [LandingController::class, 'showLatestForLandingPage'])->name('landing.index');
 // Route::get('/paket', fn() => view('landing_page/paket'))->name('paket');
 Route::get('/paket', [PaketController::class, 'landingPage'])->name('paket.landing');
 

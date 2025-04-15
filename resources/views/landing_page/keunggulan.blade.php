@@ -60,33 +60,36 @@
                     <!-- Features section-->
                     <section class="bg-white py-5 border-bottom" id="features">
                         <div class="container px-5 my-5">
-                            <div class="row gx-5">
-                                <div class="col-lg-4 mb-5 mb-lg-0 card">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h4 fw-bolder">Reliable</h2>
-                                    <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
-                                    <a class="text-decoration-none" href="#!">
-                                        Call to action
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
+                            <div class="row gx-4 gy-4">
+                                <div class="col-lg-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-collection"></i>
+                                        </div>
+                                        <h2>Reliable</h2>
+                                        <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
+                                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 mb-5 mb-lg-0 card">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h4 fw-bolder">Affordable</h2>
-                                    <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
-                                    <a class="text-decoration-none" href="#!">
-                                        Call to action
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
+                                <div class="col-lg-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-building"></i>
+                                        </div>
+                                        <h2>Affordable</h2>
+                                        <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
+                                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 card">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h4 fw-bolder">Unlimited</h2>
-                                    <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
-                                    <a class="text-decoration-none" href="#!">
-                                        Call to action
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
+                                <div class="col-lg-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="bi bi-toggles2"></i>
+                                        </div>
+                                        <h2>Unlimited</h2>
+                                        <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
+                                        <a href="#!">Call to action <i class="bi bi-arrow-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

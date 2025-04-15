@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Paket;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
@@ -71,10 +72,5 @@ class BannerController extends Controller
         $banners = Banner::all();
         return view('landing_page.index', compact('banners'));
     }
-    
-    public function landingPage()
-    {
-        $banners = \App\Models\Banner::all(); // Pastikan modelnya di-import atau pakai \App\Models\
-        return view('landing_page.index', compact('banners'));
-    }
+
 }

@@ -53,21 +53,24 @@
                     <h2 class="fw-bold display-6 mb-4">Selamat Datang di ICONNET</h2>
 
                     <p class="text-muted fs-6">
-                        Layanan Internet Broadband dengan jaringan full fiber optic. Dengan berbagai paket yang dapat disesuaikan
-                        dengan kebutuhan internet dan multimedia Anda.
+                        ICONNET adalah layanan Internet Broadband berbasis jaringan <strong>full fiber optic</strong> yang dirancang untuk memberikan pengalaman digital terbaik.
+                        Dengan berbagai pilihan paket yang fleksibel, ICONNET hadir untuk memenuhi kebutuhan internet dan multimedia rumah tangga, bisnis, hingga institusi publik.
                     </p>
                     <p class="text-muted fs-6">
-                        ICONNET adalah hasil rebranding dari Stroomnet, dikelola oleh PLN ICON PLUS sebagai Sub-Holding PT PLN (Persero).
+                        Layanan ini merupakan hasil rebranding dari Stroomnet dan kini dikelola oleh <strong>PLN Icon Plus</strong>,
+                        sebagai Sub-Holding PT PLN (Persero) di bidang teknologi informasi dan komunikasi.
                     </p>
                     <p class="text-muted fs-6">
-                        Tujuannya adalah menyediakan internet yang <strong>andal, cepat, dan terjangkau</strong> bagi seluruh masyarakat.
+                        Dengan visi menghadirkan konektivitas unggul untuk seluruh masyarakat, ICONNET berkomitmen menyediakan internet yang <strong>andal, cepat, dan terjangkau</strong>,
+                        sebagai bagian dari upaya digitalisasi nasional.
                     </p>
 
                     <ul class="list-unstyled text-muted fs-6">
-                        <li>✔️ Jaringan fiber optic untuk stabilitas dan kecepatan tinggi.</li>
-                        <li>✔️ Pilihan bandwidth: 10, 20, 50, hingga 100 Mbps.</li>
-                        <li>✔️ Area layanan luas: Jabodetabek, Jawa, Bali, Sumatera, Kalimantan, dan Indonesia Timur.</li>
-                        <li>✔️ Mendukung digitalisasi UMKM melalui layanan broadband.</li>
+                        <li>✔️ Jaringan <strong>fiber optic</strong> untuk koneksi internet stabil dan kecepatan tinggi.</li>
+                        <li>✔️ Pilihan bandwidth: 10, 20, 35, 50, hingga 100 Mbps, sesuai kebutuhan.</li>
+                        <li>✔️ Area layanan luas: Jabodetabek, Jawa, Bali, Sumatera, Kalimantan, dan kini menjangkau Indonesia Timur.</li>
+                        <li>✔️ Mendukung digitalisasi UMKM, pendidikan daring, dan aktivitas kerja jarak jauh.</li>
+                        <li>✔️ Layanan pelanggan 24/7 dan instalasi profesional.</li>
                     </ul>
                 </div>
 
@@ -75,47 +78,58 @@
                 <div class="mt-5">
                     <h5 class="fw-bold mb-3">Tentang ICONNET</h5>
                     <p class="text-muted fs-6">
-                        ICONNET adalah layanan internet broadband berbasis fiber optic yang disediakan oleh PLN Icon Plus,
-                        anak perusahaan dari PT PLN (Persero). Layanan ini menawarkan koneksi internet berkecepatan tinggi
-                        dan stabil untuk memenuhi kebutuhan digital masyarakat Indonesia.
+                        ICONNET adalah layanan internet broadband dari <strong>PLN Icon Plus</strong>, anak perusahaan PT PLN (Persero) yang fokus pada penyediaan jaringan berbasis fiber optic.
+                        ICONNET hadir sebagai solusi konektivitas modern dengan kualitas tinggi, didukung oleh infrastruktur nasional PLN yang menjangkau hingga pelosok negeri.
                     </p>
 
                     <h6 class="fw-semibold mt-4">Keunggulan ICONNET:</h6>
                     <ul class="text-muted fs-6">
-                        <li><strong>Keandalan Tinggi:</strong> Menggunakan jaringan fiber optic untuk memastikan koneksi yang stabil dan cepat.</li>
-                        <li><strong>Harga Terjangkau:</strong> Menawarkan paket dengan harga kompetitif untuk berbagai kalangan.</li>
-                        <li><strong>Tanpa Batasan Kuota:</strong> Akses internet unlimited tanpa khawatir kuota habis.</li>
+                        <li><strong>Keandalan Tinggi:</strong> Stabil di berbagai kondisi cuaca dan lingkungan geografis.</li>
+                        <li><strong>Harga Terjangkau:</strong> Paket layanan dapat disesuaikan dengan kebutuhan dan anggaran keluarga Indonesia.</li>
+                        <li><strong>Tanpa Batasan Kuota:</strong> Internet unlimited tanpa batasan waktu atau kuota harian/bulanan.</li>
+                        <li><strong>Dukungan Teknologi:</strong> Terintegrasi dengan ekosistem digital PLN, termasuk PLN Mobile dan smart metering.</li>
                     </ul>
 
                     <h6 class="fw-semibold mt-4">Paket Layanan:</h6>
                     <p class="text-muted fs-6">
-                        ICONNET menyediakan berbagai pilihan paket kecepatan hingga 35 Mbps, 50 Mbps, dan 100 Mbps.
-                        Harga dan ketersediaan dapat berbeda di setiap wilayah.
+                        ICONNET menyediakan berbagai pilihan paket kecepatan seperti:
+                    </p>
+                    <ul class="text-muted fs-6">
+                        <li><strong>ICONNET 10 Mbps</strong> – Cocok untuk browsing dan streaming ringan.</li>
+                        <li><strong>ICONNET 20 Mbps</strong> – Ideal untuk kegiatan daring keluarga.</li>
+                        <li><strong>ICONNET 35 Mbps</strong> – Mendukung aktivitas belajar dan bekerja dari rumah.</li>
+                        <li><strong>ICONNET 50 Mbps & 100 Mbps</strong> – Performa tinggi untuk gaming, smart home, dan bisnis kecil.</li>
+                    </ul>
+                    <p class="text-muted fs-6">
+                        Harga dan ketersediaan dapat berbeda di tiap wilayah, dan sering disertai promo khusus pelanggan baru atau pengguna PLN Mobile.
                     </p>
 
                     <h6 class="fw-semibold mt-4">Cakupan Layanan:</h6>
                     <p class="text-muted fs-6">
-                        ICONNET telah menjangkau sekitar 70% wilayah nasional dengan lebih dari 1 juta pelanggan sejak diluncurkan pada tahun 2020.
-                        ICONNET menjadi salah satu penyedia internet dengan pertumbuhan tercepat di Indonesia.
+                        ICONNET telah menjangkau lebih dari <strong>70% wilayah nasional</strong> dan melayani lebih dari <strong>1 juta pelanggan</strong>.
+                        Ekspansi jaringan terus dilakukan hingga ke wilayah timur Indonesia, mendukung pemerataan akses digital nasional.
                     </p>
 
-                    <h6 class="fw-semibold mt-4">Penghargaan:</h6>
-                    <p class="text-muted fs-6">
-                        PLN Icon Plus meraih penghargaan "Broadband Telecom Company of the Year" dari Asian Telecom Awards 2024.
-                    </p>
+                    <h6 class="fw-semibold mt-4">Penghargaan dan Prestasi:</h6>
+                    <ul class="text-muted fs-6">
+                        <li>🏆 <strong>Broadband Telecom Company of the Year</strong> - Asian Telecom Awards 2024.</li>
+                        <li>🏅 Dikenal sebagai salah satu penyedia internet dengan pertumbuhan tercepat di Indonesia.</li>
+                        <li>📈 Mendukung program <strong>Transformasi Digital Nasional</strong> dan Smart City di berbagai kota.</li>
+                    </ul>
 
-                    <h6 class="fw-semibold mt-4">Pendaftaran Layanan:</h6>
+                    <h6 class="fw-semibold mt-4">Cara Daftar Layanan:</h6>
                     <p class="text-muted fs-6">
-                        Calon pelanggan dapat mendaftar melalui aplikasi PLN Mobile atau situs resmi ICONNET untuk informasi lebih lanjut.
+                        Pendaftaran ICONNET dapat dilakukan dengan mudah melalui aplikasi <strong>PLN Mobile</strong> atau mengunjungi situs resmi di
+                        <a href="https://iconnet.id" target="_blank">www.iconnet.id</a>. Tim teknisi akan segera melakukan survei dan instalasi ke lokasi Anda.
                     </p>
 
                     <p class="text-muted fs-6 mt-4">
-                        Dengan komitmen menghadirkan internet berkualitas, ICONNET terus mendukung transformasi digital dan kebutuhan konektivitas masyarakat Indonesia.
+                        Dengan komitmen menghadirkan internet berkualitas untuk semua kalangan, ICONNET akan terus mendukung konektivitas digital
+                        untuk masa depan Indonesia yang lebih cerdas, produktif, dan terhubung.
                     </p>
                 </div>
 
             </div>
-        </div>
     </section>
 
 
@@ -293,6 +307,22 @@
                         <p>Iconnet kini hadir hampir di tiap kota dan kabupaten di pulau Jawa, Sumatera dan Kalimantan dan menjangkau wilayah pelosok.</p>
                     </div>
                 </div>
+                <div class="timeline-item right">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content card">
+                        <h3>Transformasi Digital</h3>
+                        <p>Iconnet meningkatkan kualitas layanan melalui digitalisasi sistem, termasuk aplikasi mobile untuk pelanggan dan integrasi layanan PLN dalam satu platform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content card">
+                        <h3>Ekspansi Nasional</h3>
+                        <p>Iconnet memperluas jaringan hingga wilayah Indonesia Timur, serta memperkenalkan layanan bundling TV kabel dan smart home untuk mendukung gaya hidup digital masyarakat Indonesia.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

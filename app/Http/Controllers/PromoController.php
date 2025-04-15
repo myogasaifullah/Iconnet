@@ -23,16 +23,6 @@ class PromoController extends Controller
         return view('admin_page.produk_promo', compact('promos', 'editPromo'));
     }
 
-
-    public function showLatestForLandingPage()
-    {
-        $latestPromo = Promo::latest()->first();
-        $banners = Banner::latest()->get(); // ambil semua banner
-
-        return view('landing_page.index', compact('latestPromo', 'banners'));
-    }
-
-
     // Menyimpan Promo
     public function store(Request $request)
     {
