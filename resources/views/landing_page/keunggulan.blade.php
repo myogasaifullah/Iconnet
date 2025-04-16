@@ -10,13 +10,15 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Bootstrap icons-->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 text-gray-800">
@@ -31,8 +33,8 @@
                         <!-- Bagian Gambar -->
                         <div class="bg-light row gx-5 justify-content-center">
                             <div class="col-lg-6">
-                            <div class="text-center my-5" data-aos="fade-up">
-                            <h1 class="display-5 fw-bolder mb-2">KEUNGGULAN ICONNET</h1>
+                                <div class="text-center my-5" data-aos="fade-up">
+                                    <h1 class="display-5 fw-bolder mb-2">KEUNGGULAN ICONNET</h1>
                                     <p class="lead text-black-50 mb-4">Dengan pesatnya perkembangan teknologi mempengaruhi berbagai aspek kehidupan kita yang semakin bergantung pada Internet.
                                         Kualitas dan kecepatan yang terus bertambah menjadi kebutuhan baik di rumah, kantor, dan banyak tempat lainnya membuat kami memberikan layanan terbaik untuk anda.
                                     </p>
@@ -42,7 +44,7 @@
                                     </div>
                                 </div>
                                 <div class="text-left p-4 bg-white rounded-3 shadow" data-aos="fade-right">
-                                <h2 class="fw-bold text-center mb-4">Keunggulan Iconnet</h2>
+                                    <h2 class="fw-bold text-center mb-4">Keunggulan Iconnet</h2>
                                     <ul class="list-unstyled">
                                         <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Kecepatan tinggi:</strong> Jaringan fiber optic yang canggih.</li>
                                         <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Koneksi stabil:</strong> Dapat diandalkan kapan saja.</li>
@@ -56,7 +58,7 @@
 
                                 <!-- Garis horizontal warna biru -->
                                 <hr class="mt-4" style="border: 2px solid #007bff; width: 100%;" data-aos="zoom-in">
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Features section-->
@@ -99,8 +101,8 @@
                     <!-- why -->
                     <section class="bg-light  py-5 border-bottom">
                         <div class="container text-center my-5">
-                        <h2 class="fw-bold" data-aos="zoom-in">Mengapa Memilih Iconnet</h2>
-                        <div class="row mt-4">
+                            <h2 class="fw-bold" data-aos="zoom-in">Mengapa Memilih Iconnet</h2>
+                            <div class="row mt-4">
                                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">>
                                     <div class="card-custom card">
                                         <div class="icon"><img src="https://static.thenounproject.com/png/3574480-200.png" alt="Home Broadband"></div>
@@ -150,22 +152,22 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    once: true, // animasi hanya muncul sekali
-    duration: 1000, // durasi animasi dalam ms
-  });
-</script>
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    once: true,
-    duration: 1000,
-    easing: 'ease-in-out',
-  });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // animasi hanya muncul sekali
+            duration: 1000, // durasi animasi dalam ms
+        });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
 
 </body>
 

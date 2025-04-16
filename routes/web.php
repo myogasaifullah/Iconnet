@@ -9,18 +9,18 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
 
-// ✅ Route login & logout (TIDAK DI DALAM MIDDLEWARE auth)
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
+Route::middleware(['guest'])->group(function () {
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [LoginController::class, 'login']);
+});
+
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-// ✅ Route yang hanya bisa diakses jika SUDAH login
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         return view('admin_page.dashboard');
     });
 });
-
 
 Route::prefix('banner')->name('banner.')->group(function () {
     Route::get('/', [BannerController::class, 'index'])->name('index');
@@ -53,6 +53,7 @@ Route::get('/', [LandingController::class, 'showLatestForLandingPage'])->name('w
 Route::get('/index', [LandingController::class, 'showLatestForLandingPage'])->name('index');
 Route::get('/syarat', fn() => view('landing_page/syarat'))->name('syarat');
 Route::get('/kontak', fn() => view('landing_page/kontak'))->name('kontak');
+Route::get('/myicon', fn() => view('landing_page/myicon'))->name('myicon');
 Route::get('/tentang', fn() => view('landing_page/tentang'))->name('tentang');
 Route::get('/keunggulan', fn() => view('landing_page/keunggulan'))->name('keunggulan');
 Route::get('/jangkauan', fn() => view('landing_page/jangkauan'))->name('jangkauan');

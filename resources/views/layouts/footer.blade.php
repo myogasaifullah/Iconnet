@@ -20,9 +20,9 @@
             <div class="col-lg-3 col-md-6">
                 <h5 class="fw-bold mb-3">Alamat</h5>
                 <ul class="list-unstyled small">
-                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"><a href="tel:08116241500" class="text-decoration-none text-dark"></i>Jl. Gn. Rajabasa Raya No.16, Way Halim, Bandar Lampung</a></li>
-                    <li class="mb-2"><i class="fas fa-phone me-2 text-primary"></i><a href="tel:08116241500" class="text-decoration-none text-dark">08116241500</a></li>
-                    <li><i class="fas fa-envelope me-2 text-primary"></i><a href="mailto:iconnetlampung@gmail.com" class="text-decoration-none text-dark">iconnetlampung@gmail.com</a></li>
+                    <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"><a href="tel:08116241500" class="text-decoration-none text-dark"></i>Jl. Gn. Rajabasa Raya No.16, Way Halim, Bandar Lampung</a></li>
+                    <li class="mb-2"><i class="bi bi-whatsapp me-2 text-primary"></i><a href="tel:08116241500" class="text-decoration-none text-dark">08116241500</a></li>
+                    <li><i class="bi bi-envelope-paper-fill me-2 text-primary"></i><a href="mailto:iconnetlampung@gmail.com" class="text-decoration-none text-dark">iconnetlampung@gmail.com</a></li>
                 </ul>
             </div>
 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iconnet</title>
-      <!-- Favicon-->
-      <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* login */
@@ -142,7 +142,7 @@
 
             <form action="{{ route('login') }}" method="POST">
                 @csrf
-                <input type="text" name="username" placeholder="Username" class="input-box" required>
+                <input type="email" name="email" placeholder="Email" class="input-box" required value="{{ old('email') }}">
                 <input type="password" name="password" placeholder="Password" class="input-box" required>
                 <button type="submit" class="login-btn">Login</button>
             </form>

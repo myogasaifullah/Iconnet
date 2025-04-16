@@ -31,10 +31,16 @@
                 <li class="nav-item">
                     <a class="nav-link fw-semibold px-3 py-2 rounded {{ Request::is('syarat') ? 'active-nav' : '' }}" href="/syarat">Syarat & Ketentuan</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold px-3 py-2 rounded {{ Request::is('kontak') ? 'active-nav' : '' }}" href="/kontak">Kontak</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold px-3 py-2 rounded {{ Request::is('kontak') || Request::is('myicon') ? 'active-nav' : '' }}" href="#" id="navbarDropdownProduk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Informasi
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="navbarDropdownProduk">
+                        <li><a class="dropdown-item {{ Request::is('kontak') ? 'fw-bold text-primary' : '' }}" href="/kontak">Kontak</a></li>
+                        <li><a class="dropdown-item {{ Request::is('myicon') ? 'fw-bold text-primary' : '' }}" href="/myicon">MyIcon+</a></li>
+                    </ul>
                 </li>
-
+               
                 {{-- Tombol Login dan Daftar --}}
                 <li class="nav-item ms-3">
                     <a href="{{ route('login') }}" class="btn btn-outline-primary fw-semibold px-3 py-1">Login</a>
