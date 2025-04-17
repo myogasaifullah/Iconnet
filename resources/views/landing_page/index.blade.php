@@ -186,7 +186,7 @@
                                 <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
                             <div class="text-center">
-                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
+                                <a href="https://api.whatsapp.com/send?phone=628117381899" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
                         </div>
                     </div>
@@ -264,44 +264,62 @@
         </div>
     </section>
 
-
     <!-- Testimonials section -->
     <section class="bg-light py-5 border-bottom">
-        <div class="container px-5 my-5">
-            <div class="text-center mb-5">
-                <h2 class="fw-bolder">TESTIMONI</h2>
-                <p class="lead mb-0">Apa kata mereka tentang Iconnet</p>
-            </div>
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">TESTIMONI</h2>
+            <p class="lead mb-0">Apa kata mereka tentang Iconnet</p>
+        </div>
 
-            <!-- Carousel Testimoni -->
-            <div class="d-flex overflow-auto pb-3">
-                @php
-                $testimonials = [
-                ['pesan' => 'Iconnet menjawab kebutuhan internet untuk bisnis saya', 'nama' => 'Wiyadi', 'profesi' => 'Wirausahawan'],
-                ['pesan' => 'Iconnet harganya relatif murah dan terjangkau', 'nama' => 'Murni', 'profesi' => 'Carik Sindumartani'],
-                ['pesan' => 'Internet Iconnet stabil dan cocok untuk kerja remote', 'nama' => 'Rian', 'profesi' => 'Freelancer'],
-                ['pesan' => 'Pelayanan cepat dan ramah, recommended!', 'nama' => 'Ayu', 'profesi' => 'Mahasiswa'],
-                ];
-                @endphp
+        <!-- Wrapper untuk testimonial + tombol -->
+        <div class="position-relative">
+            <!-- Tombol Prev -->
+            <button class="btn btn-outline-primary position-absolute start-0 top-50 translate-middle-y z-3" style="margin-left: -1rem; height: 3rem; width: 3rem;" onclick="scrollTestimonials(-1)">
+                <i class="bi bi-chevron-left fs-4"></i>
+            </button>
 
-                @foreach($testimonials as $t)
-                <div class="card shadow-sm border-0 me-3" style="min-width: 300px;" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0">
-                                <i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
-                            </div>
-                            <div class="ms-4">
-                                <p class="mb-1 fst-italic">"{{ $t['pesan'] }}"</p>
-                                <div class="small text-muted">- {{ $t['nama'] }}, {{ $t['profesi'] }}</div>
+            <!-- Container Testimoni -->
+            <div class="px-5">
+                <div class="d-flex overflow-auto pb-3 align-items-center" id="testimonialContainer" style="scroll-behavior: smooth;">
+                    @php
+                    $testimonials = [
+                        
+                        ['pesan' => 'Iconnet harganya relatif murah dan terjangkau', 'nama' => 'Murni', 'profesi' => 'Carik Sindumartani'],
+                        ['pesan' => 'Internet Iconnet stabil dan cocok untuk kerja remote', 'nama' => 'Rian', 'profesi' => 'Freelancer'],
+                        ['pesan' => 'Pelayanan cepat dan ramah, recommended!', 'nama' => 'Ayu', 'profesi' => 'Mahasiswa'],
+                        
+                        ['pesan' => 'Iconnet harganya relatif murah dan terjangkau', 'nama' => 'Yosa', 'profesi' => 'Mahasiswa'],
+                        ['pesan' => 'Internet Iconnet stabil dan cocok untuk kerja remote', 'nama' => 'Anton', 'profesi' => 'Freelancer'],
+                        ['pesan' => 'Pelayanan cepat dan ramah, recommended!', 'nama' => 'Dila', 'profesi' => 'Mahasiswa'],
+                    ];
+                    @endphp
+
+                    @foreach($testimonials as $t)
+                    <div class="card shadow-sm border-0 me-3" style="min-width: 300px;" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="mb-1 fst-italic">"{{ $t['pesan'] }}"</p>
+                                    <div class="small text-muted">- {{ $t['nama'] }}, {{ $t['profesi'] }}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
+
+            <!-- Tombol Next -->
+            <button class="btn btn-outline-primary position-absolute end-0 top-50 translate-middle-y z-3" style="margin-right: -1rem; height: 3rem; width: 3rem;" onclick="scrollTestimonials(1)">
+                <i class="bi bi-chevron-right fs-4"></i>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
 
     @include('layouts.footer')
@@ -323,6 +341,16 @@
             duration: 1000,
             once: true,
         });
+    </script>
+    <script>
+        function scrollTestimonials(direction) {
+            const container = document.getElementById('testimonialContainer');
+            const scrollAmount = 320; // Lebih besar dari min-width card agar 1 per klik
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
     </script>
 
 </body>

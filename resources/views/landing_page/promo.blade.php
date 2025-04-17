@@ -44,7 +44,7 @@
                         <div class="w-full lg:w-1/2">
                             <h2 class="text-3xl font-bold mb-4">{{ $promo->judul }}</h2>
                             <p class="mb-4">{{ $promo->deskripsi }}</p>
-                            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a href="https://api.whatsapp.com/send?phone=628117381899" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 Info Detail
                             </a>
                         </div>

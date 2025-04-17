@@ -49,7 +49,7 @@
                                 <li>Harga Belum Termasuk PPN 11%</li>
                             </ul>
                             <div class="text-center">
-                                <a href="#" class="btn btn-outline-primary btn-daftar">Daftar</a>
+                                <a href="https://api.whatsapp.com/send?phone=628117381899" class="btn btn-outline-primary btn-daftar">Daftar</a>
                             </div>
                         </div>
                     </div>

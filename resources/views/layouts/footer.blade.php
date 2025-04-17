@@ -27,15 +27,15 @@
                 <ul class="list-unstyled small">
                     <li class="mb-2">
                         <i class="bi bi-geo-alt-fill me-2 text-white"></i>
-                        <a href="tel:08116241500" class="text-decoration-none text-white">Jl. Gn. Rajabasa Raya No.16, Way Halim, Bandar Lampung</a>
+                        <a href="https://maps.app.goo.gl/uxwKkCkEXTuZWBaG8" class="text-decoration-none text-white">Jl. Gn. Rajabasa Raya No.16, Way Halim, Bandar Lampung</a>
                     </li>
                     <li class="mb-2">
                         <i class="bi bi-whatsapp me-2 text-white"></i>
-                        <a href="tel:08116241500" class="text-decoration-none text-white">08116241500</a>
+                        <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-decoration-none text-white">0813-9000-6280</a>
                     </li>
                     <li>
                         <i class="bi bi-envelope-paper-fill me-2 text-white"></i>
-                        <a href="mailto:iconnetlampung@gmail.com" class="text-decoration-none text-white">iconnetlampung@gmail.com</a>
+                        <a href="https://www.instagram.com/iconnetlampung/" class="text-decoration-none text-white">iconnetlampung@gmail.com</a>
                     </li>
                 </ul>
             </div>

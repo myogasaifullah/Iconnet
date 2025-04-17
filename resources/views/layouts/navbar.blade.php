@@ -46,7 +46,7 @@
                     <a href="{{ route('login') }}" class="btn btn-outline-primary fw-semibold px-3 py-1">Login</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a href="{{ route('register') }}" class="btn btn-primary fw-semibold px-3 py-1 text-white">Daftar</a>
+                    <a href="https://api.whatsapp.com/send?phone=628117381899" class="btn btn-primary fw-semibold px-3 py-1 text-white">Daftar</a>
                 </li>
             </ul>
         </div>

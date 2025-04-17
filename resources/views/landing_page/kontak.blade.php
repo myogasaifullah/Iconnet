@@ -120,7 +120,7 @@
                     </div>
                     <div>
                         <h6 class="fw-bold">Email & Ponsel</h6>
-                        <p class="mb-0">info@iconnetjabar.com<br>+62 821-1660-9261</p>
+                        <p class="mb-0">iconnetlampung@gmail.com<br>+62 811-7381-899</p>
                     </div>
                 </div>
 
@@ -129,8 +129,8 @@
                         <i class="bi bi-geo-alt-fill text-info fs-1"></i>
                     </div>
                     <div>
-                        <h6 class="fw-bold">Kantor Perwakilan Cirebon</h6>
-                        <p class="mb-0">Jl. Pemuda Raya No. 20, Sunyaragi, Kec. Kesambi,<br>Kota Cirebon, Jawa Barat 45152</p>
+                        <h6 class="fw-bold">Kantor Perwakilan Lampung</h6>
+                        <p class="mb-0"> Jl. Gn. Rajabasa Raya No.16, Perumnas Way Halim, Kec. Way Halim,<br>Kota Bandar Lampung, Lampung 35132</p>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
                     </div>
                     <div>
                         <h6 class="fw-bold">Sosial Media</h6>
-                        <p class="mb-0">Instagram <a href="https://instagram.com/iconnet.plniconplus" target="_blank">@iconnet.plniconplus</a><br>WhatsApp: 0811-1200-2123</p>
+                        <p class="mb-0">Instagram <a href="https://www.instagram.com/iconnetlampung/" target="_blank">iconnetlampung</a><br>WhatsApp: 0811-7381-899</p>
                     </div>
                 </div>
             </div>
