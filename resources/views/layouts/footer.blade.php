@@ -60,6 +60,7 @@
                     <li><a href="/kontak" class="text-decoration-none text-white">> Kontak</a></li>
                     <li><a href="/myicon" class="text-decoration-none text-white">> MyIcon+</a></li>
                     <li><a href="/syarat" class="text-decoration-none text-white">> Syarat & Ketentuan</a></li>
+                    <li><a href="/kebijakan" class="text-decoration-none text-white">> Kebijakan & Privasi</a></li>
                 </ul>
             </div>
         </div>

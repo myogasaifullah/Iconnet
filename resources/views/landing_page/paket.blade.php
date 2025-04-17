@@ -25,8 +25,10 @@
     <section class="bg-light py-5 border-bottom">
         <div class="container px-5 my-5">
             <div class="text-center mb-5">
-                <h2 class="fw-bolder">PAKET ICONNET</h2>
-                <p class="lead mb-0">Berbagai paket yang dapat sesuai dengan layanan kebutuhan internet dan multimedia anda.</p>
+                <h6 class="text-primary">Layanan Internet Broadband Super Cepat</h6>
+                <h2 class="fw-bolder">Paket Internet Broadband Iconnet
+                </h2>
+                <p class="lead mb-0">ICONNET adalah penyedia layanan terkemuka dalam solusi konektivitas dan jaringan, menawarkan beragam produk dan layanan berkualitas tinggi untuk memenuhi kebutuhan komunikasi dan konektivitas bisnis Anda.</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
                 <!-- Card 1 -->
