@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Laporkan Gangguan Jaringan PLN IconPlus dengan Aplikasi MyIcon+" />
     <meta name="author" content="PLN IconPlus" />
-    <title>MyIcon+ | PLN IconPlus</title>
+    <title>Iconnet</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Bootstrap icons-->
@@ -15,6 +15,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <style>
         :root {
             --primary: #2C5F9E;
@@ -74,9 +80,12 @@
             margin-bottom: 1.5rem;
         }
 
-        .card-flat:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        .card-flat:hover,
+        .poster-card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
 
         .btn-flat {
             border-radius: 6px;
@@ -92,9 +101,11 @@
             color: white;
         }
 
-        .btn-primary-flat:hover {
-            background: #1E4B8B;
-            color: white;
+
+        .btn-primary-flat:hover,
+        .btn-light-flat:hover {
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
         }
 
         .btn-light-flat {
@@ -136,6 +147,10 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             background: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            /* agar semua card seragam tinggi */
         }
 
         .poster-card:hover {
@@ -145,7 +160,9 @@
 
         .poster-img {
             width: 100%;
-            height: 180px;
+            height: auto;
+            /* biar rasio gambar tetap alami */
+            display: block;
             object-fit: cover;
         }
 
@@ -187,11 +204,11 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section py-5">
+        <section class="hero-section py-5 bg-primary-gradient" data-aos="fade-up" data-aos-duration="1200">
             <div class="container px-4 my-5 text-center">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h1 class="display-5 fw-bold mb-4">⚡ Mudah & Cepat! Laporkan Gangguan Jaringan PLN IconPlus dengan Aplikasi MyIcon+ ⚡</h1>
+                        <h1 class="display-5 fw-bold mb-4 ">⚡ Mudah & Cepat! Laporkan Gangguan Jaringan PLN IconPlus dengan Aplikasi MyIcon+ ⚡</h1>
                         <p class="lead mb-4 text-white">Kini tidak perlu khawatir atau bingung lagi! Laporkan gangguan jaringan secara cepat dan praktis langsung dari ponsel Anda.</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                             <a href="#download" class="btn btn-primary btn-lg px-4 me-sm-3">Download Sekarang</a>
@@ -213,9 +230,9 @@
                         </div>
 
                         <!-- What is MyIcon+ Section -->
-                        <div class="card-flat p-4 mb-5">
+                        <div class=" card card-flat p-4 mb-5" data-aos="zoom-in" data-aos-delay="100">
                             <div class="card-body text-center">
-                                <div class="icon-box bg-primary text-white">
+                                <div class="bg-primary-gradient icon-box bg-primary text-white">
                                     <i class="bi bi-info-circle"></i>
                                 </div>
                                 <h3 class="h4 mb-3">💡 Apa Itu MyIcon+?</h3>
@@ -228,7 +245,7 @@
                         <h3 class="section-title">✨ Keunggulan MyIcon+</h3>
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <div class="card-flat h-100 p-4">
+                                <div class="card card-flat h-100 p-4" data-aos="zoom-in" data-aos-delay="100">
                                     <div class="card-body text-center">
                                         <div class="icon-box bg-success bg-opacity-10 text-success mb-3">
                                             <i class="bi bi-check-circle-fill fs-3"></i>
@@ -239,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card-flat h-100 p-4">
+                                <div class="card card-flat h-100 p-4" data-aos="zoom-in" data-aos-delay="100">
                                     <div class="card-body text-center">
                                         <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3">
                                             <i class="bi bi-graph-up fs-3"></i>
@@ -250,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card-flat h-100 p-4">
+                                <div class="card card-flat h-100 p-4" data-aos="zoom-in" data-aos-delay="100">
                                     <div class="card-body text-center">
                                         <div class="icon-box bg-warning bg-opacity-10 text-warning mb-3">
                                             <i class="bi bi-megaphone fs-3"></i>
@@ -261,7 +278,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card-flat h-100 p-4">
+                                <div class="card card-flat h-100 p-4" data-aos="zoom-in" data-aos-delay="100">
                                     <div class="card-body text-center">
                                         <div class="icon-box bg-danger bg-opacity-10 text-danger mb-3">
                                             <i class="bi bi-lightning-charge-fill fs-3"></i>
@@ -275,7 +292,7 @@
 
                         <!-- Why Use Section -->
                         <h3 class="h4 mb-1 section-title my-5">💬 Mengapa Harus Pakai MyIcon+?</h3>
-                        <div class="card-flat p-4 my-4 bg-primary">
+                        <div class="card card-flat p-4 my-4 bg-primary-gradient" data-aos="zoom-in" data-aos-delay="100">
                             <div class="card-body">
                                 <p class="text-white">Dengan MyIcon+, kamu bisa mendapatkan respon cepat dari PLN IconPlus tanpa harus menghubungi call center atau mengunjungi kantor PLN IconPlus. Semuanya bisa dilakukan dari rumah, kapan saja dan di mana saja!</p>
                             </div>
@@ -285,50 +302,50 @@
                         <!-- Poster Collection -->
                         <div id="posters" class="my-5">
                             <h3 class="section-title">📌 Panduan Visual MyIcon+</h3>
-                            <p class="text-muted">Berikut koleksi poster informasi tentang MyIcon+:</p>
+                            <p class="text-muted">Berikut informasi tentang MyIcon+:</p>
 
                             <div class="poster-grid">
-                                <div class="poster-card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0vxv9A1hnWQWsNgRXlCz9zBZ9Wp2u3mM6g&s" alt="Tutorial MyIcon+" class="poster-img">
+                                <div class="card poster-card" data-aos="fade-up" data-aos-delay="200">
+                                    <img src="assets/tutor.jpg" alt="Tutorial MyIcon+" class="poster-img">
                                     <div class="p-4">
                                         <h5 class="fw-bold">Tutorial Penggunaan My ICON+</h5>
                                         <p class="text-muted small">TUTORIAL PENGGUNAAN MY ICON+ Pelanggan Korporat</p>
                                         <a href="https://drive.google.com/file/d/1JZsFfE-euBQrNlyYEMqhEJYD0L41zImE/view?usp=sharing" class="btn btn-sm btn-primary-flat">Download PDF</a>
                                     </div>
                                 </div>
-                                <div class="poster-card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1OatUfTGOxwXvZL7VjSSq4dmfIxaR1KxhHA&s" alt="Flow Eskalasi" class="poster-img">
+                                <div class="card poster-card" data-aos="fade-up" data-aos-delay="200">
+                                    <img src="assets/ekskalasi.jpg" alt="Flow Eskalasi" class="poster-img">
                                     <div class="p-4">
                                         <h5 class="fw-bold">Flow Eskalasi ganggaun</h5>
                                         <p class="text-muted small">FLOW ESKALASI GANGGUAN PELANGGAN</p>
                                         <a href="https://drive.google.com/file/d/1hmBY0mvztNDJwvme-Uvb-mAvInC4i1WS/view?usp=drive_link" class="btn btn-sm btn-primary-flat">Download PDF</a>
                                     </div>
                                 </div>
-                                <div class="poster-card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShcl39wneaXUltqtT-ytVSpmW3qsz9hsgSHQ&s" alt="Basic Pengecekan" class="poster-img">
+                                <div class="card poster-card" data-aos="fade-up" data-aos-delay="200">
+                                    <img src="assets/basic.jpg" alt="Basic Pengecekan" class="poster-img">
                                     <div class="p-4">
                                         <h5 class="fw-bold">Basic Pengecekan Service</h5>
                                         <p class="text-muted small">IPVPN , Metronet , Internet Corporate , IBBC , I-win</p>
-                                        <a href="#" class="btn btn-sm btn-primary-flat">Download PDF</a>
+                                        <a href="https://drive.google.com/file/d/1w37yQT1mqLjM4-Pd31GDOtVOkEq_KWyj/view?usp=drive_link" class="btn btn-sm btn-primary-flat">Download PDF</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Download Section -->
-                        <div id="download" class="download-card my-5">
+                        <div id="download" class=" my-5">
                             <h3 class="section-title text-center">🚀 Download MyIcon+ Sekarang!</h3>
                             <p class="text-center text-muted mb-4">Klik link berikut untuk download aplikasi:</p>
 
                             <div class="row g-4 text-center">
-                                <div class="col-md-6">
+                                <div class="card col-md-6">
                                     <div class="p-4">
                                         <i class="bi bi-phone text-primary" style="font-size: 3rem;"></i>
                                         <h4 class="h5 mt-3">Android</h4>
                                         <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer&pcampaignid=web_share" class="btn btn-primary-flat mt-2" target="_blank">Download</a>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="card col-md-6">
                                     <div class="p-4">
                                         <i class="bi bi-phone text-primary" style="font-size: 3rem;"></i>
                                         <h4 class="h5 mt-3">IOS/iPhone</h4>
@@ -358,6 +375,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true // animasi hanya jalan sekali
+        });
+    </script>
+
 </body>
 
 </html>
