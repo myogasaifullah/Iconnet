@@ -21,7 +21,7 @@
             width: 100%;
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
-            background-color: #ffffff;
+            background-color:rgb(255, 255, 255);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -58,7 +58,7 @@
             padding: 30px;
             border-radius: 12px;
             background-color: #ffffff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
             text-align: center;
         }
 
@@ -126,7 +126,7 @@
         }
 
         .login-section {
-            margin: 40px 0;
+            margin: 33px 0;
             /* Atur sesuai kebutuhan */
             width: 100%;
         }
