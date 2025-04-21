@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Kebijakan Privasi IconNet" />
     <meta name="author" content="IconNet" />
-    <title>Kebijakan Privasi - Iconnet</title>
+    <title>Iconnet</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
@@ -101,7 +101,7 @@ rgb(51, 166, 166) ) !important;
                 <!-- Sidebar -->
                 <div class="col-lg-3">
                     <ul class="list-group list-group-flush sticky-sidebar">
-                        <li class="list-group-item fw-bold" id="item-pengertian">
+                        <li class="list-group-item" id="item-pengertian">
                             <a href="#" id="link-pengertian" class="text-decoration-none text-dark active-link" onclick="showSection('pengertian', this, 'item-pengertian', event)">Pengertian</a>
                         </li>
                         <li class="list-group-item" id="item-filelog">

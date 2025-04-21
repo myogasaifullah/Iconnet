@@ -105,7 +105,7 @@
                         </div>
                         <h2>Reliable</h2>
                         <p>ICONNET memiliki kecepatan internet yang tinggi dan stabil karena menggunakan jaringan Fiber.</p>
-                        <a href="#!" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
@@ -115,7 +115,7 @@
                         </div>
                         <h2>Affordable</h2>
                         <p>Koneksi ICONNET sangat stabil karena menggunakan jaringan fiber optic yang tercanggih.</p>
-                        <a href="#!" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -125,7 +125,7 @@
                         </div>
                         <h2>Unlimited</h2>
                         <p>ICONNET saat ini mempunyai coverage area yang paling luas jangkauannya.</p>
-                        <a href="#!" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-primary">Call to action <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
