@@ -40,35 +40,36 @@
                 </ul>
             </div>
 
+
             <!-- Tentang -->
             <div class="col-lg-3 col-md-6">
-                <h5 class="fw-bold mb-3 text-white">Fitur Iconnet</h5>
-                <ul class="list-unstyled small">
-                    <li><a href="/" class="text-decoration-none text-white">> Beranda</a></li>
-                    <li><a href="/tentang" class="text-decoration-none text-white">> Tentang</a></li>
-                    <li><a href="/keunggulan" class="text-decoration-none text-white">> Keunggulan</a></li>
-                    <li><a href="/promo" class="text-decoration-none text-white">> Promo</a></li>
-                    <li><a href="/produk" class="text-decoration-none text-white">> Produk</a></li>
+                <h5 class="fw-bold mb-3 text-white">Fitur</h5>
+                <ul class="list-unstyled small footer-list">
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/tentang">Tentang</a></li>
+                    <li><a href="/keunggulan">Keunggulan</a></li>
+                    <li><a href="/promo">Promo</a></li>
+                    <li><a href="/produk">Produk</a></li>
                 </ul>
             </div>
 
             <!-- Layanan Kami -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="fw-bold mb-3 text-white">Layanan Kami</h5>
-                <ul class="list-unstyled small">
-                    <li><a href="/jangkauan" class="text-decoration-none text-white">> Jangkauan</a></li>
-                    <li><a href="/kontak" class="text-decoration-none text-white">> Kontak</a></li>
-                    <li><a href="/myicon" class="text-decoration-none text-white">> MyIcon+</a></li>
-                    <li><a href="/syarat" class="text-decoration-none text-white">> Syarat & Ketentuan</a></li>
-                    <li><a href="/kebijakan" class="text-decoration-none text-white">> Kebijakan & Privasi</a></li>
+                <ul class="list-unstyled small footer-list">
+                    <li><a href="/jangkauan">Jangkauan</a></li>
+                    <li><a href="/kontak">Kontak</a></li>
+                    <li><a href="/myicon">MyIcon+</a></li>
+                    <li><a href="/syarat">Syarat & Ketentuan</a></li>
+                    <li><a href="/kebijakan">Kebijakan & Privasi</a></li>
+                    <li><a href="/pembayaran">Metode Pembayaran</a></li>
                 </ul>
             </div>
-        </div>
 
-        <!-- Copyright -->
-        <hr class="mt-5 border-white">
-        <div class="text-center small text-white">
-            &copy; {{ date('Y') }} PT INDONESIA COMNETS PLUS. All Rights Reserved.
+            <!-- Copyright -->
+            <hr class="mt-5 border-white">
+            <div class="text-center small text-white">
+                &copy; {{ date('Y') }} PT INDONESIA COMNETS PLUS. All Rights Reserved.
+            </div>
         </div>
-    </div>
 </footer>

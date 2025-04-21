@@ -16,9 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link fw-semibold px-3 py-2 rounded {{ Request::is('/') ? 'active-nav' : '' }}" href="/">Beranda</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link fw-semibold px-3 py-2 rounded {{ Request::is('keunggulan') ? 'active-nav' : '' }}" href="/keunggulan">Keunggulan</a>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-semibold px-3 py-2 rounded {{ Request::is('promo') || Request::is('paket') ? 'active-nav' : '' }}" href="#" id="navbarDropdownProduk" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Produk
@@ -45,9 +45,9 @@
                 <li class="nav-item ms-3">
                     <a href="{{ route('login') }}" class="btn btn-outline-primary fw-semibold px-3 py-1">Login</a>
                 </li>
-                <li class="nav-item ms-2">
+                <!-- <li class="nav-item ms-2">
                     <a href="https://api.whatsapp.com/send?phone=628117381899" class="btn btn-primary fw-semibold px-3 py-1 text-white">Daftar</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>

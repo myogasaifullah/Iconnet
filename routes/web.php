@@ -53,6 +53,7 @@ Route::get('/', [LandingController::class, 'showLatestForLandingPage'])->name('w
 Route::get('/index', [LandingController::class, 'showLatestForLandingPage'])->name('index');
 Route::get('/syarat', fn() => view('landing_page/syarat'))->name('syarat');
 Route::get('/kebijakan', fn() => view('landing_page/kebijakan'))->name('kebijakan');
+Route::get('/pembayaran', fn() => view('landing_page/pembayaran'))->name('pembayaran');
 Route::get('/kontak', fn() => view('landing_page/kontak'))->name('kontak');
 Route::get('/myicon', fn() => view('landing_page/myicon'))->name('myicon');
 Route::get('/tentang', fn() => view('landing_page/tentang'))->name('tentang');

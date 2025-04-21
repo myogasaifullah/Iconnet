@@ -11740,3 +11740,40 @@ p {
 .z-3 {
   z-index: 999;
 }
+
+/* footer  */
+
+.footer-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.footer-list li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #ffcc00; /* Warna saat hover */
+}
+
+.card.active-border {
+  border-left: 4px solid #007bff;
+  background-color: #f8f9fa;
+}
+
+.card.active-link {
+  color: #007bff !important;
+  font-weight: bold;
+}
