@@ -75,8 +75,8 @@
 
         .bg-privacy {
             background: linear-gradient(135deg,
-rgb(0, 0, 128),
-rgb(51, 166, 166) ) !important;
+                    rgb(0, 0, 128),
+                    rgb(51, 166, 166)) !important;
         }
     </style>
 </head>
@@ -94,81 +94,9 @@ rgb(51, 166, 166) ) !important;
             </div>
         </div>
     </section>
-    <section class="bg-white py-5 border-bottom">
-        <div class="container">
-            <div class="row gx-5 gy-4">
+    @include('components.privacy')
 
-                <!-- Sidebar -->
-                <div class="col-lg-3">
-                    <ul class="list-group list-group-flush sticky-sidebar">
-                        <li class="list-group-item" id="item-pengertian">
-                            <a href="#" id="link-pengertian" class="text-decoration-none text-dark active-link" onclick="showSection('pengertian', this, 'item-pengertian', event)">Pengertian</a>
-                        </li>
-                        <li class="list-group-item" id="item-filelog">
-                            <a href="#" id="link-filelog" class="text-decoration-none text-dark" onclick="showSection('filelog', this, 'item-filelog', event)">File Log</a>
-                        </li>
-                        <li class="list-group-item" id="item-cookies">
-                            <a href="#" id="link-cookies" class="text-decoration-none text-dark" onclick="showSection('cookies', this, 'item-cookies', event)">Cookies</a>
-                        </li>
-                        <li class="list-group-item" id="item-datapengguna">
-                            <a href="#" id="link-datapengguna" class="text-decoration-none text-dark" onclick="showSection('datapengguna', this, 'item-datapengguna', event)">Data Pengguna</a>
-                        </li>
-                        <li class="list-group-item" id="item-penggunaaninformasi">
-                            <a href="#" id="link-penggunaaninformasi" class="text-decoration-none text-dark" onclick="showSection('penggunaaninformasi', this, 'item-penggunaaninformasi', event)">Penggunaan Informasi</a>
-                        </li>
-                        <li class="list-group-item" id="item-perubahan">
-                            <a href="#" id="link-perubahan" class="text-decoration-none text-dark" onclick="showSection('perubahan', this, 'item-perubahan'), event">Perubahan</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Konten -->
-                <div class="col-lg-9">
-                    <section id="pengertian" class="content-section active mb-5">
-                        <h4 class="fw-bold">Pengertian</h4>
-                        <p>
-                            Sebagai penyedia jasa layanan internet rumah, kami IconNet sangat menjunjung tinggi privasi pelanggan. Hal ini karena informasi pribadi merupakan hal yang sangat krusial dan tidak boleh diketahui siapapun. Berikut akan kami jelaskan mengenai informasi apa saja yang kami terima dan kami kumpulkan pada saat Anda mengunjungi situs IconNet. Serta, tentang bagaimana kami menyimpan dan menjaga informasi tersebut. Kami tegaskan bahwa kami tidak akan pernah memberikan informasi tersebut kepada siapapun termasuk pihak ketiga.
-                        </p>
-                    </section>
-
-                    <section id="filelog" class="content-section mb-5">
-                        <h4 class="fw-bold">File Log</h4>
-                        <p>
-                            Seperti situs lain pada umumnya, kami mengumpulkan dan menggunakan data yang terdapat pada file log. Informasi yang terdapat pada file log termasuk alamat IP (Internet Protocol) Anda, ISP (Internet Service Provider), browser yang Anda gunakan, waktu pada saat Anda berkunjung serta halaman mana saja yang Anda buka selama berkunjung di IconNet.
-                        </p>
-                    </section>
-
-                    <section id="cookies" class="content-section mb-5">
-                        <h4 class="fw-bold">Cookies</h4>
-                        <p>
-                            Situs kami menggunakan cookies untuk menyimpan berbagai informasi seperti preferensi pribadi pada saat mengunjungi situs IconNet serta informasi login. IconNet juga menggunakan layanan tracking dari pihak ketiga untuk mendukung situs kami. Beberapa layanan tersebut mungkin menggunakan cookies ketika melakukan tracking di situs kami. IconNet bekerja sama dengan layanan tracker seperti Google AdWords, Google Analytics, AdRoll serta CrazyEgg. Dimana informasi yang dikirim dapat berupa alamat IP, ISP, browser, sistem operasi yang Anda pakai, dan sebagainya.
-                        </p>
-                    </section>
-
-                    <section id="datapengguna" class="content-section mb-5">
-                        <h4 class="fw-bold">Data Pengguna</h4>
-                        <p>
-                            Data pengguna meliputi: Nama; Informasi ID Pelanggan PLN atau Nomor Meter PLN; Informasi Nomor KTP; Informasi kontak, termasuk alamat email; Data demografi seperti kode pos, preferensi, dan minat; Informasi lain yang berhubungan dengan survei pelanggan dan/penawaran.
-                        </p>
-                    </section>
-
-                    <section id="penggunaaninformasi" class="content-section mb-5">
-                        <h4 class="fw-bold">Penggunaan Informasi</h4>
-                        <p>
-                            Kami menggunakan informasi yang dikumpulkan di situs kami untuk melakukan pendaftaran pemasangan internet ke sistem dan upgrade/downgrade kapasitas layanan internet; Memberikan pengalaman yang lebih baik kepada Anda dalam bentuk maintenance service, peningkatan layanan akses internet survey; Mengirimkan informasi terkait pembayaran dan tagihan kepada anda dalam bentuk whatsapp, email atau sms maupun telepon; Meningkatkan pelayanan kami dalam bentuk perbaikan dalam situs.
-                        </p>
-                    </section>
-
-                    <section id="perubahan" class="content-section mb-5">
-                        <h4 class="fw-bold">Perubahan Kebijakan Privasi</h4>
-                        <p>
-                            Dengan mengakses situs IconNet, maka Anda setuju bahwa kebijakan privasi ini dapat diubah dalam hal apa saja dan kapan saja oleh IconNet. Penggunaan Layanan yang tetap Anda lakukan secara berkelanjutan akan dianggap setuju terhadap perubahan tersebut. Jika Anda tidak ingin melanjutkan menggunakan Layanan kami karena perubahan tersebut, Anda dapat memberitahukan keinginan Anda untuk menghentikan penggunaan layanan internet ke IconNet.
-                        </p>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('components.policy')
 
     @include('layouts.footer')
 
@@ -180,39 +108,39 @@ rgb(51, 166, 166) ) !important;
 
     <!-- Custom JS -->
     <script>
-        function showSection(id, el, itemId) {
+    function showSection(sectionId, linkElement, listItemId, event) {
+        event.preventDefault();
 
-            event.preventDefault()
-            // Tampilkan konten sesuai id
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => section.classList.remove('active'));
+        // Tentukan container induk berdasarkan id item
+        const isPrivacy = listItemId.startsWith('item-pengertian') || listItemId.startsWith('item-filelog') ||
+                          listItemId.startsWith('item-cookies') || listItemId.startsWith('item-datapengguna') ||
+                          listItemId.startsWith('item-penggunaaninformasi') || listItemId.startsWith('item-perubahan');
 
-            const selected = document.getElementById(id);
-            if (selected) {
-                selected.classList.add('active');
-                // selected.scrollIntoView({
-                //     behavior: 'smooth',
-                //     block: 'start'
-                // });
-            }
+        const contentSections = isPrivacy
+            ? document.querySelectorAll("section#pengertian, section#filelog, section#cookies, section#datapengguna, section#penggunaaninformasi, section#perubahan")
+            : document.querySelectorAll("section#pengartian, section#pengumpulan, section#cookie, section#tujuan, section#pembagian, section#penyimpanan, section#hak, section#kebijakan");
 
-            // Ganti kelas aktif di sidebar
-            const links = document.querySelectorAll('.list-group-item a');
-            links.forEach(link => link.classList.remove('active-link'));
+        // Sembunyikan semua section terkait
+        contentSections.forEach(section => {
+            section.classList.remove('active');
+        });
 
-            const items = document.querySelectorAll('.list-group-item');
-            items.forEach(item => item.classList.remove('active-border'));
+        // Tampilkan section yang dipilih
+        document.getElementById(sectionId).classList.add('active');
 
-            // Tambahkan border aktif pada item sidebar yang sesuai
-            if (el) {
-                el.classList.add('active-link');
-                const activeItem = document.getElementById(itemId);
-                if (activeItem) {
-                    activeItem.classList.add('active-border');
-                }
-            }
-        }
-    </script>
+        // Reset active class dari semua link dan list item
+        const allListItems = isPrivacy
+            ? document.querySelectorAll('#item-pengertian, #item-filelog, #item-cookies, #item-datapengguna, #item-penggunaaninformasi, #item-perubahan')
+            : document.querySelectorAll('#item-pengartian, #item-pengumpulan, #item-cookie, #item-tujuan, #item-pembagian, #item-penyimpanan, #item-hak, #item-kebijakan');
+
+        allListItems.forEach(item => item.classList.remove('active-border'));
+        document.querySelectorAll('.active-link').forEach(link => link.classList.remove('active-link'));
+
+        // Tambahkan kelas aktif ke item yang diklik
+        linkElement.classList.add('active-link');
+        document.getElementById(listItemId).classList.add('active-border');
+    }
+</script>
 
 </body>
 
