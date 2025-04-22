@@ -190,10 +190,10 @@ rgb(51, 166, 166) ) !important;
             const selected = document.getElementById(id);
             if (selected) {
                 selected.classList.add('active');
-                selected.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                // selected.scrollIntoView({
+                //     behavior: 'smooth',
+                //     block: 'start'
+                // });
             }
 
             // Ganti kelas aktif di sidebar

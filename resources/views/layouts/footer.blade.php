@@ -49,7 +49,7 @@
                     <li><a href="/tentang">Tentang</a></li>
                     <li><a href="/keunggulan">Keunggulan</a></li>
                     <li><a href="/promo">Promo</a></li>
-                    <li><a href="/produk">Produk</a></li>
+                    <li><a href="/paket">Paket</a></li>
                 </ul>
             </div>
 

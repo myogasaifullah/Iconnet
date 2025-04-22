@@ -147,6 +147,14 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Card: PLN Mobile -->
+                        <div class="col">
+                            <div class="card list-group-item-action" onclick="showSection('mobile', this)" id="btn-link" style="cursor: pointer;">
+                                <div class="card-body">
+                                    <h6 class="card-title mb-0">PLN Mobile</h6>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Card: LinkAja -->
                         <div class="col">
                             <div class="card list-group-item-action" onclick="showSection('link', this)" id="btn-link" style="cursor: pointer;">
@@ -306,9 +314,42 @@
                     </div>
 
                     <div id="bca" class="content-section">
-                    <h4>Pembayaran melalui Bank BCA</h4>
+                        <h4>Pembayaran melalui Bank BCA</h4>
 
+                        <h5 class="mt-4">1. Pembayaran melalui ATM BCA</h5>
+                        <ol>
+                            <li>Masukkan kartu ATM dan PIN</li>
+                            <li>Pilih menu <strong>Transaksi Lain</strong> -> <strong>LAINNYA</strong> -> <strong>BCAVA</strong></li>
+                            <li>Masukkan Nomor Virtual Account, yaitu <strong>“2060091”</strong> (ICONNET)</li>
+                            <li>Masukkan Nomor Virtual Account, contoh: <strong>2060091000000001</strong></li>
+                            <li>Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai: Nomor BCAVA, Nama Pelanggan, dan Jumlah Pembayaran</li>
+                            <li>Transaksi Selesai</li>
+                            <li>Simpan Struk Pembayaran</li>
+                        </ol>
+
+                        <h5 class="mt-4">2. Pembayaran melalui Mobile Banking BCA</h5>
+                        <ol>
+                            <li>Buka aplikasi BCA Mobile</li>
+                            <li>Pilih menu <strong>Mobile Banking BCA</strong> -> <strong>PEMBAYARAN</strong> -> <strong>BCAVA</strong></li>
+                            <li>Masukkan Nomor Virtual Account</li>
+                            <li>Kemudian Klik <strong>Bayar</strong></li>
+                            <li>Masukkan PIN</li>
+                            <li>Transaksi Selesai</li>
+                            <li>Simpan notifikasi SMS sebagai bukti pembayaran</li>
+                        </ol>
+
+                        <h5 class="mt-4">3. Pembayaran melalui Klik BCA</h5>
+                        <ol>
+                            <li>Login pada alamat Internet Banking BCA: <a href="https://www.klikbca.com" target="_blank">https://www.klikbca.com</a></li>
+                            <li>Pilih menu <strong>Pembayaran Tagihan</strong> > <strong>Pembayaran</strong> > <strong>BCAVA</strong></li>
+                            <li>Masukkan Nomor Virtual Account</li>
+                            <li>Di halaman konfirmasi, pastikan detil pembayaran sudah sesuai: Nomor BCAVA, Nama Pelanggan, dan Jumlah Pembayaran</li>
+                            <li>Masukkan password dan mToken</li>
+                            <li>Transaksi Selesai</li>
+                            <li>Simpan Struk Pembayaran</li>
+                        </ol>
                     </div>
+
                     <div id="alfa" class="content-section">
                         <h4>Pembayaran melalui Gerai Alfamart</h4>
                         <ol>
@@ -331,17 +372,50 @@
                             <li>Simpan struk pembayaran</li>
                         </ol>
                     </div>
-                    <div id="link" class="content-section">
-                    <h4>Pembayaran melalui LinkAja</h4>
+                    <div id="mobile" class="content-section">
+                        <h4>Pembayaran melalui PLN Mobile</h4>
 
+                        <p><strong>PLN Mobile – OVO/Gopay/LinkAja</strong></p>
+                        <ol>
+                            <li>Buka Aplikasi PLN Mobile</li>
+                            <li>Pembayaran melalui Gopay, OVO, dan LinkAja dapat dilakukan untuk pendaftaran baru maupun tagihan bulanan ICONNET hanya pada aplikasi PLN Mobile</li>
+                            <li>Pilih Menu <strong>“Internet”</strong></li>
+                            <li>Pilih <strong>“Koneksi Saya”</strong> (klik pada bagian Nama Pelanggan)</li>
+                            <li>Pilih <strong>“Bayar”</strong></li>
+                            <li>Pilih <strong>“Metode Pembayaran”</strong>: Gopay / OVO / LinkAja</li>
+                            <li>Lanjutkan transaksi sesuai tahap aplikasi masing-masing</li>
+                            <li>Transaksi Selesai</li>
+                        </ol>
+                    </div>
+                    <div id="link" class="content-section">
+                        <h4>Pembayaran melalui LinkAja</h4>
+
+                        <ol>
+                            <li>Pastikan Anda sudah memiliki aplikasi <strong>LinkAja</strong> dengan saldo yang cukup</li>
+                            <li>Masukkan <strong>PIN</strong> aplikasi LinkAja</li>
+                            <li><strong>Biaya administrasi</strong> akan tertera pada aplikasi</li>
+                        </ol>
                     </div>
                     <div id="ovo" class="content-section">
-                    <h4>Pembayaran melalui OVO</h4>
+                        <h4>Pembayaran melalui OVO</h4>
 
+                        <ol>
+                            <li>Masukkan <strong>Nomor Handphone</strong> yang teregistrasi pada OVO</li>
+                            <li>Pastikan Anda sudah <strong>login</strong> ke aplikasi OVO</li>
+                            <li>Pembayaran dengan OVO akan <strong>kadaluarsa dalam 55 detik</strong> setelah Anda klik “Konfirmasi”</li>
+                            <li>Buka <strong>notifikasi OVO</strong> untuk melakukan pembayaran</li>
+                            <li>Pilih cara pembayaran dengan <strong>OVO Cash</strong> atau <strong>OVO Point</strong> atau kombinasi keduanya, kemudian klik “<strong>Bayar</strong>”</li>
+                            <li><strong>Biaya administrasi</strong> tertera pada aplikasi</li>
+                        </ol>
                     </div>
                     <div id="gopay" class="content-section">
-                    <h4>Pembayaran melalui Gopay</h4>
+                        <h4>Pembayaran melalui Gopay</h4>
 
+                        <ol>
+                            <li>Pastikan Anda sudah memiliki aplikasi <strong>Gojek</strong> dengan saldo yang cukup</li>
+                            <li>Masukkan <strong>PIN</strong> Aplikasi Gojek</li>
+                            <li><strong>Biaya administrasi</strong> tertera pada aplikasi</li>
+                        </ol>
                     </div>
                 </div>
             </div>
