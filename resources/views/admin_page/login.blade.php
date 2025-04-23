@@ -164,7 +164,7 @@
                     </form>
                     <div class="text-link">
                         Belum memiliki akun? <a href="{{ route('register') }}">Daftar sekarang</a><br>
-                        <a href="#">Lupa Password?</a>
+                        <a href="password">Lupa Password?</a>
                     </div>
                 </div>
             </div>
