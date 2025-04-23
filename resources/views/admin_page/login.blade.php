@@ -7,6 +7,7 @@
     <title>Iconnet</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -28,108 +29,7 @@
             align-items: center;
         }
 
-        .top-banner,
-        .bottom-banner {
-            width: 100%;
-        }
-
-        .top-banner img,
-        .bottom-banner img {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin: 0;
-            padding: 0;
-        }
-
-        .login-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .login-wrapper {
-            width: 100%;
-            max-width: 400px;
-            padding: 30px;
-            border-radius: 12px;
-            background-color: #ffffff;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
-
-        .logo {
-            max-width: 200px;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-
-        .input-box {
-            width: 100%;
-            padding: 12px 16px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .login-btn {
-            width: 100%;
-            padding: 12px;
-            background-color: #002f6c;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .login-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .text-link {
-            margin-top: 16px;
-            font-size: 13px;
-        }
-
-        .text-link a {
-            color: #0056b3;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 11px;
-            color: #888;
-            text-align: center;
-        }
-
-        .footer p {
-            margin-bottom: 4px;
-        }
-
-        .footer-logo {
-            max-width: 80px;
-            margin: 10px auto;
-        }
-
-        .login-section {
-            margin: 33px 0;
-            /* Atur sesuai kebutuhan */
-            width: 100%;
-        }
+       
     </style>
 </head>
 

@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Log extends Model
 {
-    public $timestamps = false;
-    protected $fillable = ['activity', 'user', 'created_at'];
+    public $timestamps = false; // karena kita hanya punya `created_at`
+    
+    protected $fillable = [
+        'activity',
+        'user',
+        'created_at',
+    ];
 }
