@@ -55,8 +55,6 @@
                     </div>
                 </div>
                 @endforeach
-
-
             </div>
         </div>
     </section>
@@ -73,6 +71,19 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    // Track current page visit
+    fetch("{{ route('track.visit') }}", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
+        body: JSON.stringify({
+            page: window.location.pathname
+        })
+    });
+</script>
 </body>
 
 </html>

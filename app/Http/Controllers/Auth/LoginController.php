@@ -15,7 +15,7 @@ class LoginController extends Controller
             return redirect('/dashboard');
         }
 
-        return view('auth.login');
+        return view('admin_page.login');
     }
 
     public function login(Request $request)

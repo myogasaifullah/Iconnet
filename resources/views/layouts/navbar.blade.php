@@ -1,3 +1,14 @@
+@php
+    if (!request()->is('admin*')) {
+        \App\Models\Visit::updateOrCreate([
+            'page' => request()->path(),
+            'visited_at' => now()->format('Y-m-d H:00:00')
+        ], [
+            'ip_address' => request()->ip(),
+            'user_agent' => request()->userAgent()
+        ]);
+    }
+@endphp
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top border-bottom">
     <div class="container px-4 px-md-5">
         <!-- Logo dan Nama Brand -->

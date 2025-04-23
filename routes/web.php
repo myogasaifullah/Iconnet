@@ -9,8 +9,9 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
+use App\Http\Controllers\VisitController;
 
-
+Route::post('/track-visit', [DashboardController::class, 'trackVisit'])->name('track.visit');
 Route::middleware('guest')->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('/register', [RegisteredUserController::class, 'store']);

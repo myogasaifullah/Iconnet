@@ -352,7 +352,24 @@
             });
         }
     </script>
-
+@unless(request()->is('admin*'))
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/track-visit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                page: window.location.pathname,
+                screen_width: window.screen.width,
+                referrer: document.referrer
+            })
+        });
+    });
+</script>
+@endunless
 </body>
 
 </html>

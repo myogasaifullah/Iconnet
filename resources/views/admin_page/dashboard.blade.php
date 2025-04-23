@@ -13,6 +13,17 @@
       <!-- Favicon-->
       <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+    .chart-container {
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+    .card-body canvas {
+        width: 100% !important;
+        height: 300px !important;
+    }
+</style>
 </head>
 
 <body class="sb-nav-fixed">
@@ -65,25 +76,29 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Area Chart Example
-                                </div>
-                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Bar Chart Example
-                                </div>
-                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="col-xl-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-area me-1"></i>
+                Kunjungan 7 Hari Terakhir
+            </div>
+            <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="40"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-bar me-1"></i>
+                5 Halaman Paling Sering Dikunjungi
+            </div>
+            <div class="card-body">
+                <canvas id="myBarChart" width="100%" height="40"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
@@ -131,110 +146,129 @@
     <!-- <script src="assets/demo/chart-bar-demo.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Area Chart
-        const visitDates = @json($visitData->pluck('date')->map(function($date) {
-            return \Carbon\Carbon::parse($date)->format('M d');
-        }));
-        const visitCounts = @json($visitData->pluck('total'));
-
-        const ctxArea = document.getElementById("myAreaChart").getContext('2d');
-        new Chart(ctxArea, {
-            type: 'line',
-            data: {
-                labels: visitDates,
-                datasets: [{
-                    label: "Daily Visits",
-                    data: visitCounts,
-                    backgroundColor: "rgba(78, 115, 223, 0.2)",
-                    borderColor: "rgba(78, 115, 223, 1)",
-                    borderWidth: 2,
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top'
-                    }
+    
+    @push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Area Chart
+    var ctxArea = document.getElementById("myAreaChart");
+    var myAreaChart = new Chart(ctxArea, {
+        type: 'line',
+        data: {
+            labels: {!! json_encode($visitData->keys()->map(function($date) {
+                return \Carbon\Carbon::parse($date)->format('d M');
+            })) !!},
+            datasets: [{
+                label: "Kunjungan",
+                lineTension: 0.3,
+                backgroundColor: "rgba(2, 117, 216, 0.2)",
+                borderColor: "rgba(2, 117, 216, 1)",
+                pointRadius: 5,
+                pointBackgroundColor: "rgba(2, 117, 216, 1)",
+                pointBorderColor: "rgba(255,255,255,0.8)",
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(2, 117, 216, 1)",
+                pointHitRadius: 10,
+                pointBorderWidth: 2,
+                data: {!! json_encode($visitData->values()) !!},
+                fill: true
+            }],
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
                 },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Visits'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Date'
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.parsed.y + ' kunjungan';
                         }
                     }
                 }
-            }
-        });
-
-        // Bar Chart
-        const pageNames = @json($barData->pluck('page'));
-        const pageCounts = @json($barData->pluck('total'));
-
-        const ctxBar = document.getElementById("myBarChart").getContext('2d');
-        new Chart(ctxBar, {
-            type: 'bar',
-            data: {
-                labels: pageNames,
-                datasets: [{
-                    label: "Page Visits",
-                    data: pageCounts,
-                    backgroundColor: [
-                        'rgba(54, 185, 204, 0.5)',
-                        'rgba(255, 99, 132, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(153, 102, 255, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(54, 185, 204, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
             },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        precision: 0
+                    },
+                    grid: {
+                        display: true
+                    }
+                },
+                x: {
+                    grid: {
                         display: false
                     }
+                }
+            }
+        }
+    });
+
+    // Bar Chart
+    var ctxBar = document.getElementById("myBarChart");
+    var myBarChart = new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+            labels: {!! json_encode($barData->keys()->map(function($page) {
+                return str_replace('/', '', $page); // Membersihkan path
+            })) !!},
+            datasets: [{
+                label: "Total Kunjungan",
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1,
+                data: {!! json_encode($barData->values()) !!},
+            }],
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
                 },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Number of Visits'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Page'
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.parsed.y + ' kunjungan';
                         }
                     }
                 }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        precision: 0
+                    },
+                    grid: {
+                        display: true
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
             }
-        });
+        }
     });
 </script>
+@endpush
 </body>
 
 </html>

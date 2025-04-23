@@ -9,8 +9,6 @@ class LogActivity
 {
     public static function addToLog($activity)
     {
-        dd('LogActivity called!');
-
         Log::create([
             'activity' => $activity,
             'user' => Auth::check() ? Auth::user()->name : 'Guest',

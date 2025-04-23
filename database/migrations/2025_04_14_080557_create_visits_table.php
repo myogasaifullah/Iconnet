@@ -14,7 +14,12 @@ return new class extends Migration
         Schema::create('visits', function (Blueprint $table) {
             $table->id();
             $table->string('page');
+            $table->string('ip_address')->nullable();
+            $table->text('user_agent')->nullable();
+            $table->json('meta')->nullable();
             $table->timestamp('visited_at')->useCurrent();
+            
+            $table->index(['page', 'visited_at']); // Untuk query yang lebih cepat
         });
     }
 
