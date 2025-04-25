@@ -11,23 +11,26 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
 use App\Http\Controllers\VisitController;
 
-Route::post('/track-visit', [DashboardController::class, 'trackVisit'])->name('track.visit');
+// Guest Routes (Unauthenticated users only)
 Route::middleware('guest')->group(function () {
+    // Registration Routes
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('/register', [RegisteredUserController::class, 'store']);
-});
-
-Route::middleware(['guest'])->group(function () {
+    
+    // Login Routes
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
 });
 
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-
-Route::middleware(['auth'])->group(function () {
+// Authenticated Routes
+Route::middleware('auth')->group(function () {
+    // Logout
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+    
+    // Dashboard
     Route::get('/dashboard', function () {
         return view('admin_page.dashboard');
-    });
+    })->name('dashboard');
 });
 
 Route::prefix('banner')->name('banner.')->group(function () {
@@ -37,6 +40,8 @@ Route::prefix('banner')->name('banner.')->group(function () {
     Route::put('/{id}', [BannerController::class, 'update'])->name('update');
     Route::delete('/{id}', [BannerController::class, 'destroy'])->name('destroy');
 });
+
+Route::post('/track-visit', [DashboardController::class, 'trackVisit'])->name('track.visit');
 
 // Route untuk halaman admin promo
 Route::prefix('produk_promo')->name('promo.')->group(function () {
