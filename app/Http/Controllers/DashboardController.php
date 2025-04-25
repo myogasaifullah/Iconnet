@@ -15,46 +15,46 @@ class DashboardController extends Controller
         $visitData = $this->getVisitDataLast7Days();
         $barData = $this->getTop5Pages();
         $logs = Log::orderBy('created_at', 'desc')->limit(10)->get();
-    
+
         return view('admin_page.dashboard', compact('visitData', 'barData', 'logs'));
     }
-    
+
 
     protected function getVisitDataLast7Days()
-{
-    $startDate = Carbon::now()->subDays(6)->startOfDay(); // 6 hari + hari ini = 7 hari
-    $endDate = Carbon::now()->endOfDay();
+    {
+        $startDate = Carbon::now()->subDays(6)->startOfDay(); // 6 hari + hari ini = 7 hari
+        $endDate = Carbon::now()->endOfDay();
 
-    $visits = Visit::select(
+        $visits = Visit::select(
             DB::raw('DATE(visited_at) as date'),
             DB::raw('COUNT(*) as total')
         )
-        ->whereBetween('visited_at', [$startDate, $endDate])
-        ->groupBy('date')
-        ->orderBy('date')
-        ->get()
-        ->keyBy('date');
+            ->whereBetween('visited_at', [$startDate, $endDate])
+            ->groupBy('date')
+            ->orderBy('date')
+            ->get()
+            ->keyBy('date');
 
-    $dateRange = collect();
-    for ($date = $startDate->copy(); $date->lte($endDate); $date->addDay()) {
-        $dateString = $date->format('Y-m-d');
-        $dateRange->push([
-            'date' => $dateString,
-            'total' => $visits->has($dateString) ? $visits[$dateString]->total : 0
-        ]);
+        $dateRange = collect();
+        for ($date = $startDate->copy(); $date->lte($endDate); $date->addDay()) {
+            $dateString = $date->format('Y-m-d');
+            $dateRange->push([
+                'date' => $dateString,
+                'total' => $visits->has($dateString) ? $visits[$dateString]->total : 0
+            ]);
+        }
+
+        return $dateRange;
     }
 
-    return $dateRange;
-}
-
-protected function getTop5Pages()
-{
-    return Visit::select('page', DB::raw('COUNT(*) as total'))
-        ->groupBy('page')
-        ->orderByDesc('total')
-        ->limit(5)
-        ->get();
-}
+    protected function getTop5Pages()
+    {
+        return Visit::select('page', DB::raw('COUNT(*) as total'))
+            ->groupBy('page')
+            ->orderByDesc('total')
+            ->limit(5)
+            ->get();
+    }
 
     public function trackVisit(Request $request)
     {

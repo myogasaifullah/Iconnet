@@ -11077,36 +11077,45 @@ body {
 .sb-sidenav-dark .sb-sidenav-footer {
   background-color: #343a40;
 }
-
 .sb-sidenav-light {
-  background-color: #f8f9fa;
+  background-color: #ffffff; /* ubah dari #f8f9fa menjadi putih murni */
   color: #212529;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .sb-sidenav-menu-heading {
   color: #adb5bd;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link {
   color: #212529;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link .sb-nav-link-icon {
-  color: #adb5bd;
+  color: #6c757d; /* warna abu gelap agar lebih kontras di putih */
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link .sb-sidenav-collapse-arrow {
-  color: #adb5bd;
+  color: #6c757d;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link:hover {
   color: #0d6efd;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active {
   color: #0d6efd;
 }
+
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #0d6efd;
 }
-.sb-sidenav-light .sb-sidenav-footer {
-  background-color: #e9ecef;
-}
 
+.sb-sidenav-light .sb-sidenav-footer {
+  background-color: #ffffff; /* footer putih juga */
+}
+.sb-sidenav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
 .datatable-wrapper .datatable-container {
   font-size: 0.875rem;
 }
@@ -11946,4 +11955,25 @@ p {
 .footer-logo {
     max-width: 80px;
     margin: 10px auto;
+}
+
+/* password  */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #6c757d;
 }

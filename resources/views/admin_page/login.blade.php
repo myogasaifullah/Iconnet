@@ -22,14 +22,27 @@
             width: 100%;
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
-            background-color:rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-       
+        .login-logo {
+            margin-bottom: 20px;
+            max-width: 183px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 12px;
+            top: 40%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -45,7 +58,7 @@
             <div class="left-section">
                 <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Logo_PLN.svg/2560px-Logo_PLN.svg.png" alt="PLN Icon Plus" class="footer-logo" /> -->
                 <div class="login-wrapper">
-                    <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Favicon-Iconnet-1024x1024-1.png" alt="ICONNET Logo" class="logo">
+                    <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Favicon-Iconnet-1024x1024-1.png" alt="ICONNET Logo" class="login-logo">
                     <div class="title">Semua Makin Mudah</div>
 
                     @if ($errors->any())
@@ -59,7 +72,10 @@
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
                         <input type="email" name="email" placeholder="Email" class="input-box" required value="{{ old('email') }}">
-                        <input type="password" name="password" placeholder="Password" class="input-box" required>
+                        <div class="password-wrapper">
+                            <input type="password" name="password" id="password" placeholder="Password" class="input-box" required>
+                            <img src="assets/show.png" class="toggle-password" onclick="togglePassword('password', this)">
+                        </div>
                         <button type="submit" class="login-btn">Login</button>
                     </form>
                     <div class="text-link">
@@ -83,6 +99,15 @@
     <div class="bottom-banner">
         <img src="assets/bottom.png" alt="Bottom Banner">
     </div>
+    <script>
+        function togglePassword(element) {
+            const input = element.previousElementSibling;
+            const isHidden = input.type === "password";
+            input.type = isHidden ? "text" : "password";
+            element.src = isHidden ? "assets/show.png" : "assets/hide.png";
+        }
+    </script>
+
 </body>
 
 </html>

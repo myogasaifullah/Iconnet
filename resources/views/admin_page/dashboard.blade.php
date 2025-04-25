@@ -196,7 +196,7 @@ const visitCounts = @json($visitData->pluck('total'));
 
         // Bar Chart
         const pageNames = @json($barData->pluck('page'));
-const pageCounts = @json($barData->pluck('total'));
+        const pageCounts = @json($barData->pluck('total'));
 
         const ctxBar = document.getElementById("myBarChart").getContext('2d');
         new Chart(ctxBar, {
