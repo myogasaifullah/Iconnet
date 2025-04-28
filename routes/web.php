@@ -9,7 +9,17 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\VisitController;
+
+Route::middleware('auth')->group(function () {
+    Route::get('/users', [UserController::class, 'index'])->name('users');
+    Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
+    Route::post('/users', [UserController::class, 'store'])->name('users.store');
+    Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
+    Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
+    Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+});
 
 // Guest Routes (Unauthenticated users only)
 Route::middleware('guest')->group(function () {
@@ -87,3 +97,4 @@ Route::get('/password', fn() => view('admin_page/password'))->name('password');
 Route::get('/login', fn() => view('admin_page/login'))->name('login');
 Route::get('/charts', fn() => view('admin_page/charts'))->name('charts');
 Route::get('/tables', fn() => view('admin_page/tables'))->name('tables');
+Route::get('/verfikasi', fn() => view('admin_page/verifikasi'))->name('verifikasi');

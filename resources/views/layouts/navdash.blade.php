@@ -28,7 +28,12 @@
                 <li>
                     <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="{{ route('login') }}">Logout</a></li>
+                <li>
+    <form action="{{ route('logout') }}" method="POST" onsubmit="return confirm('Yakin ingin logout?');">
+        @csrf
+        <button type="submit" class="dropdown-item">Logout</button>
+    </form>
+</li>
             </ul>
         </li>
     </ul>
