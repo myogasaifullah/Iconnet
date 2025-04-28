@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Helpers\LogActivity;
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
@@ -41,6 +42,15 @@ class LoginController extends Controller
         ]);
 
         if (Auth::attempt($credentials, $request->boolean('remember'))) {
+            // Cek apakah user sudah diverifikasi
+            $user = Auth::user();
+            if (!$user->is_verified) {
+                Auth::logout();
+                return back()->withErrors([
+                    'email' => 'Akun Anda belum diverifikasi oleh admin.',
+                ]);
+            }
+
             $request->session()->regenerate();
             RateLimiter::clear($throttleKey);
 
@@ -77,5 +87,28 @@ class LoginController extends Controller
     protected function throttleKey(Request $request): string
     {
         return mb_strtolower($request->input('email')) . '|' . $request->ip();
+    }
+
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        $user = User::where('email', $request->email)->first();
+
+        // Cek apakah user ada dan sudah terverifikasi
+        if ($user && !$user->is_verified) {
+            return back()->withErrors([
+                'email' => 'Akun Anda belum diverifikasi oleh admin.',
+            ]);
+        }
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('dashboard');
+        }
+
+        return back()->withErrors([
+            'email' => 'Email atau password salah.',
+        ]);
     }
 }

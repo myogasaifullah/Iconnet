@@ -74,7 +74,7 @@
                     <div class="collapse" id="collapseUsers" aria-labelledby="headingUsers" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="{{ route('users') }}">Users</a>
-                            <a class="nav-link" href="{{ route('verifikasi') }}">Verifikasi</a>
+                            <a class="nav-link" href="{{ route('verifikasi.index') }}">Verifikasi</a>
                         </nav>
                     </div>
                     <!-- <div class="sb-sidenav-menu-heading">Users</div>

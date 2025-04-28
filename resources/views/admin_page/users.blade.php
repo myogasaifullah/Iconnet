@@ -50,6 +50,7 @@
                                         <th>Nama</th>
                                         <th>Email</th>
                                         <th>Tanggal Daftar</th>
+                                        <th>Status Verifikasi</th> <!-- Kolom status verifikasi -->
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -61,12 +62,20 @@
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->created_at->format('d M Y') }}</td>
                                         <td>
-                                            <button 
-                                                class="btn btn-sm btn-warning btn-edit" 
-                                                data-id="{{ $user->id }}" 
-                                                data-name="{{ $user->name }}" 
+                                            <!-- Menampilkan status verifikasi -->
+                                            @if ($user->is_verified)
+                                            <span class="badge bg-success">Terverifikasi</span>
+                                            @else
+                                            <span class="badge bg-danger">Belum Terverifikasi</span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <button
+                                                class="btn btn-sm btn-warning btn-edit"
+                                                data-id="{{ $user->id }}"
+                                                data-name="{{ $user->name }}"
                                                 data-email="{{ $user->email }}"
-                                                data-bs-toggle="modal" 
+                                                data-bs-toggle="modal"
                                                 data-bs-target="#modalEditUser">
                                                 Edit
                                             </button>
@@ -168,7 +177,7 @@
     <script>
         // Script untuk mengisi data ke modal edit
         document.querySelectorAll('.btn-edit').forEach(button => {
-            button.addEventListener('click', function () {
+            button.addEventListener('click', function() {
                 const id = this.getAttribute('data-id');
                 const name = this.getAttribute('data-name');
                 const email = this.getAttribute('data-email');

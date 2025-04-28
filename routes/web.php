@@ -10,7 +10,11 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PromoLandingController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VerifikasiUserController;
 use App\Http\Controllers\VisitController;
+
+Route::get('/verifikasi-user', [VerifikasiUserController::class, 'index'])->name('verifikasi.index');
+Route::post('/verifikasi-user/{id}', [VerifikasiUserController::class, 'verify'])->name('verifikasi.verify');
 
 Route::middleware('auth')->group(function () {
     Route::get('/users', [UserController::class, 'index'])->name('users');
@@ -97,4 +101,4 @@ Route::get('/password', fn() => view('admin_page/password'))->name('password');
 Route::get('/login', fn() => view('admin_page/login'))->name('login');
 Route::get('/charts', fn() => view('admin_page/charts'))->name('charts');
 Route::get('/tables', fn() => view('admin_page/tables'))->name('tables');
-Route::get('/verfikasi', fn() => view('admin_page/verifikasi'))->name('verifikasi');
+

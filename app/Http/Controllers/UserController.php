@@ -71,4 +71,5 @@ class UserController extends Controller
 
         return redirect()->route('users')->with('success', 'User berhasil dihapus.');
     }
+    
 }
