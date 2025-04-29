@@ -53,8 +53,8 @@
         }
 
         .register-logo {
-            margin-bottom: 20px;
-            max-width: 63px;
+            margin-bottom: 1px;
+            max-width: 50px;
         }
 
         .title {
@@ -87,7 +87,7 @@
         .toggle-password {
             position: absolute;
             right: 12px;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
             cursor: pointer;
             width: 20px;

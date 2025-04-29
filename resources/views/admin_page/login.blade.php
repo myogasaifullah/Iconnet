@@ -74,7 +74,7 @@
                         <input type="email" name="email" placeholder="Email" class="input-box" required value="{{ old('email') }}">
                         <div class="password-wrapper">
                             <input type="password" name="password" id="password" placeholder="Password" class="input-box" required>
-                            <img src="assets/show.png" class="toggle-password" onclick="togglePassword('password', this)">
+                            <img src="assets/show.png" class="toggle-password" onclick="togglePassword(this)">
                         </div>
                         <button type="submit" class="login-btn">Login</button>
                     </form>
@@ -100,13 +100,17 @@
         <img src="assets/bottom.png" alt="Bottom Banner">
     </div>
     <script>
-        function togglePassword(element) {
-            const input = element.previousElementSibling;
-            const isHidden = input.type === "password";
-            input.type = isHidden ? "text" : "password";
-            element.src = isHidden ? "assets/show.png" : "assets/hide.png";
+    function togglePassword(icon) {
+        const passwordInput = icon.previousElementSibling;
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.src = "assets/hide.png"; // Ganti dengan ikon 'hide'
+        } else {
+            passwordInput.type = "password";
+            icon.src = "assets/show.png"; // Ganti dengan ikon 'show'
         }
-    </script>
+    }
+</script>
 
 </body>
 

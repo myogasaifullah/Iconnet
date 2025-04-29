@@ -33,9 +33,13 @@
                         <i class="bi bi-whatsapp me-2 text-white"></i>
                         <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-decoration-none text-white">0813-9000-6280</a>
                     </li>
-                    <li>
+                    <li class="mb-2">
                         <i class="bi bi-envelope-paper-fill me-2 text-white"></i>
                         <a href="https://www.instagram.com/iconnetlampung/" class="text-decoration-none text-white">iconnetlampung@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram me-2 text-white"></i>
+                        <a href="https://www.instagram.com/iconnetlampung/" class="text-decoration-none text-white">@iconnetlampung</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +54,8 @@
                     <li><a href="/keunggulan">Keunggulan</a></li>
                     <li><a href="/promo">Promo</a></li>
                     <li><a href="/paket">Paket</a></li>
+                    <li><a href="/panduan">Panduan</a></li>
+                    <li><a href="https://plniconplus.co.id/">PLN Icon Plus</a></li>
                 </ul>
             </div>
 
@@ -60,6 +66,7 @@
                     <li><a href="/jangkauan">Jangkauan</a></li>
                     <li><a href="/kontak">Kontak</a></li>
                     <li><a href="/myicon">MyIcon+</a></li>
+                    <li><a href="/mobile">PLN Mobile</a></li>
                     <li><a href="/syarat">Syarat & Ketentuan</a></li>
                     <li><a href="/kebijakan">Kebijakan & Privasi</a></li>
                     <li><a href="/pembayaran">Metode Pembayaran</a></li>

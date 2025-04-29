@@ -281,6 +281,38 @@
             <h2 class="main-heading">Sejarah Iconnet</h2>
 
             <div class="timeline ">
+            <div class="timeline-item left" data-aos="fade-right">>
+                    <div class="timeline-date">2000</div>
+                    <div class="timeline-content card">
+                        <h3>Established</h3>
+                        <p><strong>PT Indonesia Comnets Plus</strong>PT Indonesia Comnets Plus berdiri.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">>
+                    <div class="timeline-date">2005</div>
+                    <div class="timeline-content card">
+                        <h3>Izin</h3>
+                        <p>Memperoleh izin prinsip Internet Telephony untuk keperluan publik.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">>
+                    <div class="timeline-date">2007</div>
+                    <div class="timeline-content card">
+                        <h3>Penyelenggara Jasa</h3>
+                        <p><strong>PT Indonesia Comnets Plus</strong> Memperoleh izin prinsip Penyelenggara Jasa Interkoneksi Internet (NAP) dan penyelenggara Jasa Internet Telephone Keperluan Publik.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">>
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content card">
+                        <h3>Lisensi</h3>
+                        <p>PLN Icon Plus memiliki lisensi Jasa Telekomunikasi Layanan Call Center dan Launching Aplikasi Layanan Pelanggan New PLN Mobile .</p>
+                    </div>
+                </div>
+
                 <div class="timeline-item left" data-aos="fade-right">>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content card">
