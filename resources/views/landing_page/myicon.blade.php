@@ -18,14 +18,16 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-    .feature-text h2 {
-        color: rgb(0, 128, 128); /* Tosca */
-    }
+        .feature-text h2 {
+            color: rgb(0, 128, 128);
+            /* Tosca */
+        }
 
-    .feature-text b {
-        color: rgb(0, 128, 128); /* Tosca untuk teks bold */
-    }
-</style>
+        .feature-text b {
+            color: rgb(0, 128, 128);
+            /* Tosca untuk teks bold */
+        }
+    </style>
 
 </head>
 
@@ -68,58 +70,16 @@
                 <!-- Feature 1 -->
                 <div class="row align-items-center feature-block">
                     <div class="col-md-6 text-center">
-                        <img src="https://layanan.pln.co.id/_nuxt/img/section2-img1.bafa863.png" alt="Kelistrikan">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="feature-text">
-                            <h2>01. Kelistrikan</h2>
-                            <h6>Kamu dapat melakukan <b>Pasang Baru</b> dan pilih variasi daya hingga pilihan prabayar atau pascabayar, kamu juga bisa coba fitur <b>Ubah Daya</b> untuk tambah daya biar listrik kamu gak jeglek, selain itu kalau kamu ada ngadain acara besar di rumah bisa mengajukan <b>Penyambungan Sementara</b> lewat PLN Mobile.</h6>
-                        </div>
+                        <img src="assets/12pro.png" alt="Kelistrikan">
                     </div>
                 </div>
-
-                <!-- Feature 2 -->
-                <div class="row align-items-center feature-block flex-md-row-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="https://layanan.pln.co.id/_nuxt/img/section2-img2.d3114cc.png" alt="Internet">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="feature-text">
-                            <h2>02. Internet</h2>
-                            <h6>Dengan pesatnya perkembangan teknologi mempengaruhi berbagai aspek kehidupan kita yang semakin bergantung pada <b>Internet. Kualitas dan kecepatan</b> yang terus bertambah menjadi kebutuhan baik di rumah, kantor, dan banyak tempat lainnya membuat kami memberikan <b>layanan terbaik</b> untuk anda.
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
                 <div class="row align-items-center feature-block">
                     <div class="col-md-6 text-center">
-                        <img src="https://layanan.pln.co.id/_nuxt/img/section2-img3.7420bb8.png" alt="Perbaikan">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="feature-text">
-                            <h2>03. Perbaikan</h2>
-                            <h6>Memudahkan pelanggan dalam memenuhi <b>kebutuhan instalasi</b> listrik di rumah, kantor, atau gedung ketika mengalami gangguan. Anda akan mendapatkan notifikasi work order dan dapat melakukan <b>Tracking status order.</b> Petugas PLN akan datang sesuai jadwal, melakukan pengecekan dan setelah selesai, Anda dapat melakukan approval pekerjaan dan lakukan pembayaran.
-                            </h6>
-                        </div>
+                        <img src="assets/15pro.png" alt="Kelistrikan">
                     </div>
                 </div>
 
-                <!-- Feature 4 -->
-                <div class="row align-items-center feature-block flex-md-row-reverse">
-                    <div class="col-md-6 text-center">
-                        <img src="https://layanan.pln.co.id/_nuxt/img/section2-img4.7f6e57f.png" alt="SPKLU">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="feature-text">
-                            <h2>04. SPKLU</h2>
-                            <h6>Kalau punya kendaraan listrik ngisi dayanya di mana ya? Di sini nih. Nama tempatnya SPKLU atau Stasiun Pengisian <b>Kendaraan Listrik</b> Umum. Nah untuk mengetahui lokasi isi daya kendaraan listrik kamu yuk, cek fitur <b>Charge.In</b> di PLN Mobile! Kamu akan menemukan lokasi SPKLU terdekat yang ada di sekitar lokasi kamu. <b>Download sekarang!</b></h6>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                 </div>
         </section>
     </main>
 
