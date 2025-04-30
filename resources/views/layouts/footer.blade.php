@@ -22,11 +22,11 @@
             </div>
 
             <!-- Alamat -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <h5 class="fw-bold mb-3 text-white">Alamat</h5>
                 <ul class="list-unstyled small">
                     <li class="mb-2">
-                        <i class="bi bi-geo-alt-fill me-2 text-white"></i>
+                        <i class="bi bi-geo-alt me-2 text-white"></i>
                         <a href="https://maps.app.goo.gl/uxwKkCkEXTuZWBaG8" class="text-decoration-none text-white">Jl. Gn. Rajabasa Raya No.16, Way Halim, Bandar Lampung</a>
                     </li>
                     <li class="mb-2">
@@ -34,19 +34,27 @@
                         <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-decoration-none text-white">0813-9000-6280</a>
                     </li>
                     <li class="mb-2">
-                        <i class="bi bi-envelope-paper-fill me-2 text-white"></i>
+                        <i class="bi bi-envelope-paper me-2 text-white"></i>
                         <a href="https://www.instagram.com/iconnetlampung/" class="text-decoration-none text-white">iconnetlampung@gmail.com</a>
                     </li>
-                    <li>
+                    <li class="mb-2">
+                        <i class="bi bi-headphones me-2 text-white"></i>
+                        <a href="https://api.whatsapp.com/send?phone=628117381899" class="text-decoration-none text-white">150678</a>
+                    </li>
+                    <li class="mb-2">
                         <i class="bi bi-instagram me-2 text-white"></i>
                         <a href="https://www.instagram.com/iconnetlampung/" class="text-decoration-none text-white">@iconnetlampung</a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-globe me-2 text-white"></i>
+                        <a href="https://iconnet.id/" class="text-decoration-none text-white">https://iconnet.id/</a>
                     </li>
                 </ul>
             </div>
 
 
             <!-- Tentang -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-2 col-md-6">
                 <h5 class="fw-bold mb-3 text-white">Fitur</h5>
                 <ul class="list-unstyled small footer-list">
                     <li><a href="/">Beranda</a></li>
