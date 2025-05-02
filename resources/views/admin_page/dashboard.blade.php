@@ -106,7 +106,7 @@
                             DataTable Example
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+<table id="datatablesSimple" class="datatable table table-bordered">
                                 <thead>
                                     <tr>
                                         <th>User</th>
@@ -131,7 +131,6 @@
                                     </tr>
                                     @endforeach
                                 </tbody>
-
                             </table>
                         </div>
                     </div>
@@ -140,6 +139,20 @@
             @include('layouts.footdash')
         </div>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const simpleDatatablesElement = document.getElementById("datatablesSimple");
+        if (simpleDatatablesElement) {
+            new simpleDatatables.DataTable(simpleDatatablesElement, {
+                searchable: true,
+                fixedHeight: false,
+                perPage: 10, // Jumlah baris per halaman
+                perPageSelect: [5, 10, 25, 50, 100]
+            });
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

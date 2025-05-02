@@ -32,10 +32,9 @@ Route::middleware('guest')->group(function () {
     Route::post('/register', [RegisteredUserController::class, 'store']);
     
     // Login Routes
-    // Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
 });
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); // Biarkan tetap di guest
 
 // Authenticated Routes
 Route::middleware('auth')->group(function () {
@@ -98,11 +97,10 @@ Route::get('/paket', [PaketController::class, 'landingPage'])->name('paket.landi
 // Admin page
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-// Admin page (dibatasi oleh auth)
-Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/register', fn() => view('admin_page/register'))->name('register');
-    Route::get('/password', fn() => view('admin_page/password'))->name('password');
-    Route::get('/charts', fn() => view('admin_page/charts'))->name('charts');
-    Route::get('/tables', fn() => view('admin_page/tables'))->name('tables');
-});
+// Route::get('/dashboard', fn() => view('admin_page/dashboard'))->name('dashboard');
+Route::get('/register', fn() => view('admin_page/register'))->name('register');
+Route::get('/password', fn() => view('admin_page/password'))->name('password');
+Route::get('/login', fn() => view('admin_page/login'))->name('login');
+Route::get('/charts', fn() => view('admin_page/charts'))->name('charts');
+Route::get('/tables', fn() => view('admin_page/tables'))->name('tables');
+

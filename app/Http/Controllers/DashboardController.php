@@ -19,7 +19,6 @@ class DashboardController extends Controller
         return view('admin_page.dashboard', compact('visitData', 'barData', 'logs'));
     }
 
-
     protected function getVisitDataLast7Days()
     {
         $startDate = Carbon::now()->subDays(6)->startOfDay(); // 6 hari + hari ini = 7 hari
