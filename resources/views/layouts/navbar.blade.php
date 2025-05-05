@@ -13,7 +13,7 @@
     <div class="container px-4 px-md-5">
         <!-- Logo dan Nama Brand -->
         <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Iconnet.png" alt="Logo" width="120" class="me-2">
+            <img src="assets/logo.png" alt="Logo" width="120" class="me-2">
             <!-- <span class="fw-bold text-primary fs-5">ICONNET</span> -->
         </a>
 

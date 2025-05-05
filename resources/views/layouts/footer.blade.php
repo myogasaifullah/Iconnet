@@ -13,10 +13,10 @@
                 </a>
                 <div class="d-flex align-items-center gap-3">
                     <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer" target="_blank">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/Logo-MyIcon.png" alt="MyIcon" width="50">
+                        <img src="assets/myicon.png" alt="MyIcon" width="50">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.icon.pln123" target="_blank">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/Logo-PLN-Mobile.png" alt="PLN Mobile" width="50">
+                        <img src="assets/pln.png" alt="PLN Mobile" width="50">
                     </a>
                 </div>
             </div>
