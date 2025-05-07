@@ -26,104 +26,104 @@
     @include('layouts.navbar')
 
     <section class="py-5 bg-light border-bottom">
-    <div class="container px-5">
-        <div class="row align-items-center g-5">
+        <div class="container px-5">
+            <div class="row align-items-center g-5">
 
-            <!-- Bagian Gambar -->
-            <div class="col-lg-6" data-aos="fade-right">
-                <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-3">
+                <!-- Bagian Gambar -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center gap-3">
 
-                    <!-- Gambar 1 -->
-                    <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/pexels-ketut-subiyanto-4473892.jpg"
-                            class="img-fluid rounded-4 shadow-sm hover-shadow mb-3"
-                            alt="Gambar 1" style="max-height: 400px;">
-                    </div>
+                        <!-- Gambar 1 -->
+                        <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="assets/ketut.jpg"
+                                class="img-fluid rounded-4 shadow-sm hover-shadow mb-3"
+                                alt="Gambar 1" style="max-height: 400px;">
+                        </div>
 
-                    <!-- Gambar 2 dan 3 -->
-                    <div class="d-flex flex-column gap-3">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/pexels-pavel-danilyuk-8640288.jpg"
-                            class="img-fluid rounded-4 shadow-sm hover-shadow"
-                            alt="Gambar 2" style="max-height: 190px;" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/rizki-yulian-jdqVf-HdF3Y-unsplash.jpg"
-                            class="img-fluid rounded-4 shadow-sm hover-shadow"
-                            alt="Gambar 3" style="max-height: 190px;" data-aos="zoom-in" data-aos-delay="300">
+                        <!-- Gambar 2 dan 3 -->
+                        <div class="d-flex flex-column gap-3">
+                            <img src="assets/pavel.jpg"
+                                class="img-fluid rounded-4 shadow-sm hover-shadow"
+                                alt="Gambar 2" style="max-height: 190px;" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="assets/rizky.jpg"
+                                class="img-fluid rounded-4 shadow-sm hover-shadow"
+                                alt="Gambar 3" style="max-height: 190px;" data-aos="zoom-in" data-aos-delay="300">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Bagian Konten -->
-            <div class="col-lg-6" data-aos="fade-left">
-                <h6 class="text-primary fw-semibold mb-2 text-uppercase small" data-aos="fade-up" data-aos-delay="100">Layanan Internet Broadband Super Cepat</h6>
-                <h2 class="fw-bold display-6 mb-4" data-aos="fade-up" data-aos-delay="200">Selamat Datang di ICONNET</h2>
+                <!-- Bagian Konten -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h6 class="text-primary fw-semibold mb-2 text-uppercase small" data-aos="fade-up" data-aos-delay="100">Layanan Internet Broadband Super Cepat</h6>
+                    <h2 class="fw-bold display-6 mb-4" data-aos="fade-up" data-aos-delay="200">Selamat Datang di ICONNET</h2>
 
-                <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="300">
-                    ICONNET adalah layanan Internet Broadband berbasis jaringan <strong>full fiber optic</strong> yang dirancang untuk memberikan pengalaman digital terbaik.
-                </p>
-                <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="400">
-                    Layanan ini merupakan hasil rebranding dari Stroomnet dan kini dikelola oleh <strong>PLN Icon Plus</strong>.
-                </p>
-                <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="500">
-                    ICONNET berkomitmen menyediakan internet yang <strong>andal, cepat, dan terjangkau</strong>.
-                </p>
+                    <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="300">
+                        ICONNET adalah layanan Internet Broadband berbasis jaringan <strong>full fiber optic</strong> yang dirancang untuk memberikan pengalaman digital terbaik.
+                    </p>
+                    <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="400">
+                        Layanan ini merupakan hasil rebranding dari Stroomnet dan kini dikelola oleh <strong>PLN Icon Plus</strong>.
+                    </p>
+                    <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="500">
+                        ICONNET berkomitmen menyediakan internet yang <strong>andal, cepat, dan terjangkau</strong>.
+                    </p>
 
-                <ul class="list-unstyled text-muted fs-6" data-aos="fade-up" data-aos-delay="600">
-                    <li>✔️ Jaringan <strong>fiber optic</strong> untuk koneksi internet stabil dan kecepatan tinggi.</li>
-                    <li>✔️ Pilihan bandwidth: 10, 20, 35, 50, hingga 100 Mbps, sesuai kebutuhan.</li>
-                    <li>✔️ Area layanan luas: Jabodetabek, Jawa, Bali, Sumatera, Kalimantan, dan Indonesia Timur.</li>
-                    <li>✔️ Mendukung digitalisasi UMKM, pendidikan daring, dan aktivitas kerja jarak jauh.</li>
-                    <li>✔️ Layanan pelanggan 24/7 dan instalasi profesional.</li>
-                </ul>
-            </div>
+                    <ul class="list-unstyled text-muted fs-6" data-aos="fade-up" data-aos-delay="600">
+                        <li>✔️ Jaringan <strong>fiber optic</strong> untuk koneksi internet stabil dan kecepatan tinggi.</li>
+                        <li>✔️ Pilihan bandwidth: 10, 20, 35, 50, hingga 100 Mbps, sesuai kebutuhan.</li>
+                        <li>✔️ Area layanan luas: Jabodetabek, Jawa, Bali, Sumatera, Kalimantan, dan Indonesia Timur.</li>
+                        <li>✔️ Mendukung digitalisasi UMKM, pendidikan daring, dan aktivitas kerja jarak jauh.</li>
+                        <li>✔️ Layanan pelanggan 24/7 dan instalasi profesional.</li>
+                    </ul>
+                </div>
 
-            <!-- Informasi Tambahan -->
-            <div class="mt-5" data-aos="fade-up" data-aos-delay="100">
-                <h5 class="fw-bold mb-3">Tentang ICONNET</h5>
-                <p class="text-muted fs-6">
-                    ICONNET adalah layanan internet broadband dari <strong>PLN Icon Plus</strong>.
-                </p>
+                <!-- Informasi Tambahan -->
+                <div class="mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="fw-bold mb-3">Tentang ICONNET</h5>
+                    <p class="text-muted fs-6">
+                        ICONNET adalah layanan internet broadband dari <strong>PLN Icon Plus</strong>.
+                    </p>
 
-                <h6 class="fw-semibold mt-4">Keunggulan ICONNET:</h6>
-                <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="200">
-                    <li><strong>Keandalan Tinggi:</strong> Stabil di berbagai kondisi cuaca.</li>
-                    <li><strong>Harga Terjangkau:</strong> Paket layanan fleksibel.</li>
-                    <li><strong>Tanpa Batasan Kuota:</strong> Internet unlimited.</li>
-                    <li><strong>Dukungan Teknologi:</strong> Terintegrasi dengan ekosistem digital PLN.</li>
-                </ul>
+                    <h6 class="fw-semibold mt-4">Keunggulan ICONNET:</h6>
+                    <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="200">
+                        <li><strong>Keandalan Tinggi:</strong> Stabil di berbagai kondisi cuaca.</li>
+                        <li><strong>Harga Terjangkau:</strong> Paket layanan fleksibel.</li>
+                        <li><strong>Tanpa Batasan Kuota:</strong> Internet unlimited.</li>
+                        <li><strong>Dukungan Teknologi:</strong> Terintegrasi dengan ekosistem digital PLN.</li>
+                    </ul>
 
-                <h6 class="fw-semibold mt-4">Paket Layanan:</h6>
-                <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="300">
-                    <li><strong>ICONNET 10 Mbps</strong> – Cocok untuk browsing ringan.</li>
-                    <li><strong>ICONNET 20 Mbps</strong> – Ideal untuk keluarga.</li>
-                    <li><strong>ICONNET 35 Mbps</strong> – Untuk belajar & bekerja dari rumah.</li>
-                    <li><strong>ICONNET 50 Mbps & 100 Mbps</strong> – Untuk gaming dan smart home.</li>
-                </ul>
+                    <h6 class="fw-semibold mt-4">Paket Layanan:</h6>
+                    <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="300">
+                        <li><strong>ICONNET 10 Mbps</strong> – Cocok untuk browsing ringan.</li>
+                        <li><strong>ICONNET 20 Mbps</strong> – Ideal untuk keluarga.</li>
+                        <li><strong>ICONNET 35 Mbps</strong> – Untuk belajar & bekerja dari rumah.</li>
+                        <li><strong>ICONNET 50 Mbps & 100 Mbps</strong> – Untuk gaming dan smart home.</li>
+                    </ul>
 
-                <h6 class="fw-semibold mt-4">Cakupan Layanan:</h6>
-                <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="400">
-                    ICONNET menjangkau lebih dari <strong>70% wilayah nasional</strong>.
-                </p>
+                    <h6 class="fw-semibold mt-4">Cakupan Layanan:</h6>
+                    <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="400">
+                        ICONNET menjangkau lebih dari <strong>70% wilayah nasional</strong>.
+                    </p>
 
-                <h6 class="fw-semibold mt-4">Penghargaan dan Prestasi:</h6>
-                <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="500">
-                    <li>🏆 <strong>Broadband Telecom Company of the Year</strong> - Asian Telecom Awards 2024.</li>
-                    <li>🏅 Pertumbuhan tercepat di Indonesia.</li>
-                    <li>📈 Mendukung program <strong>Smart City</strong>.</li>
-                </ul>
+                    <h6 class="fw-semibold mt-4">Penghargaan dan Prestasi:</h6>
+                    <ul class="text-muted fs-6" data-aos="fade-up" data-aos-delay="500">
+                        <li>🏆 <strong>Broadband Telecom Company of the Year</strong> - Asian Telecom Awards 2024.</li>
+                        <li>🏅 Pertumbuhan tercepat di Indonesia.</li>
+                        <li>📈 Mendukung program <strong>Smart City</strong>.</li>
+                    </ul>
 
-                <h6 class="fw-semibold mt-4">Cara Daftar Layanan:</h6>
-                <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="600">
-                    Daftar melalui <strong>PLN Mobile</strong> atau situs resmi
-                    <a href="https://iconnet.id" target="_blank">www.iconnet.id</a>.
-                </p>
+                    <h6 class="fw-semibold mt-4">Cara Daftar Layanan:</h6>
+                    <p class="text-muted fs-6" data-aos="fade-up" data-aos-delay="600">
+                        Daftar melalui <strong>PLN Mobile</strong> atau situs resmi
+                        <a href="https://iconnet.id" target="_blank">www.iconnet.id</a>.
+                    </p>
 
-                <p class="text-muted fs-6 mt-4" data-aos="fade-up" data-aos-delay="700">
-                    ICONNET akan terus mendukung konektivitas digital untuk masa depan Indonesia yang lebih cerdas dan terhubung.
-                </p>
+                    <p class="text-muted fs-6 mt-4" data-aos="fade-up" data-aos-delay="700">
+                        ICONNET akan terus mendukung konektivitas digital untuk masa depan Indonesia yang lebih cerdas dan terhubung.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -281,7 +281,7 @@
             <h2 class="main-heading">Sejarah Iconnet</h2>
 
             <div class="timeline ">
-            <div class="timeline-item left" data-aos="fade-right">>
+                <div class="timeline-item left" data-aos="fade-right">>
                     <div class="timeline-date">2000</div>
                     <div class="timeline-content card">
                         <h3>Established</h3>
