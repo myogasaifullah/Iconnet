@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Visit;
 use App\Models\Log;
+use App\Models\Paket;
+use App\Models\Promo;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -15,9 +17,28 @@ class DashboardController extends Controller
         $visitData = $this->getVisitDataLast7Days();
         $barData = $this->getTop5Pages();
         $logs = Log::orderBy('created_at', 'desc')->limit(10)->get();
-
-        return view('admin_page.dashboard', compact('visitData', 'barData', 'logs'));
+    
+        $totalKunjungan = Visit::count();
+        $totalPaket = Paket::count();
+        $totalPromo = Promo::count();
+    
+        $pageTerendah = Visit::select('page', DB::raw('COUNT(*) as total'))
+            ->groupBy('page')
+            ->orderBy('total', 'asc')
+            ->limit(1)
+            ->first();
+    
+        return view('admin_page.dashboard', compact(
+            'visitData',
+            'barData',
+            'logs',
+            'totalKunjungan',
+            'totalPaket',
+            'totalPromo',
+            'pageTerendah'
+        ));
     }
+    
 
     protected function getVisitDataLast7Days()
     {

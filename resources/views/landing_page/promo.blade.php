@@ -33,7 +33,7 @@
             justify-content: center;
             background-color: #f8f9fa;
         }
-        
+
         .promo-image {
             max-width: 100%;
             max-height: 400px;
@@ -42,30 +42,39 @@
             object-fit: contain;
             transition: transform 0.3s ease;
         }
-        
+
         .promo-card:hover .promo-image-container {
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .promo-card:hover .promo-image {
             transform: scale(1.03);
         }
-        
+
         /* Modal untuk preview gambar */
-        .modal-image {
-            max-width: 90vw;
+        /* Gambar dalam modal tetap di dalam batas modal */
+        .modal-body {
             max-height: 80vh;
-            width: auto;
-            height: auto;
+            overflow-y: auto;
+            text-align: center;
         }
-        
+
+        .modal-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 0.5rem;
+        }
+
+
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .promo-image {
                 max-height: 300px;
             }
         }
-        
+
         @media (max-width: 768px) {
             .promo-image {
                 max-height: 250px;
@@ -101,13 +110,14 @@
                         </div>
                         <!-- Gambar -->
                         <div class="w-full lg:w-1/2">
-                            <div class="promo-image-container" 
-                                 data-bs-toggle="modal" 
-                                 data-bs-target="#imageModal"
-                                 onclick="showImageModal('{{ asset('/' . $promo->gambar) }}', '{{ $promo->judul }}')">
-                                <img src="{{ asset('storage/' . $promo->gambar) }}" 
-                                     alt="{{ $promo->judul }}" 
-                                     class="promo-image">
+                            <div class="promo-image-container"
+                                role="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#imageModal"
+                                onclick="showImageModal('{{ asset('storage/' . $promo->gambar) }}', '{{ $promo->judul }}')">
+                                <img src="{{ asset('storage/' . $promo->gambar) }}"
+                                    alt="{{ $promo->judul }}"
+                                    class="promo-image">
                             </div>
                         </div>
                     </div>
@@ -135,6 +145,7 @@
         </div>
     </div>
 
+
     @include('layouts.footer')
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -155,13 +166,25 @@
             duration: 800,
             once: true,
         });
-        
-        // Fungsi untuk menampilkan gambar di modal
+
+        // // Fungsi untuk menampilkan gambar di modal
+        // function showImageModal(imageSrc, title) {
+        //     document.getElementById('modalImage').src = imageSrc;
+        //     document.getElementById('modalImage').alt = title;
+        //     document.getElementById('imageModalLabel').textContent = title;
+        // }
+    </script>
+    <script>
         function showImageModal(imageSrc, title) {
-            document.getElementById('modalImage').src = imageSrc;
-            document.getElementById('modalImage').alt = title;
-            document.getElementById('imageModalLabel').textContent = title;
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('imageModalLabel');
+
+            modalImage.src = imageSrc;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
         }
     </script>
+
 </body>
+
 </html>
