@@ -82,7 +82,7 @@
             </div>
 
             <!-- Copyright -->
-            <hr class="mt-5 border-white">
+            <hr class="mt-5 border-white border-4">
             <div class="text-center small text-white">
                 &copy; {{ date('Y') }} PT INDONESIA COMNETS PLUS. All Rights Reserved.
             </div>
