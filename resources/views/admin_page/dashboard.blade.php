@@ -26,7 +26,6 @@
         }
     </style>
 </head>
-
 <body class="sb-nav-fixed">
     @include('layouts.navdash')
     <div id="layoutSidenav">
