@@ -47,7 +47,36 @@ Route::middleware('auth')->group(function () {
     })->name('dashboard');
 });
 
-Route::prefix('banner')->name('banner.')->group(function () {
+Route::post('/track-visit', [DashboardController::class, 'trackVisit'])->name('track.visit');
+
+// Route::prefix('banner')->name('banner.')->group(function () {
+//     Route::get('/', [BannerController::class, 'index'])->name('index');
+//     Route::post('/', [BannerController::class, 'store'])->name('store');
+//     // Route::get('/{id}/edit', [BannerController::class, 'edit'])->name('edit');
+//     Route::put('/{id}', [BannerController::class, 'update'])->name('update');
+//     Route::delete('/{id}', [BannerController::class, 'destroy'])->name('destroy');
+// });
+
+// // Route untuk halaman admin promo
+// Route::prefix('produk_promo')->name('promo.')->group(function () {
+//     Route::get('/', [PromoController::class, 'index'])->name('index');
+//     Route::post('/', [PromoController::class, 'store'])->name('store');
+//     Route::put('/{promo}', [PromoController::class, 'update'])->name('update');
+//     Route::delete('/{promo}', [PromoController::class, 'destroy'])->name('destroy');
+// });
+
+// // Route untuk halaman admin paket
+// Route::prefix('produk_paket')->name('produk_paket.')->group(function () {
+//     Route::get('/', [PaketController::class, 'index'])->name('index');
+//     Route::get('/create', [PaketController::class, 'create'])->name('create');
+//     Route::post('/', [PaketController::class, 'store'])->name('store');
+//     Route::get('/{id}/edit', [PaketController::class, 'edit'])->name('edit');
+//     Route::put('/{id}', [PaketController::class, 'update'])->name('update');
+//     Route::delete('/{id}', [PaketController::class, 'destroy'])->name('destroy');
+// });
+
+// Route untuk halaman admin banner - HANYA untuk user yang login
+Route::middleware('auth')->prefix('banner')->name('banner.')->group(function () {
     Route::get('/', [BannerController::class, 'index'])->name('index');
     Route::post('/', [BannerController::class, 'store'])->name('store');
     // Route::get('/{id}/edit', [BannerController::class, 'edit'])->name('edit');
@@ -55,18 +84,16 @@ Route::prefix('banner')->name('banner.')->group(function () {
     Route::delete('/{id}', [BannerController::class, 'destroy'])->name('destroy');
 });
 
-Route::post('/track-visit', [DashboardController::class, 'trackVisit'])->name('track.visit');
-
-// Route untuk halaman admin promo
-Route::prefix('produk_promo')->name('promo.')->group(function () {
+// Route untuk halaman admin promo - HANYA untuk user yang login
+Route::middleware('auth')->prefix('produk_promo')->name('promo.')->group(function () {
     Route::get('/', [PromoController::class, 'index'])->name('index');
     Route::post('/', [PromoController::class, 'store'])->name('store');
     Route::put('/{promo}', [PromoController::class, 'update'])->name('update');
     Route::delete('/{promo}', [PromoController::class, 'destroy'])->name('destroy');
 });
 
-// Route untuk halaman admin paket
-Route::prefix('produk_paket')->name('produk_paket.')->group(function () {
+// Route untuk halaman admin paket - HANYA untuk user yang login
+Route::middleware('auth')->prefix('produk_paket')->name('produk_paket.')->group(function () {
     Route::get('/', [PaketController::class, 'index'])->name('index');
     Route::get('/create', [PaketController::class, 'create'])->name('create');
     Route::post('/', [PaketController::class, 'store'])->name('store');
@@ -95,7 +122,14 @@ Route::get('/', [LandingController::class, 'showLatestForLandingPage'])->name('l
 Route::get('/paket', [PaketController::class, 'landingPage'])->name('paket.landing');
 
 // Admin page
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::middleware('auth')->group(function () {
+    // Logout
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    // Dashboard - diproteksi
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 // Route::get('/dashboard', fn() => view('admin_page/dashboard'))->name('dashboard');
 Route::get('/register', fn() => view('admin_page/register'))->name('register');
