@@ -153,7 +153,7 @@
                 new simpleDatatables.DataTable(simpleDatatablesElement, {
                     searchable: true,
                     fixedHeight: false,
-                    perPage: 10, // Jumlah baris per halaman
+                    perPage: 5, // Jumlah baris per halaman
                     perPageSelect: [5, 10, 25, 50, 100]
                 });
             }
