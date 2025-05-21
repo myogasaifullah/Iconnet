@@ -56,7 +56,7 @@
             </div>
           </div>
           <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left">
-            <img class="img-fluid rounded" src="https://layanan.pln.co.id/_nuxt/img/img-new-section1.1dd0f97.png" alt="PLN Mobile" style="max-width: 80%;">
+            <img class="img-fluid rounded" src="assets/m1.png" alt="PLN Mobile" style="max-width: 80%;">
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <!-- Feature 1 -->
         <div class="row align-items-center feature-block mb-5">
           <div class="col-md-6 text-center" data-aos="fade-right">
-            <img src="https://layanan.pln.co.id/_nuxt/img/section2-img1.bafa863.png" alt="Kelistrikan" class="img-fluid">
+            <img src="assets/m2.png" alt="Kelistrikan" class="img-fluid">
           </div>
           <div class="col-md-6" data-aos="fade-left">
             <div class="feature-text">
@@ -87,7 +87,7 @@
         <!-- Feature 2 -->
         <div class="row align-items-center feature-block mb-5 flex-md-row-reverse">
           <div class="col-md-6 text-center" data-aos="fade-left">
-            <img src="https://layanan.pln.co.id/_nuxt/img/section2-img2.d3114cc.png" alt="Internet" class="img-fluid">
+            <img src="assets/m3.png" alt="Internet" class="img-fluid">
           </div>
           <div class="col-md-6" data-aos="fade-right">
             <div class="feature-text">
@@ -100,7 +100,7 @@
         <!-- Feature 3 -->
         <div class="row align-items-center feature-block mb-5">
           <div class="col-md-6 text-center" data-aos="fade-right">
-            <img src="https://layanan.pln.co.id/_nuxt/img/section2-img3.7420bb8.png" alt="Perbaikan" class="img-fluid">
+            <img src="assets/m4.png" alt="Perbaikan" class="img-fluid">
           </div>
           <div class="col-md-6" data-aos="fade-left">
             <div class="feature-text">
@@ -113,7 +113,7 @@
         <!-- Feature 4 -->
         <div class="row align-items-center feature-block flex-md-row-reverse">
           <div class="col-md-6 text-center" data-aos="fade-left">
-            <img src="https://layanan.pln.co.id/_nuxt/img/section2-img4.7f6e57f.png" alt="SPKLU" class="img-fluid">
+            <img src="assets/m5.png" alt="SPKLU" class="img-fluid">
           </div>
           <div class="col-md-6" data-aos="fade-right">
             <div class="feature-text">
