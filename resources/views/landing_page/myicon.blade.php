@@ -75,12 +75,12 @@
                 <!-- Feature 1 -->
                 <div class="row align-items-center feature-block mb-5">
                     <div class="col-md-6 text-center" data-aos="fade-up-right">
-                        <img src="assets/12pro.png" alt="Layanan MyIcon+" class="img-fluid">
+                        <img src="assets/1.png" alt="Layanan MyIcon+" class="img-fluid">
                     </div>
                     <div class="col-md-6" data-aos="fade-up-left">
                         <div class="feature-text">
-                            <h2>01. Layanan Digital</h2>
-                            <h6>Kamu dapat mengakses <b>monitoring jaringan</b>, mengajukan <b>layanan baru</b>, dan melihat <b>status langganan</b> hanya lewat aplikasi MyIcon+.</h6>
+                            <h2>01. Install</h2>
+                            <h6>Download <b>MyIcon+</b>, di <b>Playstore</b>, dan  <b>App Store</b>.</h6>
                         </div>
                     </div>
                 </div>
@@ -88,12 +88,94 @@
                 <!-- Feature 2 -->
                 <div class="row align-items-center feature-block">
                     <div class="col-md-6 order-md-2 text-center" data-aos="fade-up-left">
-                        <img src="assets/15pro.png" alt="Monitoring" class="img-fluid">
+                        <img src="assets/2.png" alt="Monitoring" class="img-fluid">
                     </div>
                     <div class="col-md-6 order-md-1" data-aos="fade-up-right">
                         <div class="feature-text">
-                            <h2>02. Monitoring Real-time</h2>
-                            <h6>Pantau performa jaringan dan layananmu secara <b>real-time</b> langsung dari smartphone.</h6>
+                            <h2>02. Tampilan</h2>
+                            <h6>Ini adalah tampilan awal <b>MyIcon+</b>.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 1 -->
+                <div class="row align-items-center feature-block mb-5">
+                    <div class="col-md-6 text-center" data-aos="fade-up-right">
+                        <img src="assets/3.png" alt="Layanan MyIcon+" class="img-fluid">
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <div class="feature-text">
+                            <h2>03. Login</h2>
+                            <h6>Login menggunakan akun <b>Gmail</b> dan ini adalah halaman Home <b>MyIcon+</b></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="row align-items-center feature-block">
+                    <div class="col-md-6 order-md-2 text-center" data-aos="fade-up-left">
+                        <img src="assets/4.png" alt="Monitoring" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1" data-aos="fade-up-right">
+                        <div class="feature-text">
+                            <h2>04. Open Tiket</h2>
+                            <h6>Klik menu<b> Entreprise </b>untuk melihat service aktif untuk open tiket.</h6>
+                            <h6>Klik <b>Filter</b> Untuk mencari service terganggu bisa filter berdasarkan : Alamat, Layanan Produk, Service ID, Lokasi.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 1 -->
+                <div class="row align-items-center feature-block mb-5">
+                    <div class="col-md-6 text-center" data-aos="fade-up-right">
+                        <img src="assets/5.png" alt="Layanan MyIcon+" class="img-fluid">
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <div class="feature-text">
+                            <h2>05. Membuat Laporan</h2>
+                            <h6>Setelah memilih service yang akan di open tiket klik <b>“Buat Laporan”.</b></h6>
+                            <h6>Isi seluruh form di tampilan berikut dengan detail keluhan disertai capture hasil pengecekan atau kondisi perangkat dan klik <b>“Kirim laporan”</b></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="row align-items-center feature-block">
+                    <div class="col-md-6 order-md-2 text-center" data-aos="fade-up-left">
+                        <img src="assets/6.png" alt="Monitoring" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1" data-aos="fade-up-right">
+                        <div class="feature-text">
+                            <h2>06. Monitoring </h2>
+                            <h6>Pantau Riwayat <b>Laporan</b> langsung dari smartphone.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 1 -->
+                <div class="row align-items-center feature-block mb-5">
+                    <div class="col-md-6 text-center" data-aos="fade-up-right">
+                        <img src="assets/7.png" alt="Layanan MyIcon+" class="img-fluid">
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <div class="feature-text">
+                            <h2>07. Layanan Digital</h2>
+                            <h6>Untuk komen tiket bisa dilakukan dengan klik fitur <b>chat</b> pada icon yang dilingkari</h6>
+                            <h6>Akan muncul tampilan untuk tulis pesan yang akan muncul di kolom komentar dan akan terkirim ke <b>Contact Center PLN ICON+</b></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="row align-items-center feature-block">
+                    <div class="col-md-6 order-md-2 text-center" data-aos="fade-up-left">
+                        <img src="assets/8.png" alt="Monitoring" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1" data-aos="fade-up-right">
+                        <div class="feature-text">
+                            <h2>08. Contact Center</h2>
+                            <h6>Untuk melakukan panggilan ke <b>Contact Center PLN ICON+</b> dengan klik fitur call pada icon yang dilingkari di menu <b> “Enterprise”</b></h6>
+                            <h6>Akan terhubung dengan Agent <b>Contact Center PLN ICON+</b></h6>
                         </div>
                     </div>
                 </div>

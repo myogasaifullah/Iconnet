@@ -49,6 +49,10 @@
                         <i class="bi bi-globe me-2 text-white"></i>
                         <a href="https://iconnet.id/" class="text-decoration-none text-white">https://iconnet.id/</a>
                     </li>
+                    <li class="mb-2">
+                        <i class="bi bi-globe me-2 text-white"></i>
+                        <a href="https://web.pln.co.id/" class="text-decoration-none text-white">https://web.pln.co.id/</a>
+                    </li>
                 </ul>
             </div>
 
