@@ -84,9 +84,15 @@
                     </a> -->
                 </div>
             </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">Logged in as:</div>
-                Iconnet
+            <div class="sb-sidenav-footer d-flex align-items-center justify-content-between p-2">
+                <div class="d-flex align-items-center">
+                    <img src="assets/favicon.png" alt="Profile Photo"
+                        class="rounded-circle me-2" width="40" height="40">
+                    <div>
+                        <div class="small">Logged in as:</div>
+                        Iconnet
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
