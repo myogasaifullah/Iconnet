@@ -70,7 +70,7 @@
                                 <div class="card-body">
                                     Halaman Sepi:
                                     @if ($pageTerendah)
-                                    <br><strong>{{ $pageTerendah->page }}</strong> ({{ $pageTerendah->total }}x)
+                                    <strong>{{ $pageTerendah->page }}</strong> ({{ $pageTerendah->total }}x)
                                     @else
                                     <br>Tidak ada data
                                     @endif
@@ -82,7 +82,17 @@
                             </div>
                         </div>
                     </div>
-
+<div class="col-xl-12">
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-chart-line me-1"></i>
+            Kunjungan Bulanan (12 Bulan Terakhir)
+        </div>
+        <div class="card-body">
+            <canvas id="monthlyVisitChart" width="100%" height="40"></canvas>
+        </div>
+    </div>
+</div>
                     <div class="row">
                         <div class="col-xl-6">
                             <div class="card mb-4">
@@ -268,6 +278,49 @@
                 }
             });
         });
+        // Monthly Visits Chart
+const monthlyLabels = @json($monthlyVisits->pluck('month'));
+const monthlyCounts = @json($monthlyVisits->pluck('total'));
+
+const ctxMonthly = document.getElementById("monthlyVisitChart").getContext('2d');
+new Chart(ctxMonthly, {
+    type: 'bar',
+    data: {
+        labels: monthlyLabels,
+        datasets: [{
+            label: "Monthly Visits",
+            data: monthlyCounts,
+            backgroundColor: "rgba(28, 200, 138, 0.5)",
+            borderColor: "rgba(28, 200, 138, 1)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Visits'
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Month'
+                }
+            }
+        }
+    }
+});
+
     </script>
 </body>
 

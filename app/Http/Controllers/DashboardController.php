@@ -17,17 +17,18 @@ class DashboardController extends Controller
         $visitData = $this->getVisitDataLast7Days();
         $barData = $this->getTop5Pages();
         $logs = Log::orderBy('created_at', 'desc')->limit(10)->get();
-    
+
         $totalKunjungan = Visit::count();
         $totalPaket = Paket::count();
         $totalPromo = Promo::count();
-    
+        $monthlyVisits = $this->getMonthlyVisitsLastYear();
+
         $pageTerendah = Visit::select('page', DB::raw('COUNT(*) as total'))
             ->groupBy('page')
             ->orderBy('total', 'asc')
             ->limit(1)
             ->first();
-    
+
         return view('admin_page.dashboard', compact(
             'visitData',
             'barData',
@@ -35,10 +36,11 @@ class DashboardController extends Controller
             'totalKunjungan',
             'totalPaket',
             'totalPromo',
-            'pageTerendah'
+            'pageTerendah',
+            'monthlyVisits'
         ));
     }
-    
+
 
     protected function getVisitDataLast7Days()
     {
@@ -90,5 +92,32 @@ class DashboardController extends Controller
         ]);
 
         return response()->json(['success' => true]);
+    }
+
+    protected function getMonthlyVisitsLastYear()
+    {
+        $startDate = Carbon::now()->subMonths(11)->startOfMonth(); // dari 11 bulan lalu
+        $endDate = Carbon::now()->endOfMonth();
+
+        $visits = Visit::select(
+            DB::raw('DATE_FORMAT(visited_at, "%Y-%m") as month'),
+            DB::raw('COUNT(*) as total')
+        )
+            ->whereBetween('visited_at', [$startDate, $endDate])
+            ->groupBy('month')
+            ->orderBy('month')
+            ->get()
+            ->keyBy('month');
+
+        $monthRange = collect();
+        for ($date = $startDate->copy(); $date->lte($endDate); $date->addMonth()) {
+            $monthKey = $date->format('Y-m');
+            $monthRange->push([
+                'month' => $date->format('M Y'),
+                'total' => $visits->has($monthKey) ? $visits[$monthKey]->total : 0
+            ]);
+        }
+
+        return $monthRange;
     }
 }
