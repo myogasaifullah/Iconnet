@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row gx-5 gy-4">
             <h4>Policy</h4>
-            
+
             <!-- Sidebar -->
             <div class="col-lg-3">
                 <ul class="list-group list-group-flush sticky-sidebar">
                     <li class="list-group-item" id="item-pengartian">
-                        <a href="#" id="link-pengartian" class="text-decoration-none text-dark active-link" onclick="showSection('pengartian', this, 'item-pengartian', event)">Pengartian</a>
+                        <a href="#" id="link-pengartian" class="text-decoration-none text-dark active-link" onclick="showSection('pengartian', this, 'item-pengartian', event)">Pengertian</a>
                     </li>
                     <li class="list-group-item" id="item-pengumpulan">
                         <a href="#" id="link-pengumpulan" class="text-decoration-none text-dark" onclick="showSection('pengumpulan', this, 'item-pengumpulan', event)">Pengumpulan Data</a>
@@ -36,7 +36,7 @@
             <!-- Konten -->
             <div class="col-lg-9">
                 <section id="pengartian" class="content-section active mb-5">
-                    <h4 class="fw-bold">Pengartian</h4>
+                    <h4 class="fw-bold">Pengertian</h4>
                     <p>
                         Kebijakan Privasi ini merupakan kebijakan PT Indonesia Comnets Plus ("PLN Icon Plus" atau "Kami") dalam penanganan informasi dan data pengguna layanan, website, aplikasi, platform dan produk Kami (secara keseluruhan disebut "Layanan"). Kebijakan privasi ini disusun oleh PLN Icon Plus untuk menghargai, menghormati dan melindungi data tentang perseorangan yang terindentifikasi atau dapat diidentifikasi secara tersendiri atau dikombinasi dengan informasi lainnya baik secara langsung maupun tidak langsung melalui sistem elektronik atau nonelektronik ("Data Pribadi") milik calon pengguna dan/atau pengguna Layanan PLN Icon Plus ("Pengguna", "Konsumen" atau "Anda") berdasarkan standar dan ketentuan peraturan perundang-undangan yang berlaku di Indonesia.
                     </p>
