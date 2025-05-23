@@ -29,7 +29,7 @@
             <div class="row align-items-center">
                 <!-- Bagian Kiri (Peta) -->
                 <div class="col-md-6 text-center mb-4 mb-md-0">
-                    <img src="/assets/lampung.png" alt="Jangkauan Iconnet" class="img-fluid">
+                    <img src="/assets/pin.png" alt="Jangkauan Iconnet" class="img-fluid">
                 </div>
 
                 <!-- Bagian Kanan (Teks dan Cakupan Area) -->
@@ -72,8 +72,8 @@
                     <!-- List Area -->
                     <p class="text-2xl text-gray-800 leading-relaxed font-black">
                         Bandar Lampung, Lampung Barat, Lampung Selatan, Lampung Tengah <br>
-                        Lampung Timur, Lampung Utara, Metro, Pesawaran <br>
-                        Pringsewu, Tanggamus, Tulang Bawang
+                        Lampung Timur, Lampung Utara, Metro, Pesawaran, Pringsewu, Tanggamus, <br>
+                        Tulang Bawang,Tulang Bawang Barat, Mesuji, Pesisir Barat, Way Kanan
                     </p>
 
                 </div>

@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-center mt-5 mt-lg-0" data-aos="fade-left">
-                        <img class="img-fluid rounded" src="https://play-lh.googleusercontent.com/3J7h7oUyqSqkB-NTrBXiRmV-4LNlA18ayh3zxIt7mjFfbMpfteBRxm2W3kZim-ys9Fkf" alt="MyIcon+ App" style="max-width: 80%;">
+                        <img class="img-fluid rounded" src="assets/12pro.png" alt="MyIcon+ App" style="max-width: 80%;">
                     </div>
                 </div>
             </div>
