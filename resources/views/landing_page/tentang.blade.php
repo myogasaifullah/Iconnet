@@ -124,238 +124,234 @@
             </div>
         </div>
     </section>
+<section class="py-5 px-4 bg-light">
+    <style>
+        /* Typography */
+        .sub-heading {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
+        .main-heading {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 2rem;
+        }
 
+        /* Timeline Container */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px 0;
+        }
 
-    <section class="py-5 px-4 bg-light">
-        <style>
-            /* Typography */
-            .sub-heading {
-                text-align: center;
-                font-size: 1.1rem;
-                font-weight: 600;
-                color: #555;
-                margin-bottom: 0.5rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #ccc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            z-index: 0;
+        }
 
-            .main-heading {
-                text-align: center;
-                font-size: 2rem;
-                font-weight: 700;
-                color: #222;
-                margin-bottom: 2rem;
-            }
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            z-index: 1;
+        }
 
-            /* Timeline Container */
-            .timeline {
-                position: relative;
-                max-width: 900px;
-                margin: auto;
-                padding: 20px 0;
-            }
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
 
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 15px;
+            width: 100px;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #063970;
+        }
+
+        .timeline-item.left .timeline-date {
+            right: -140px;
+            text-align: right;
+        }
+
+        .timeline-item.right .timeline-date {
+            left: -140px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: #009EA9;
+            border-radius: 50%;
+            top: 25px;
+            z-index: 1;
+            border: 3px solid white; /* ✅ Border putih */
+        }
+
+        .timeline-item.left::before {
+            right: -8px;
+        }
+
+        .timeline-item.right::before {
+            left: -8px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
             .timeline::after {
-                content: '';
-                position: absolute;
-                width: 4px;
-                background-color: #ccc;
-                top: 0;
-                bottom: 0;
-                left: 50%;
-                margin-left: -2px;
-                z-index: 0;
+                left: 20px;
             }
 
             .timeline-item {
-                padding: 20px 40px;
-                position: relative;
-                width: 50%;
-                box-sizing: border-box;
-                z-index: 1;
-                /* Di atas garis */
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 25px;
+                margin-bottom: 30px;
             }
 
-            .timeline-item.left {
-                left: 0;
-                text-align: right;
-            }
-
+            .timeline-item.left,
             .timeline-item.right {
-                left: 50%;
+                left: 0;
+                text-align: left;
             }
 
-            .timeline-content {
-                background: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                position: relative;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-            }
-
-            .timeline-content h3 {
-                font-size: 1.2rem;
-                font-weight: 600;
-                margin-bottom: 0.5rem;
-            }
-
-            .timeline-content p {
-                font-size: 1rem;
-                color: #555;
-                line-height: 1.5;
-            }
-
-            .timeline-date {
-                position: absolute;
-                top: 15px;
-                width: 100px;
-                font-weight: bold;
-                font-size: 2rem;
-                color: #007bff;
-            }
-
-            .timeline-item.left .timeline-date {
-                right: -140px;
-                text-align: right;
-            }
-
+            .timeline-item.left .timeline-date,
             .timeline-item.right .timeline-date {
-                left: -140px;
+                left: 0;
+                top: -30px;
+                text-align: left;
             }
 
-            .timeline-item::before {
-                content: '';
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                background-color: #007bff;
-                border-radius: 50%;
-                top: 25px;
-                z-index: 1;
-            }
-
-            .timeline-item.left::before {
-                right: -8px;
-            }
-
+            .timeline-item.left::before,
             .timeline-item.right::before {
-                left: -8px;
+                left: 0;
             }
+        }
+    </style>
 
-            /* Responsive */
-            @media screen and (max-width: 768px) {
-                .timeline::after {
-                    left: 20px;
-                }
+    <div class="timeline-section">
+        <p class="sub-heading">Our Story</p>
+        <h2 class="main-heading">Sejarah Iconnet</h2>
 
-                .timeline-item {
-                    width: 100%;
-                    padding-left: 60px;
-                    padding-right: 25px;
-                    margin-bottom: 30px;
-                }
-
-                .timeline-item.left,
-                .timeline-item.right {
-                    left: 0;
-                    text-align: left;
-                }
-
-                .timeline-item.left .timeline-date,
-                .timeline-item.right .timeline-date {
-                    left: 0;
-                    top: -30px;
-                    text-align: left;
-                }
-
-                .timeline-item.left::before,
-                .timeline-item.right::before {
-                    left: 0;
-                }
-            }
-        </style>
-
-        <div class="timeline-section">
-            <p class="sub-heading">Our Story</p>
-            <h2 class="main-heading">Sejarah Iconnet</h2>
-
-            <div class="timeline ">
-                <div class="timeline-item left" data-aos="fade-right">>
-                    <div class="timeline-date">2000</div>
-                    <div class="timeline-content card">
-                        <h3>Established</h3>
-                        <p><strong>PT Indonesia Comnets Plus</strong>PT Indonesia Comnets Plus berdiri.</p>
-                    </div>
+        <div class="timeline">
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-date">2000</div>
+                <div class="timeline-content card">
+                    <h3>Established</h3>
+                    <p><strong>PT Indonesia Comnets Plus</strong> berdiri.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item right" data-aos="fade-left">>
-                    <div class="timeline-date">2005</div>
-                    <div class="timeline-content card">
-                        <h3>Izin</h3>
-                        <p>Memperoleh izin prinsip Internet Telephony untuk keperluan publik.</p>
-                    </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-date">2005</div>
+                <div class="timeline-content card">
+                    <h3>Izin</h3>
+                    <p>Memperoleh izin prinsip Internet Telephony untuk keperluan publik.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item left" data-aos="fade-right">>
-                    <div class="timeline-date">2007</div>
-                    <div class="timeline-content card">
-                        <h3>Penyelenggara Jasa</h3>
-                        <p><strong>PT Indonesia Comnets Plus</strong> Memperoleh izin prinsip Penyelenggara Jasa Interkoneksi Internet (NAP) dan penyelenggara Jasa Internet Telephone Keperluan Publik.</p>
-                    </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-date">2007</div>
+                <div class="timeline-content card">
+                    <h3>Penyelenggara Jasa</h3>
+                    <p><strong>PT Indonesia Comnets Plus</strong> memperoleh izin prinsip Penyelenggara Jasa Interkoneksi Internet (NAP) dan penyelenggara Jasa Internet Telepon Keperluan Publik.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item right" data-aos="fade-left">>
-                    <div class="timeline-date">2020</div>
-                    <div class="timeline-content card">
-                        <h3>Lisensi</h3>
-                        <p>PLN Icon Plus memiliki lisensi Jasa Telekomunikasi Layanan Call Center dan Launching Aplikasi Layanan Pelanggan New PLN Mobile .</p>
-                    </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content card">
+                    <h3>Lisensi</h3>
+                    <p>PLN Icon Plus memiliki lisensi Jasa Telekomunikasi Layanan Call Center dan launching aplikasi layanan pelanggan New PLN Mobile.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item left" data-aos="fade-right">>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content card">
-                        <h3>Established</h3>
-                        <p><strong>PT Indonesia Comnets Plus</strong> (berbisnis dengan nama PLN Icon Plus) adalah anak usaha PLN yang bergerak di bidang teknologi informasi dan komunikasi.</p>
-                    </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content card">
+                    <h3>Established</h3>
+                    <p><strong>PT Indonesia Comnets Plus</strong> (berbisnis dengan nama PLN Icon Plus) adalah anak usaha PLN yang bergerak di bidang teknologi informasi dan komunikasi.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item right" data-aos="fade-left">>
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content card">
-                        <h3>Berkembang</h3>
-                        <p>Iconnet terus melebarkan sayap dan mengembangkan internet broadband di beberapa kota.</p>
-                    </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content card">
+                    <h3>Berkembang</h3>
+                    <p>Iconnet terus melebarkan sayap dan mengembangkan internet broadband di beberapa kota.</p>
                 </div>
+            </div>
 
-                <div class="timeline-item left" data-aos="fade-right">>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content card">
-                        <h3>Menjangkau Wilayah Pelosok</h3>
-                        <p>Iconnet kini hadir hampir di tiap kota dan kabupaten di pulau Jawa, Sumatera dan Kalimantan dan menjangkau wilayah pelosok.</p>
-                    </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content card">
+                    <h3>Menjangkau Wilayah Pelosok</h3>
+                    <p>Iconnet kini hadir hampir di tiap kota dan kabupaten di pulau Jawa, Sumatera, dan Kalimantan serta menjangkau wilayah pelosok.</p>
                 </div>
-                <div class="timeline-item right" data-aos="fade-left">>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content card">
-                        <h3>Transformasi Digital</h3>
-                        <p>Iconnet meningkatkan kualitas layanan melalui digitalisasi sistem, termasuk aplikasi mobile untuk pelanggan dan integrasi layanan PLN dalam satu platform.</p>
-                    </div>
-                </div>
+            </div>
 
-                <div class="timeline-item left" data-aos="fade-right">>
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content card">
-                        <h3>Ekspansi Nasional</h3>
-                        <p>Iconnet memperluas jaringan hingga wilayah Indonesia Timur, serta memperkenalkan layanan bundling TV kabel dan smart home untuk mendukung gaya hidup digital masyarakat Indonesia.</p>
-                    </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content card">
+                    <h3>Transformasi Digital</h3>
+                    <p>Iconnet meningkatkan kualitas layanan melalui digitalisasi sistem, termasuk aplikasi mobile untuk pelanggan dan integrasi layanan PLN dalam satu platform.</p>
                 </div>
+            </div>
 
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content card">
+                    <h3>Ekspansi Nasional</h3>
+                    <p>Iconnet memperluas jaringan hingga wilayah Indonesia Timur, serta memperkenalkan layanan bundling TV kabel dan smart home untuk mendukung gaya hidup digital masyarakat Indonesia.</p>
+                </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
 
     @include('layouts.footer')
     <!-- Bootstrap core JS-->

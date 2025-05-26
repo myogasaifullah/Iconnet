@@ -58,7 +58,7 @@
             <div class="left-section">
                 <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Logo_PLN.svg/2560px-Logo_PLN.svg.png" alt="PLN Icon Plus" class="footer-logo" /> -->
                 <div class="login-wrapper">
-                    <img src="https://iconnetjabar.com/wp-content/uploads/2023/09/cropped-Favicon-Iconnet-1024x1024-1.png" alt="ICONNET Logo" class="login-logo">
+                    <img src="assets/favicon.png" alt="ICONNET Logo" class="login-logo">
                     <div class="title">Semua Makin Mudah</div>
 
                     @if ($errors->any())
