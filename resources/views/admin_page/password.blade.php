@@ -35,7 +35,7 @@
 <body>
     <!-- Banner Atas -->
     <div class="top-banner">
-        <img src="assets/top.png" alt="Top Banner">
+        <img src="assets/newtop.png" alt="Top Banner">
     </div>
 
     <!-- Reset Password Section -->
@@ -58,7 +58,7 @@
 
     <!-- Banner Bawah -->
     <div class="bottom-banner">
-        <img src="assets/bottom.png" alt="Bottom Banner">
+        <img src="assets/newbot.png" alt="Bottom Banner">
     </div>
 </body>
 
