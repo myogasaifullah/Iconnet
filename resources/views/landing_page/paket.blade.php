@@ -30,30 +30,56 @@
                 </h2>
                 <p class="lead mb-0">ICONNET adalah penyedia layanan terkemuka dalam solusi konektivitas dan jaringan, menawarkan beragam produk dan layanan berkualitas tinggi untuk memenuhi kebutuhan komunikasi dan konektivitas bisnis Anda.</p>
             </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <form method="GET" action="{{ route('paket.landing') }}">
+                        <div class="input-group">
+                            <select name="nama_paket" class="form-select">
+                                <option value="">-- Pilih Nama Daerah --</option>
+                                @foreach($namaPakets as $nama)
+                                <option value="{{ $nama }}" {{ request('nama_paket') == $nama ? 'selected' : '' }}>
+                                    {{ $nama }}
+                                </option>
+                                @endforeach
+                            </select>
+                            <button class="btn btn-primary" type="submit">Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-5 justify-content-center">
                 <!-- Card 1 -->
                 @foreach($pakets as $paket)
                 <div class="col mb-4">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h2>{{ $paket->kecepatan }}</h2>
-                            <h1>{{ number_format($paket->harga, 0, ',', '.') }}</h1>
-                            <p>Per bulan</p>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li>Full Fiber To The Home</li>
-                                <li>Speed Up To {{ $paket->kecepatan }}</li>
-                                <li>Unlimited Quota</li>
-                                <li>{{ $paket->deskripsi }}</li>
-                                <li>Harga Belum Termasuk PPN 11%</li>
-                            </ul>
-                            <div class="text-center">
-                                <a href="https://api.whatsapp.com/send?phone=628117381899" class="btn btn-outline-primary btn-daftar">Daftar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="pricing-card border-0 shadow-lg rounded-4 overflow-hidden bg-white">
+        <!-- Header with gradient background -->
+        <div class="pricing-header text-center p-4" style="background: linear-gradient(135deg, #0093ae, #172858);">
+            <h5 class="text-uppercase mb-2" style="color: #fff; font-weight: 700;">{{ $paket->nama_paket }}</h5>
+            <h2 style="color: #fff; font-size: 28px;">{{ $paket->kecepatan }}</h2>
+            <h1 style="color: #fff; font-size: 32px;">Rp {{ number_format($paket->harga, 0, ',', '.') }}</h1>
+            <p style="color: #f8f9fa; font-size: 14px;">Per bulan</p>
+        </div>
+
+        <!-- Body with features -->
+        <div class="pricing-body p-4 bg-light">
+            <ul class="list-unstyled mb-4">
+                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Full Fiber To The Home</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Speed Up To {{ $paket->kecepatan }}</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Unlimited Quota</li>
+                <li class="mb-2"><i class="bi bi-info-circle text-primary me-2"></i> {{ $paket->deskripsi }}</li>
+                <li class="mb-2"><i class="bi bi-exclamation-triangle text-warning me-2"></i> Harga Belum Termasuk PPN 11%</li>
+            </ul>
+            <div class="text-center">
+                <a href="https://api.whatsapp.com/send?phone=628117381899"
+                   class="btn btn-primary btn-daftar w-100 py-2" style="border-radius: 25px;">
+                    <i class="bi bi-whatsapp me-1"></i> Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
                 @endforeach
             </div>
         </div>
@@ -72,18 +98,18 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-    // Track current page visit
-    fetch("{{ route('track.visit') }}", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRF-TOKEN': '{{ csrf_token() }}'
-        },
-        body: JSON.stringify({
-            page: window.location.pathname
-        })
-    });
-</script>
+        // Track current page visit
+        fetch("{{ route('track.visit') }}", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                page: window.location.pathname
+            })
+        });
+    </script>
 </body>
 
 </html>

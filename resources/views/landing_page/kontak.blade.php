@@ -159,35 +159,36 @@
             <section class="contact-section py-5" data-aos="fade-up" data-aos-delay="200">
                 <div class="container">
                     <h2 class="text-center mb-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Formulir Kontak</h2>
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" action="{{ route('kontak.store') }}" method="POST">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
                                 <div class="form-floating custom-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Nama lengkap" data-sb-validations="required" />
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Nama lengkap" required>
                                     <label for="name">Nama Lengkap</label>
                                 </div>
                             </div>
                             <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
                                 <div class="form-floating custom-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="Email" required>
                                     <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
                                 <div class="form-floating custom-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Nomor Telepon" data-sb-validations="required" />
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="Nomor Telepon" required>
                                     <label for="phone">Nomor Telepon</label>
                                 </div>
                             </div>
                             <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
                                 <div class="form-floating custom-floating">
-                                    <input class="form-control" id="address" type="text" placeholder="Alamat" data-sb-validations="required" />
+                                    <input class="form-control" id="address" name="address" type="text" placeholder="Alamat" required>
                                     <label for="address">Alamat</label>
                                 </div>
                             </div>
                             <div class="col-md-12" data-aos="fade-up" data-aos-delay="500">
                                 <div class="form-floating custom-floating">
-                                    <textarea class="form-control" id="message" placeholder="Pesan" style="height: 150px" data-sb-validations="required"></textarea>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Pesan" required></textarea>
                                     <label for="message">Pesan</label>
                                 </div>
                             </div>
@@ -196,13 +197,21 @@
                         <div class="text-center mt-4" data-aos="zoom-in" data-aos-delay="600">
                             <button class="btn btn-info text-white btn-lg px-5 shadow-sm" id="submitButton" type="submit">Kirim</button>
                         </div>
+                        @if(session('success'))
+                        <div class="text-center mt-4 text-success fw-bold">
+                            {{ session('success') }}
+                        </div>
+                        @endif
 
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mt-4 text-success fw-bold">Pesan berhasil dikirim!</div>
+                        @if($errors->any())
+                        <div class="text-center mt-4 text-danger fw-bold">
+                            <ul class="list-unstyled">
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
                         </div>
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center mt-4 text-danger fw-bold">Terjadi kesalahan saat mengirim pesan!</div>
-                        </div>
+                        @endif
                     </form>
                 </div>
             </section>

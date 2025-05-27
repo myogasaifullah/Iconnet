@@ -12,6 +12,13 @@ use App\Http\Controllers\PromoLandingController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VerifikasiUserController;
 use App\Http\Controllers\VisitController;
+use App\Http\Controllers\ContactController;
+
+
+Route::delete('/admin/pesan/{id}', [ContactController::class, 'destroy'])->name('pesan.destroy');
+Route::get('/admin/pesan', [ContactController::class, 'index'])->name('pesan.index');
+
+Route::post('/kontak', [ContactController::class, 'store'])->name('kontak.store');
 
 Route::get('/verifikasi-user', [VerifikasiUserController::class, 'index'])->name('verifikasi.index');
 Route::post('/verifikasi-user/{id}', [VerifikasiUserController::class, 'verify'])->name('verifikasi.verify');

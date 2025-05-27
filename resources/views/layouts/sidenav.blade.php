@@ -77,6 +77,11 @@
                             <a class="nav-link" href="{{ route('verifikasi.index') }}">Verifikasi</a>
                         </nav>
                     </div>
+                     <div class="sb-sidenav-menu-heading">Pesan</div>
+                    <a class="nav-link" href="{{ route('pesan.index') }}">
+                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        Pesan
+                    </a>
                     <!-- <div class="sb-sidenav-menu-heading">Users</div>
                     <a class="nav-link" href="{{ route('users') }}">
                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>

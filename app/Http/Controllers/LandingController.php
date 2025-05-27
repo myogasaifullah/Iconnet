@@ -15,7 +15,7 @@ class LandingController extends Controller
     {
         $latestPromo = Promo::latest()->first();
         $banners = Banner::latest()->get(); // ambil semua banner
-        $pakets = Paket::all(); // tambahkan ini
+        $pakets = Paket::take(4)->get(); // tambahkan ini
 
         return view('landing_page.index', compact('latestPromo', 'banners', 'pakets'));
     }

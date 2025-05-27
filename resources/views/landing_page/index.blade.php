@@ -196,6 +196,10 @@
 
             </div>
         </div>
+        <!-- Tombol -->
+            <div class="text-center mt-4">
+                <a href="/paket" class="btn btn-outline-primary btn-daftar px-4 py-2">Paket Daerahmu</a>
+            </div>
     </section>
 
     <!-- WHY -->
