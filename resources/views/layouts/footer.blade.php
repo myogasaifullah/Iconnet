@@ -4,7 +4,7 @@
             <!-- Logo & App Links -->
             <div class="col-lg-3 col-md-6">
                 <a href="/" class="d-block mb-3">
-                    <img src="https://iconnet-sumbagsel.my.id/wp-content/uploads/2024/07/Logo-Iconnet.png" alt="Logo Iconnet" width="180">
+                    <img src="https://iconnetpln.id/wp-content/uploads/2025/02/Logo-IConnet.png" alt="Logo Iconnet" width="180">
                     <div>
                         <h6 class="text-white">
                             SEMUA MAKIN MUDAH
